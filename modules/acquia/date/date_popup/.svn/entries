@@ -1,0 +1,85 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/date/date_popup
+https://svn.acquia.com/drupal
+
+
+
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+translations
+dir
+
+date_popup.module
+file
+
+
+
+
+2009-06-18T04:57:59.000000Z
+1f2846103f2d2e66a9af01ede87ab372
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+themes
+dir
+
+date_popup.install
+file
+
+
+
+
+2009-06-18T04:57:59.000000Z
+9e09a681a7ef38e5363eccd1e0a4ebe1
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+lib
+dir
+
+date_popup.info
+file
+
+
+
+
+2009-06-18T04:57:59.000000Z
+ea6831a3d13aedf92c12832df0db9434
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+date_popup.js
+file
+
+
+
+
+2009-06-18T04:57:59.000000Z
+1d869c8fb8fdd615173f193d763c6769
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+

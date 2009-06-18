@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom
+END
+mollom.module
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/mollom.module
+END
+INSTALL.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/mollom/INSTALL.txt
+END
+mollom.install
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/mollom.install
+END
+mollom.css
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/mollom.css
+END
+mollom.info
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/mollom.info
+END
+mollom.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/mollom.js
+END

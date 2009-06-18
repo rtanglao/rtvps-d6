@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/dblog
+END
+dblog.info
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/dblog/dblog.info
+END
+dblog.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/dblog/dblog.admin.inc
+END
+dblog.module
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/dblog/dblog.module
+END
+dblog.install
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/dblog/dblog.install
+END
+dblog-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/dblog/dblog-rtl.css
+END
+dblog.css
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/dblog/dblog.css
+END

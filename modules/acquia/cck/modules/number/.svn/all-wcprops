@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/number
+END
+number.info
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/number/number.info
+END
+number.module
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/number/number.module
+END
+number.install
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/modules/number/number.install
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json/Server
+END
+Error.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json/Server/Error.php
+END
+Exception.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json/Server/Exception.php
+END
+Response.php
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json/Server/Response.php
+END
+Cache.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json/Server/Cache.php
+END
+Smd.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json/Server/Smd.php
+END
+Request.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json/Server/Request.php
+END

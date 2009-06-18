@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/forum
+END
+forum.css
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum.css
+END
+forums.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forums.tpl.php
+END
+forum-topic-list.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum-topic-list.tpl.php
+END
+forum-icon.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum-icon.tpl.php
+END
+forum.info
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/forum/forum.info
+END
+forum-list.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum-list.tpl.php
+END
+forum-topic-navigation.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum-topic-navigation.tpl.php
+END
+forum.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum.admin.inc
+END
+forum-submitted.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum-submitted.tpl.php
+END
+forum.module
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/forum/forum.module
+END
+forum.install
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum.install
+END
+forum-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum-rtl.css
+END
+forum.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum.pages.inc
+END

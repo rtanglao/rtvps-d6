@@ -1,0 +1,151 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/fivestar
+https://svn.acquia.com/drupal
+
+
+
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+fivestar_comment.info
+file
+
+
+
+
+2009-06-18T04:57:37.000000Z
+154f017996dc3530e3dc1a60244f0cf9
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+translations
+dir
+
+images
+dir
+
+widgets
+dir
+
+fivestar.module
+file
+
+
+
+
+2009-06-18T04:57:37.000000Z
+864ae31e50820313f63819e0590c09e3
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+css
+dir
+
+fivestar.install
+file
+
+
+
+
+2009-06-18T04:57:37.000000Z
+d2e5431694ffd30caa5e3598a1a1cf4b
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+fivestar_color.inc
+file
+
+
+
+
+2009-06-18T04:57:37.000000Z
+42558c96d5928525e26a745c72e2c3e8
+2009-04-30T23:24:28.696746Z
+4946
+buildbot
+
+fivestar_comment.module
+file
+
+
+
+
+2009-06-18T04:57:37.000000Z
+e06fa7928fc13354a0b755b419ed5d34
+2009-04-30T23:24:28.696746Z
+4946
+buildbot
+
+fivestar_comment.install
+file
+
+
+
+
+2009-06-18T04:57:37.000000Z
+c50d3d8b76b1712b92676655f27880db
+2009-04-30T23:24:28.696746Z
+4946
+buildbot
+
+README.txt
+file
+
+
+
+
+2009-06-18T04:57:37.000000Z
+341dcc81b746a838a8a95cbdbd49b8e1
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+js
+dir
+
+fivestar.info
+file
+
+
+
+
+2009-06-18T04:57:37.000000Z
+06cdb6c7dc6caea16e483df2dc8e46a5
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+fivestar_field.inc
+file
+
+
+
+
+2009-06-18T04:57:37.000000Z
+9ee31336a32cf50413049fa602171b0f
+2009-04-30T23:24:28.696746Z
+4946
+buildbot
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/taxonomy
+END
+taxonomy.module
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/taxonomy/taxonomy.module
+END
+taxonomy.install
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/taxonomy/taxonomy.install
+END
+taxonomy.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/taxonomy/taxonomy.pages.inc
+END
+taxonomy.css
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/taxonomy/taxonomy.css
+END
+taxonomy.info
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/taxonomy/taxonomy.info
+END
+taxonomy.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/taxonomy/taxonomy.js
+END
+taxonomy.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/taxonomy/taxonomy.admin.inc
+END

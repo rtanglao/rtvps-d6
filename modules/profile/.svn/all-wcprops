@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/profile
+END
+profile.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/profile/profile.admin.inc
+END
+profile-wrapper.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/profile/profile-wrapper.tpl.php
+END
+profile.module
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/profile/profile.module
+END
+profile.install
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/profile/profile.install
+END
+profile.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/profile/profile.pages.inc
+END
+profile.css
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/profile/profile.css
+END
+profile.info
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/profile/profile.info
+END
+profile-listing.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/profile/profile-listing.tpl.php
+END
+profile.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/profile/profile.js
+END
+profile-block.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/profile/profile-block.tpl.php
+END

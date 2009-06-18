@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/translations
+END
+es.po
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/es.po
+END
+hu.po
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/translations/hu.po
+END
+vi.po
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/vi.po
+END
+uk.po
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/translations/uk.po
+END
+uk-ua.po
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/translations/uk-ua.po
+END
+general.fr.po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/general.fr.po
+END
+examples.fr.po
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/examples.fr.po
+END
+theme.pot
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/translations/theme.pot
+END
+ru.po
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/ru.po
+END
+theme.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/translations/theme.sv.po
+END
+theme.de.po
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/theme.de.po
+END
+general.pot
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/translations/general.pot
+END
+general.de.po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/translations/general.de.po
+END
+general.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/translations/general.sv.po
+END
+fr.po
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/translations/fr.po
+END
+nl.po
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/nl.po
+END
+includes.fr.po
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/includes.fr.po
+END
+it.po
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/it.po
+END
+content.fr.po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/content.fr.po
+END
+includes-views-handlers.pot
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/translations/includes-views-handlers.pot
+END
+pt.po
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/pt.po
+END
+includes-views.pot
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/translations/includes-views.pot
+END
+includes-views-handlers.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/translations/includes-views-handlers.sv.po
+END
+includes-views-handlers.de.po
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/includes-views-handlers.de.po
+END
+includes-views.de.po
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/translations/includes-views.de.po
+END
+includes-views.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/translations/includes-views.sv.po
+END
+includes.pot
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/translations/includes.pot
+END
+ja.po
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/translations/ja.po
+END
+includes.de.po
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/translations/includes.de.po
+END
+includes.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/translations/includes.sv.po
+END
+content.pot
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/translations/content.pot
+END
+content.de.po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/translations/content.de.po
+END
+content.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/translations/content.sv.po
+END

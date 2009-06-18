@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/acquia_connector/acquia_spi
+END
+acquia_spi.module
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/acquia_connector/acquia_spi/acquia_spi.module
+END
+acquia_spi.install
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/acquia_connector/acquia_spi/acquia_spi.install
+END
+acquia_spi.info
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/acquia_connector/acquia_spi/acquia_spi.info
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_php4
+END
+date_php4.inc
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4.inc
+END
+date_php4_tz_abbreviations_list.inc
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4_tz_abbreviations_list.inc
+END
+date_php4_tz_create.inc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4_tz_create.inc
+END
+date_php4.info
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4.info
+END
+date_php4_calc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4_calc.inc
+END
+date_php4_missing_data.inc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4_missing_data.inc
+END
+date_php4_tz_identifiers.inc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4_tz_identifiers.inc
+END
+date_php4_lib.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4_lib.inc
+END
+date_php4_tz_map.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4_tz_map.inc
+END
+date_php4.module
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4.module
+END
+date_php4.install
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4.install
+END

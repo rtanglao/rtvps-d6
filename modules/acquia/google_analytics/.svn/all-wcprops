@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/google_analytics
+END
+googleanalytics.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/google_analytics/googleanalytics.js
+END
+googleanalytics.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/google_analytics/googleanalytics.admin.inc
+END
+googleanalytics.module
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/google_analytics/googleanalytics.module
+END
+googleanalytics.install
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/google_analytics/googleanalytics.install
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/google_analytics/README.txt
+END
+googleanalytics.info
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/google_analytics/googleanalytics.info
+END

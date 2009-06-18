@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_timezone/translations
+END
+date_timezone.pot
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/date/date_timezone/translations/date_timezone.pot
+END
+date_timezone.fr.po
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_timezone/translations/date_timezone.fr.po
+END
+date_timezone.de.po
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/date/date_timezone/translations/date_timezone.de.po
+END
+date_timezone.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_timezone/translations/date_timezone.sv.po
+END

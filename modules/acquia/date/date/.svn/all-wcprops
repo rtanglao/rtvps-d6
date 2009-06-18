@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date
+END
+date_handler_field_multiple.inc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/date/date_handler_field_multiple.inc
+END
+date.module
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date/date.module
+END
+date.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/date/date/date.views.inc
+END
+date.views_convert.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date/date.views_convert.inc
+END
+date_elements.inc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date/date_elements.inc
+END
+date.install
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/date/date/date.install
+END
+date_repeat.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/date/date_repeat.inc
+END
+date_token.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/date/date/date_token.inc
+END
+date.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date/date.info
+END
+date_content_generate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/date/date_content_generate.inc
+END
+date_admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/date/date/date_admin.inc
+END
+date.theme
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date/date.theme
+END

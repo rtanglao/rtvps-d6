@@ -1,0 +1,121 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/image
+https://svn.acquia.com/drupal
+
+
+
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+contrib
+dir
+
+translations
+dir
+
+image.admin.inc
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+0847c1b929dea4db182fe35a1ef88b97
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+tests
+dir
+
+INSTALL.txt
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+ed3a5ac255cb96b464f6eb1d28cdf007
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image.module
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+558efc713780d3bce9c9f575b4edc42e
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image.imagemagick.inc
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+7954d5827fde9347274eae0ab57e40fb
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image.install
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+6833069cd5cf9548f123b3eec577feb2
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+README.txt
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+fbd7efc876d89995501450d8c56f1fbd
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image.info
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+8d2a47b3f55975d4e44f9b00ed123484
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+

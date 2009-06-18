@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/contact
+END
+contact.module
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/contact/contact.module
+END
+contact.install
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/contact/contact.install
+END
+contact.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/contact/contact.pages.inc
+END
+contact.info
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/contact/contact.info
+END
+contact.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/contact/contact.admin.inc
+END

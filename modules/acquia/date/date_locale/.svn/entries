@@ -1,0 +1,55 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/date/date_locale
+https://svn.acquia.com/drupal
+
+
+
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+date_locale.module
+file
+
+
+
+
+2009-06-18T04:57:58.000000Z
+abe68fb4f9e4e2887f368d9d40b9c63f
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+translations
+dir
+
+date_locale.info
+file
+
+
+
+
+2009-06-18T04:57:58.000000Z
+df4dd5bbd3aaa9ea679d77b691fff597
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+

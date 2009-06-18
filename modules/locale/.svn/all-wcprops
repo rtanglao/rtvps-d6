@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/locale
+END
+locale.module
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/locale/locale.module
+END
+locale.install
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/locale/locale.install
+END
+locale.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/locale/locale.css
+END
+locale.info
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/locale/locale.info
+END

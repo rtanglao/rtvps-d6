@@ -1,0 +1,94 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/image/contrib/image_import
+https://svn.acquia.com/drupal
+
+
+
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+image_import.module
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+421aeeb8bcd566abcc5cdaebe7d4b51b
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+translations
+dir
+
+image_import.install
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+bb65663fc6b00a7df1dedfa78b2d0865
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+tests
+dir
+
+image_import.pages.inc
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+69f18ac87dda8c33282d09cc4ed6b5b1
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image_import.info
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+6bb71e773c3959b2e5465d713ba8fc8e
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image_import.admin.inc
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+05d6c5f55144a61b11fb5b0607cc570f
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+

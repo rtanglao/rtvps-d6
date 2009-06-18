@@ -1,0 +1,67 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/apachesolr/Zend
+https://svn.acquia.com/drupal
+
+
+
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+Json.php
+file
+
+
+
+
+2009-06-18T04:57:34.000000Z
+500455230d3986feb44f0d2600c254dc
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+LICENSE.txt
+file
+
+
+
+
+2009-06-18T04:57:34.000000Z
+95a93d6d64976c75807f9c5d871d8ab9
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+Exception.php
+file
+
+
+
+
+2009-06-18T04:57:34.000000Z
+7444d4451b0836b2412d695f1c0b4941
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+Json
+dir
+

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/includes
+END
+calendar_plugin_style.inc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/includes/calendar_plugin_style.inc
+END
+calendar_plugin_display_page.inc
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/calendar/includes/calendar_plugin_display_page.inc
+END
+calendar.inc
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/includes/calendar.inc
+END
+calendar.views_default.inc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/calendar/includes/calendar.views_default.inc
+END
+calendar_view_plugin_style.inc
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/calendar/includes/calendar_view_plugin_style.inc
+END
+calendar_plugin_display_attachment.inc
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/includes/calendar_plugin_display_attachment.inc
+END
+calendar.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/calendar/includes/calendar.views.inc
+END
+calendar_plugin_display_block.inc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/calendar/includes/calendar_plugin_display_block.inc
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/upload
+END
+upload.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/upload/upload.admin.inc
+END
+upload.module
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/upload/upload.module
+END
+upload.install
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/upload/upload.install
+END
+upload.info
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/upload/upload.info
+END

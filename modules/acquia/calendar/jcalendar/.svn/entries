@@ -1,0 +1,94 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/calendar/jcalendar
+https://svn.acquia.com/drupal
+
+
+
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+translations
+dir
+
+images
+dir
+
+jcalendar.module
+file
+
+
+
+
+2009-06-18T04:57:54.000000Z
+f343f828b5080d17510eeab987b1b7d9
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+jcalendar.css
+file
+
+
+
+
+2009-06-18T04:57:54.000000Z
+7477c079d755b7802280618cd350c367
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+Readme.txt
+file
+
+
+
+
+2009-06-18T04:57:54.000000Z
+dfc605e8e9235ce203820f94735eda08
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+jcalendar.info
+file
+
+
+
+
+2009-06-18T04:57:54.000000Z
+3c94ca5c626e5fdbb531f86057d7b08f
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+jcalendar.js
+file
+
+
+
+
+2009-06-18T04:57:54.000000Z
+c59f12741d65d2bc67cc610d74b0a3a4
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/block
+END
+block.install
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/block/block.install
+END
+block.css
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/block/block.css
+END
+block.info
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/block/block.info
+END
+block.js
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/block/block.js
+END
+block-admin-display-form.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/block/block-admin-display-form.tpl.php
+END
+block.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/block/block.admin.inc
+END
+block.module
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/block/block.module
+END

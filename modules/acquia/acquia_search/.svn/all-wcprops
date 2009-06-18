@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/acquia_search
+END
+acquia_search.info
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/acquia_search/acquia_search.info
+END
+search.acquia.com.pem
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/acquia_search/search.acquia.com.pem
+END
+acquia_search.module
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/acquia_search/acquia_search.module
+END
+acquia_search.install
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/acquia_search/acquia_search.install
+END
+Acquia_Search_Service.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/acquia_search/Acquia_Search_Service.php
+END

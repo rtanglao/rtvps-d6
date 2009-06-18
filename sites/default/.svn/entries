@@ -1,0 +1,40 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/sites/default
+https://svn.acquia.com/drupal
+
+
+
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+default.settings.php
+file
+
+
+
+
+2009-06-18T04:57:31.000000Z
+36a4001e6a7b7e0e00ece35e0f193cc8
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+

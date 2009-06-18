@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imageapi
+END
+imageapi.module
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/imageapi/imageapi.module
+END
+imageapi_gd.info
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imageapi/imageapi_gd.info
+END
+imagefilter.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/imageapi/imagefilter.inc
+END
+imageapi.install
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/imageapi/imageapi.install
+END
+imageapi_imagemagick.info
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imageapi/imageapi_imagemagick.info
+END
+imageapi.info
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imageapi/imageapi.info
+END
+imagerotate.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/imageapi/imagerotate.inc
+END
+imageapi_gd.module
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imageapi/imageapi_gd.module
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/imageapi/README.txt
+END
+imageapi_gd.install
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/imageapi/imageapi_gd.install
+END
+imageapi_imagemagick.module
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imageapi/imageapi_imagemagick.module
+END

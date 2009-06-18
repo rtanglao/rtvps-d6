@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/filter
+END
+filter.info
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/filter/filter.info
+END
+filter.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/filter/filter.admin.inc
+END
+filter.module
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/filter/filter.module
+END
+filter.install
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/filter/filter.install
+END
+filter.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/filter/filter.pages.inc
+END

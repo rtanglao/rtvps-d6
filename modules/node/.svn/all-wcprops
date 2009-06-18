@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/node
+END
+node.info
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/node/node.info
+END
+node.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/node/node.admin.inc
+END
+content_types.inc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/node/content_types.inc
+END
+node.module
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/node/node.module
+END
+node.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/node/node.tpl.php
+END
+node.install
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/node/node.install
+END
+node-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/node/node-rtl.css
+END
+node.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/node/node.pages.inc
+END
+node.css
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/node/node.css
+END

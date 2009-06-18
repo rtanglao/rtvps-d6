@@ -1,0 +1,67 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/image/contrib/image_im_advanced
+https://svn.acquia.com/drupal
+
+
+
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+image_im_advanced.module
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+4567f075f3eb042fb7d5acc5d709da01
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+translations
+dir
+
+image_im_advanced.install
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+6eb5ecee796a761dcdaca2bc548ce311
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image_im_advanced.info
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+801ccd6c0286ca4b79fe149d27893797
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+

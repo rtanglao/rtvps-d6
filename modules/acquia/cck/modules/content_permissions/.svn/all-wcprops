@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/content_permissions
+END
+content_permissions.info
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/content_permissions/content_permissions.info
+END
+content_permissions.module
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/modules/content_permissions/content_permissions.module
+END
+content_permissions.install
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/modules/content_permissions/content_permissions.install
+END

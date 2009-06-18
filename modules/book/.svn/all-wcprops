@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/book
+END
+book-export-html.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/book/book-export-html.tpl.php
+END
+book.install
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/book/book.install
+END
+book-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/book/book-rtl.css
+END
+book.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/book/book.pages.inc
+END
+book.css
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/book/book.css
+END
+book-node-export-html.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/book/book-node-export-html.tpl.php
+END
+book.info
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/book/book.info
+END
+book-all-books-block.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/book/book-all-books-block.tpl.php
+END
+book.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/book/book.admin.inc
+END
+book-navigation.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/book/book-navigation.tpl.php
+END
+book.module
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/book/book.module
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views
+END
+views.module
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/views.module
+END
+views2.doxy
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/views2.doxy
+END
+views.install
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/views.install
+END
+views_ui.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/views_ui.info
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/CHANGELOG.txt
+END
+views.info
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/views.info
+END
+documentation-standards.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/documentation-standards.txt
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/README.txt
+END
+views_ui.module
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/views/views_ui.module
+END

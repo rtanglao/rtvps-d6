@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/lightbox2
+END
+lightbox2.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/lightbox2/lightbox2.admin.inc
+END
+page-node-lightbox2.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/lightbox2/page-node-lightbox2.tpl.php
+END
+lightbox2.module
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/lightbox2/lightbox2.module
+END
+lightbox2.install
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/lightbox2/lightbox2.install
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/lightbox2/README.txt
+END
+lightbox2.formatter.inc
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/lightbox2/lightbox2.formatter.inc
+END
+lightbox2.info
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/lightbox2/lightbox2.info
+END

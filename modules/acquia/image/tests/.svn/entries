@@ -1,0 +1,40 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/image/tests
+https://svn.acquia.com/drupal
+
+
+
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+image.test
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+e62eeb624880d922ad0d46ca37e71a8b
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+

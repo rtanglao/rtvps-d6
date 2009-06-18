@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/filefield/filefield_meta
+END
+filefield_meta.info
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/filefield/filefield_meta/filefield_meta.info
+END
+filefield_meta.module
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/filefield/filefield_meta/filefield_meta.module
+END
+filefield_meta.install
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/filefield/filefield_meta/filefield_meta.install
+END

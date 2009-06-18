@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck
+END
+content.install
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/content.install
+END
+DEVELOPER.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/DEVELOPER.txt
+END
+content.info
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/content.info
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/CHANGELOG.txt
+END
+UPGRADE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/UPGRADE.txt
+END
+content.js
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/content.js
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/README.txt
+END
+content.module
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/content.module
+END

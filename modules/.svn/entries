@@ -1,0 +1,142 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules
+https://svn.acquia.com/drupal
+
+
+
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+syslog
+dir
+
+aggregator
+dir
+
+blog
+dir
+
+system
+dir
+
+upload
+dir
+
+php
+dir
+
+statistics
+dir
+
+book
+dir
+
+translation
+dir
+
+locale
+dir
+
+acquia
+dir
+
+menu
+dir
+
+search
+dir
+
+color
+dir
+
+taxonomy
+dir
+
+openid
+dir
+
+update
+dir
+
+filter
+dir
+
+node
+dir
+
+dblog
+dir
+
+help
+dir
+
+forum
+dir
+
+block
+dir
+
+contact
+dir
+
+tracker
+dir
+
+path
+dir
+
+ping
+dir
+
+profile
+dir
+
+comment
+dir
+
+trigger
+dir
+
+throttle
+dir
+
+poll
+dir
+
+README.txt
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+fcdd8c9dcfb9989bf0985aa971a79ed1
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+blogapi
+dir
+
+user
+dir
+

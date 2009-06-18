@@ -1,0 +1,81 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/themes/garland/minnelli
+https://svn.acquia.com/drupal
+
+
+
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+screenshot.png
+file
+
+
+
+
+2009-06-18T04:57:30.000000Z
+55fd7aebc53a2d02dba4cc6634150c26
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+has-props
+
+minnelli.info
+file
+
+
+
+
+2009-06-18T04:57:30.000000Z
+f5fbd3aae8a74fe6dc3c367c15433796
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+logo.png
+file
+
+
+
+
+2009-06-18T04:57:30.000000Z
+0ca7c0d29f1b03241c58a6f39de81559
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+has-props
+
+color
+dir
+
+minnelli.css
+file
+
+
+
+
+2009-06-18T04:57:30.000000Z
+1554baf34130a8634257eaff1fbf3b25
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+

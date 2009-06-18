@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/votingapi/views
+END
+votingapi_views_handler_field_value.inc
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/votingapi/views/votingapi_views_handler_field_value.inc
+END
+votingapi_views_handler_relationship.inc
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/votingapi/views/votingapi_views_handler_relationship.inc
+END
+votingapi.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/votingapi/views/votingapi.views.inc
+END
+votingapi.views_default.inc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/votingapi/views/votingapi.views_default.inc
+END

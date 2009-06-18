@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/theme
+END
+date-views-filter-form.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/theme/date-views-filter-form.tpl.php
+END
+date-valarm.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/date/theme/date-valarm.tpl.php
+END
+date-vevent.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/date/theme/date-vevent.tpl.php
+END
+theme.inc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/theme/theme.inc
+END
+date-navigation.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/theme/date-navigation.tpl.php
+END
+date-vcalendar.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/theme/date-vcalendar.tpl.php
+END

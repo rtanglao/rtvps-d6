@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/js
+END
+dependent.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/js/dependent.js
+END
+tabs.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/js/tabs.js
+END
+base.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/js/base.js
+END
+ajax_view.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/js/ajax_view.js
+END
+ajax.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/js/ajax.js
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/advanced_help
+END
+help.css
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/advanced_help/help.css
+END
+advanced-help-popup.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/advanced_help/advanced-help-popup.tpl.php
+END
+help-popup.css
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/advanced_help/help-popup.css
+END
+advanced_help.module
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/advanced_help/advanced_help.module
+END
+advanced_help.install
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/advanced_help/advanced_help.install
+END
+help-icon.css
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/advanced_help/help-icon.css
+END
+advanced_help.info
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/advanced_help/advanced_help.info
+END
+help.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/advanced_help/help.png
+END

@@ -1,0 +1,52 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/ping
+https://svn.acquia.com/drupal
+
+
+
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+ping.module
+file
+
+
+
+
+2009-06-18T04:58:02.000000Z
+855ebf29f879c9b8d6937ef094781ed2
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+ping.info
+file
+
+
+
+
+2009-06-18T04:58:02.000000Z
+85d744d414e28ac31390dd320a0976e3
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+

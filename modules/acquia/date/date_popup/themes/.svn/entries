@@ -1,0 +1,67 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/date/date_popup/themes
+https://svn.acquia.com/drupal
+
+
+
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+calendar.css
+file
+
+
+
+
+2009-06-18T04:57:59.000000Z
+e854b83c2927c18c4da1fb08b8d6707f
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+datepicker.css
+file
+
+
+
+
+2009-06-18T04:57:59.000000Z
+77eb50d808e3acc6659a43fba0471631
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+images
+dir
+
+timeentry.css
+file
+
+
+
+
+2009-06-18T04:57:59.000000Z
+6ecfb22efb02ddd716d56bedc6313492
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+

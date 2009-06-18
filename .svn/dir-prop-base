@@ -1,0 +1,19 @@
+K 11
+acquia:core
+V 5
+6.12
+
+K 14
+acquia:reltype
+V 8
+security
+K 13
+acquia:series
+V 3
+1.0
+K 10
+acquia:ver
+V 7
+1.2.11
+
+END

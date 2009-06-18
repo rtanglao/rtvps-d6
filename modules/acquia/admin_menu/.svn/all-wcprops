@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/admin_menu
+END
+admin_menu.module
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.module
+END
+admin_menu.install
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.install
+END
+admin_menu-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu-rtl.css
+END
+admin_menu.css
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.css
+END
+admin_menu.inc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.inc
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/admin_menu/CHANGELOG.txt
+END
+admin_menu.info
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.info
+END
+admin_menu.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.js
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/admin_menu/README.txt
+END

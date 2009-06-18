@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_repeat
+END
+date_repeat.module
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_repeat/date_repeat.module
+END
+date_repeat.install
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/date/date_repeat/date_repeat.install
+END
+date_repeat.info
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_repeat/date_repeat.info
+END
+date_repeat_calc.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_repeat/date_repeat_calc.inc
+END
+date_repeat_form.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/date_repeat/date_repeat_form.inc
+END

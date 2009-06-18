@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/comment
+END
+comment-folded.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/comment/comment-folded.tpl.php
+END
+comment.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/comment/comment.admin.inc
+END
+comment-wrapper.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/comment/comment-wrapper.tpl.php
+END
+comment.module
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/comment/comment.module
+END
+comment.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/comment/comment.tpl.php
+END
+comment.install
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/comment/comment.install
+END
+comment-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/comment/comment-rtl.css
+END
+comment.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/comment/comment.pages.inc
+END
+comment.css
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/comment/comment.css
+END
+comment.info
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/comment/comment.info
+END
+comment.js
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/comment/comment.js
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/date/tests
+END
+USHolidays.ics
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/tests/USHolidays.ics
+END
+date_api.test
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/date/tests/date_api.test
+END
+rrule.ics
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/tests/rrule.ics
+END
+Yahoo.csv
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/tests/Yahoo.csv
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/tests/README.txt
+END
+date_repeat.test
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/date/tests/date_repeat.test
+END

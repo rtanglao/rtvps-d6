@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/drupal/!svn/ver/4999/branches/1.x-6.x
+END
+INSTALL.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/drupal/!svn/ver/4875/branches/1.x-6.x/INSTALL.txt
+END
+robots.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/drupal/!svn/ver/4875/branches/1.x-6.x/robots.txt
+END
+COPYRIGHT.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/drupal/!svn/ver/4875/branches/1.x-6.x/COPYRIGHT.txt
+END
+cron.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/drupal/!svn/ver/4875/branches/1.x-6.x/cron.php
+END
+INSTALL.mysql.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/drupal/!svn/ver/4875/branches/1.x-6.x/INSTALL.mysql.txt
+END
+MAINTAINERS.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/drupal/!svn/ver/4946/branches/1.x-6.x/MAINTAINERS.txt
+END
+xmlrpc.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/drupal/!svn/ver/4875/branches/1.x-6.x/xmlrpc.php
+END
+install.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/drupal/!svn/ver/4946/branches/1.x-6.x/install.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/drupal/!svn/ver/4875/branches/1.x-6.x/index.php
+END
+LICENSE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/drupal/!svn/ver/4875/branches/1.x-6.x/LICENSE.txt
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/drupal/!svn/ver/4965/branches/1.x-6.x/CHANGELOG.txt
+END
+UPGRADE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/drupal/!svn/ver/4875/branches/1.x-6.x/UPGRADE.txt
+END
+update.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/drupal/!svn/ver/4946/branches/1.x-6.x/update.php
+END
+INSTALL.pgsql.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/drupal/!svn/ver/4875/branches/1.x-6.x/INSTALL.pgsql.txt
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/drupal/!svn/ver/4875/branches/1.x-6.x/.htaccess
+END

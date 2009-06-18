@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/modules/search
+END
+views_handler_field_search_score.inc
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/modules/search/views_handler_field_search_score.inc
+END
+views_handler_sort_search_score.inc
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/modules/search/views_handler_sort_search_score.inc
+END
+views_plugin_row_search_view.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/modules/search/views_plugin_row_search_view.inc
+END
+views_handler_filter_search.inc
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/modules/search/views_handler_filter_search.inc
+END

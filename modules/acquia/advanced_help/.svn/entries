@@ -1,0 +1,134 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/advanced_help
+https://svn.acquia.com/drupal
+
+
+
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+help.css
+file
+
+
+
+
+2009-06-18T04:58:00.000000Z
+1bd2d98664271d64cf9e1893d3c064f3
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+advanced-help-popup.tpl.php
+file
+
+
+
+
+2009-06-18T04:58:00.000000Z
+e190a0272ec58bf4e6503fb6cb11d68a
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+help-popup.css
+file
+
+
+
+
+2009-06-18T04:58:00.000000Z
+acd0ccadd1cf6b6bde8e783caea7a31a
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+translations
+dir
+
+advanced_help.module
+file
+
+
+
+
+2009-06-18T04:58:00.000000Z
+d925e01425434ccd9ed618bdbc9b3535
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+advanced_help.install
+file
+
+
+
+
+2009-06-18T04:58:00.000000Z
+5108d260318f6c2b080278dd73ea677a
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+help_example
+dir
+
+help-icon.css
+file
+
+
+
+
+2009-06-18T04:58:00.000000Z
+2c33533706980cf74e238463d0be9ffb
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+advanced_help.info
+file
+
+
+
+
+2009-06-18T04:58:00.000000Z
+f9dd1f92339d79da26b0e6656dd58b9d
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+help
+dir
+
+help.png
+file
+
+
+
+
+2009-06-18T04:58:00.000000Z
+3f78c4ce99b3f15df1af4b65690f747f
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+has-props
+

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/drupal/!svn/ver/4965/branches/1.x-6.x/themes/garland
+END
+maintenance-page.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4946/branches/1.x-6.x/themes/garland/maintenance-page.tpl.php
+END
+screenshot.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/garland/screenshot.png
+END
+page.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4946/branches/1.x-6.x/themes/garland/page.tpl.php
+END
+template.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/garland/template.php
+END
+garland.info
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4965/branches/1.x-6.x/themes/garland/garland.info
+END
+print.css
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/garland/print.css
+END
+logo.png
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/garland/logo.png
+END
+style-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/garland/style-rtl.css
+END
+comment.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/garland/comment.tpl.php
+END
+style.css
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/drupal/!svn/ver/4946/branches/1.x-6.x/themes/garland/style.css
+END
+fix-ie-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/garland/fix-ie-rtl.css
+END
+fix-ie.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/garland/fix-ie.css
+END
+node.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/garland/node.tpl.php
+END
+block.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/garland/block.tpl.php
+END

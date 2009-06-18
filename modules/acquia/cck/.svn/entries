@@ -1,0 +1,145 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck
+https://svn.acquia.com/drupal
+
+
+
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+content.install
+file
+
+
+
+
+2009-06-18T04:57:51.000000Z
+7ad5ded0aa3c11ee820f4dd3f5ff1b3a
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+translations
+dir
+
+content.js
+file
+
+
+
+
+2009-06-18T04:57:51.000000Z
+195cf7fb148a6c48a21ea4da6f69b366
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+help
+dir
+
+content.module
+file
+
+
+
+
+2009-06-18T04:57:51.000000Z
+7e92b534021f956b7d2c7a50c56920d1
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+theme
+dir
+
+tests
+dir
+
+DEVELOPER.txt
+file
+
+
+
+
+2009-06-18T04:57:51.000000Z
+bee3ebf4f03835894118521335f5ff27
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+content.info
+file
+
+
+
+
+2009-06-18T04:57:51.000000Z
+083491fb051fda50c90fea5301a4fa04
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+UPGRADE.txt
+file
+
+
+
+
+2009-06-18T04:57:51.000000Z
+ff2eaf51124a19adc2e55859ff2bd0e1
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+CHANGELOG.txt
+file
+
+
+
+
+2009-06-18T04:57:51.000000Z
+06de8c502dcccb87f4849be4bd4edd3c
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+includes
+dir
+
+modules
+dir
+
+README.txt
+file
+
+
+
+
+2009-06-18T04:57:51.000000Z
+8d4cb74e62c8c6ea9a68fb4ad46004b4
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+examples
+dir
+

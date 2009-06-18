@@ -1,0 +1,109 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json/Server
+https://svn.acquia.com/drupal
+
+
+
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+Error.php
+file
+
+
+
+
+2009-06-18T04:57:34.000000Z
+ed1f6edf8603e5c839f6c3f9418d545c
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+Smd
+dir
+
+Exception.php
+file
+
+
+
+
+2009-06-18T04:57:34.000000Z
+3b5bc39f2f6b78b8f429325bdf4519a3
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+Response.php
+file
+
+
+
+
+2009-06-18T04:57:34.000000Z
+b1f3f8120fe15091ccd9206ccd47ceea
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+Request
+dir
+
+Cache.php
+file
+
+
+
+
+2009-06-18T04:57:34.000000Z
+e0f9e5ccaebdd29255933be87f38a4e2
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+Smd.php
+file
+
+
+
+
+2009-06-18T04:57:34.000000Z
+3834738db161a7ed46a1b39243e990a2
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+Response
+dir
+
+Request.php
+file
+
+
+
+
+2009-06-18T04:57:34.000000Z
+a52363be32f6f2046df44428aa77131b
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+

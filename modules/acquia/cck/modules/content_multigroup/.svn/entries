@@ -1,0 +1,43 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/content_multigroup
+https://svn.acquia.com/drupal
+
+
+
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+translations
+dir
+
+README.txt
+file
+
+
+
+
+2009-06-18T04:57:51.000000Z
+b56952541695a5e9bd612e0ab77bf4c2
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+

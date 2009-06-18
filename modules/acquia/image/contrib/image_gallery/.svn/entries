@@ -1,0 +1,82 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery
+https://svn.acquia.com/drupal
+
+
+
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+translations
+dir
+
+tests
+dir
+
+image_gallery.module
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+d86d02b80fb48c62463803dbaa79b7c6
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image_gallery.install
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+103995565d52da0d79685afccf55469d
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image_gallery.css
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+7717aa68dbc304fd2e052820e2860bae
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image_gallery.info
+file
+
+
+
+
+2009-06-18T04:57:35.000000Z
+d6a2bc866469c25c5dd21984e19908d5
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+

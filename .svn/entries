@@ -1,0 +1,229 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x
+https://svn.acquia.com/drupal
+
+
+
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+profiles
+dir
+
+INSTALL.txt
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+bb7f852278b21a383e0380161d864f14
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+themes
+dir
+
+robots.txt
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+9e3a1ac4304f2fd5253f33ea42853838
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+COPYRIGHT.txt
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+c3fdb3f2c10e23445eabdb9540710962
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+cron.php
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+089b8a5636dff7b20bcf898b660a637c
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+sites
+dir
+
+scripts
+dir
+
+INSTALL.mysql.txt
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+e55ea884bf0afc02b4da7b0a6aba2c3d
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+MAINTAINERS.txt
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+9aa664404fa45923bf3a777f3d1ede60
+2009-04-30T23:24:28.696746Z
+4946
+buildbot
+
+xmlrpc.php
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+669526ecb94beac9da7ac781a65eb9bf
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+misc
+dir
+
+install.php
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+a1458fe71a9e139fa8743b2e1e84bba8
+2009-04-30T23:24:28.696746Z
+4946
+buildbot
+
+index.php
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+eff6f4eedb483d7c3524fe8c3d5c5ccd
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+LICENSE.txt
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+5dcb644c7bb68b902526a534e6f2d80a
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+UPGRADE.txt
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+cfb422bcfcac97a3d591db149f0e9c51
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+CHANGELOG.txt
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+6d02acfa1a7f0856876d4c72706435d7
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+includes
+dir
+
+modules
+dir
+
+update.php
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+c6b22f297fb93a9e36e3142f40a95e3b
+2009-04-30T23:24:28.696746Z
+4946
+buildbot
+
+INSTALL.pgsql.txt
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+cf842d806aecd3ff0217c7f59b4e8abc
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+.htaccess
+file
+
+
+
+
+2009-06-18T04:58:03.000000Z
+cbd78c8d4b563ef534c65b61a98fa2fd
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/drupal/!svn/ver/4875/branches/1.x-6.x/scripts
+END
+drupal.sh
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/drupal/!svn/ver/4875/branches/1.x-6.x/scripts/drupal.sh
+END
+code-style.pl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/drupal/!svn/ver/4875/branches/1.x-6.x/scripts/code-style.pl
+END
+cron-lynx.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/drupal/!svn/ver/4875/branches/1.x-6.x/scripts/cron-lynx.sh
+END
+code-clean.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/drupal/!svn/ver/4875/branches/1.x-6.x/scripts/code-clean.sh
+END
+cron-curl.sh
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/drupal/!svn/ver/4875/branches/1.x-6.x/scripts/cron-curl.sh
+END

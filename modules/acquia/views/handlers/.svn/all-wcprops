@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/handlers
+END
+views_handler_field_markup.inc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_field_markup.inc
+END
+views_handler_argument_numeric.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_argument_numeric.inc
+END
+views_handler_filter_float.inc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_filter_float.inc
+END
+views_handler_sort_formula.inc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_sort_formula.inc
+END
+views_handler_filter_many_to_one.inc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_filter_many_to_one.inc
+END
+views_handler_argument_date.inc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_argument_date.inc
+END
+views_handler_field_date.inc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_field_date.inc
+END
+views_handler_filter_date.inc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_filter_date.inc
+END
+views_handler_field_counter.inc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_field_counter.inc
+END
+views_handler_field.inc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_field.inc
+END
+views_handler_sort_date.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_sort_date.inc
+END
+views_handler_filter.inc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_filter.inc
+END
+views_handler_sort_random.inc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_sort_random.inc
+END
+views_handler_sort.inc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_sort.inc
+END
+views_handler_filter_boolean_operator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_filter_boolean_operator.inc
+END
+views_handler_relationship.inc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_relationship.inc
+END
+views_handler_filter_equality.inc
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_filter_equality.inc
+END
+views_handler_field_url.inc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_field_url.inc
+END
+views_handler_field_numeric.inc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_field_numeric.inc
+END
+views_handler_argument_formula.inc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_argument_formula.inc
+END
+views_handler_filter_numeric.inc
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_filter_numeric.inc
+END
+views_handler_argument_string.inc
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_argument_string.inc
+END
+views_handler_argument_many_to_one.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_argument_many_to_one.inc
+END
+views_handler_sort_menu_hierarchy.inc
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_sort_menu_hierarchy.inc
+END
+views_handler_filter_string.inc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_filter_string.inc
+END
+views_handler_argument_null.inc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_argument_null.inc
+END
+views_handler_field_custom.inc
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_field_custom.inc
+END
+views_handler_field_boolean.inc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_field_boolean.inc
+END
+views_handler_argument.inc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_argument.inc
+END
+views_handler_field_prerender_list.inc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_field_prerender_list.inc
+END
+views_handler_filter_boolean_operator_string.inc
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_filter_boolean_operator_string.inc
+END
+views_handler_filter_in_operator.inc
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/handlers/views_handler_filter_in_operator.inc
+END

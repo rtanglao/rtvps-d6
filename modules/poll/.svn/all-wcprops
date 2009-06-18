@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/poll
+END
+poll.info
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/poll/poll.info
+END
+poll-results-block.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/poll/poll-results-block.tpl.php
+END
+poll-bar-block.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/poll/poll-bar-block.tpl.php
+END
+poll-vote.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/poll/poll-vote.tpl.php
+END
+poll-results.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/poll/poll-results.tpl.php
+END
+poll.module
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/poll/poll.module
+END
+poll.install
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/poll/poll.install
+END
+poll-bar.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/poll/poll-bar.tpl.php
+END
+poll-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/poll/poll-rtl.css
+END
+poll.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/poll/poll.pages.inc
+END
+poll.css
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/poll/poll.css
+END

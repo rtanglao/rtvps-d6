@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/statistics
+END
+statistics.install
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/statistics/statistics.install
+END
+statistics.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/statistics/statistics.pages.inc
+END
+statistics.info
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/statistics/statistics.info
+END
+statistics.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/statistics/statistics.admin.inc
+END
+statistics.module
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/statistics/statistics.module
+END

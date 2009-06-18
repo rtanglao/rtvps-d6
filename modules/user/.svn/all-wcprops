@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/user
+END
+user-profile.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user-profile.tpl.php
+END
+user.module
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/user/user.module
+END
+user.install
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user.install
+END
+user-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user-rtl.css
+END
+user.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user.pages.inc
+END
+user.css
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user.css
+END
+user.info
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/user/user.info
+END
+user.js
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user.js
+END
+user-picture.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user-picture.tpl.php
+END
+user-profile-category.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user-profile-category.tpl.php
+END
+user-profile-item.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user-profile-item.tpl.php
+END
+user.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user.admin.inc
+END

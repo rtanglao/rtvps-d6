@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/update
+END
+update.compare.inc
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/update/update.compare.inc
+END
+update.fetch.inc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/update/update.fetch.inc
+END
+update.report.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/update/update.report.inc
+END
+update.module
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/update/update.module
+END
+update.install
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/update/update.install
+END
+update-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/update/update-rtl.css
+END
+update.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/update/update.css
+END
+update.settings.inc
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/drupal/!svn/ver/4946/branches/1.x-6.x/modules/update/update.settings.inc
+END
+update.info
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/update/update.info
+END

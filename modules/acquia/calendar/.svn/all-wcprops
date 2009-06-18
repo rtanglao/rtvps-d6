@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar
+END
+calendar.css
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/calendar/calendar.css
+END
+calendar.info
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/calendar.info
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/CHANGELOG.txt
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/calendar/readme.txt
+END
+calendar.module
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/calendar.module
+END
+calendar.install
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/calendar.install
+END

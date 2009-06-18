@@ -1,0 +1,109 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/mollom
+https://svn.acquia.com/drupal
+
+
+
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+translations
+dir
+
+tests
+dir
+
+mollom.module
+file
+
+
+
+
+2009-06-18T04:57:48.000000Z
+627772dfc48ee9bbb6bfed12694d7e2c
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+INSTALL.txt
+file
+
+
+
+
+2009-06-18T04:57:48.000000Z
+2f8a9b6ad6ac581380365ff95eb4a302
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+mollom.install
+file
+
+
+
+
+2009-06-18T04:57:48.000000Z
+0487cb229074414a53ec9ea80dc506e0
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+mollom.css
+file
+
+
+
+
+2009-06-18T04:57:48.000000Z
+666ff20bb8f388f382250b5816ce45d8
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+mollom.info
+file
+
+
+
+
+2009-06-18T04:57:48.000000Z
+d72d06c02a1d9364b23e58c00a4434f3
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+mollom.js
+file
+
+
+
+
+2009-06-18T04:57:48.000000Z
+b50a18fcfa8eac4b97c148e004c51aca
+2009-06-11T18:07:09.713535Z
+4999
+buildbot
+
+po
+dir
+

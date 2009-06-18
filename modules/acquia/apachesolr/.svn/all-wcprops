@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr
+END
+apachesolr.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/apachesolr.admin.inc
+END
+Solr_Base_Query.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/Solr_Base_Query.php
+END
+apachesolr.install
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/apachesolr/apachesolr.install
+END
+apachesolr_search.module
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/apachesolr_search.module
+END
+apachesolr.js
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/apachesolr/apachesolr.js
+END
+Drupal_Apache_Solr_Service.php
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/Drupal_Apache_Solr_Service.php
+END
+schema.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/schema.xml
+END
+apachesolr.index.inc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/apachesolr.index.inc
+END
+apachesolr_search.info
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/apachesolr_search.info
+END
+solrconfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/solrconfig.xml
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/CHANGELOG.txt
+END
+apachesolr.module
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/apachesolr.module
+END
+apachesolr_search.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/apachesolr_search.admin.inc
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/README.txt
+END
+apachesolr.info
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/apachesolr.info
+END
+apachesolr_search.install
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/apachesolr/apachesolr_search.install
+END

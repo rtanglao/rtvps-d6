@@ -1,0 +1,106 @@
+8
+
+dir
+5008
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/google_analytics
+https://svn.acquia.com/drupal
+
+
+
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+googleanalytics.js
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+3ebff0149fbca00aa3b1a2ec3ee4be5d
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+translations
+dir
+
+tests
+dir
+
+googleanalytics.admin.inc
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+97db4324fcd9e64343c543716327f9b6
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+googleanalytics.module
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+0c2b188648d08431bdfe81d7fd6f5728
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+googleanalytics.install
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+0b95cd1479cbc81404043485978255de
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+README.txt
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+eb3f4e2f9e0cf39454b229c2fdc3ed11
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+googleanalytics.info
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+503a8a57f38bbe91a1e100ec11ec1a60
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
