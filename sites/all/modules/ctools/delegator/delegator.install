@@ -182,8 +182,9 @@ function delegator_schema_1() {
     'primary key' => array('pid'),
     'unique keys' => array(
       'name' => array('name'),
+),
     'indexes' => array('task' => array('task')),
-  ));
+  );
 
   return $schema;
 }
