@@ -1,0 +1,7 @@
+; $Id: popups_test.info,v 1.1.2.1 2008/11/20 21:18:57 starbow Exp $
+name = Popups: Test Page
+description = Test the Popups API.
+package = User interface
+core = 6.x
+dependencies[] = popups
+

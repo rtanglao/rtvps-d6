@@ -1,0 +1,4 @@
+; $Id: ctools.info,v 1.2 2008/11/12 04:24:26 merlinofchaos Exp $
+name = Chaos tools
+description = A library of helpful tools by Merlin of Chaos.
+core = 6.x
