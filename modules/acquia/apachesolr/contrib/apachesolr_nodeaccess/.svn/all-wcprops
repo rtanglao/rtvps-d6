@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/contrib/apachesolr_nodeaccess
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/apachesolr/contrib/apachesolr_nodeaccess
 END
 apachesolr_nodeaccess.info
 K 25
 svn:wc:ra_dav:version-url
 V 121
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/apachesolr/contrib/apachesolr_nodeaccess/apachesolr_nodeaccess.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/apachesolr/contrib/apachesolr_nodeaccess/apachesolr_nodeaccess.info
 END
 apachesolr_nodeaccess.module
 K 25

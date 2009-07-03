@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/path
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/path
 END
 path.module
 K 25
@@ -13,7 +13,7 @@ path.info
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/path/path.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/path/path.info
 END
 path.admin.inc
 K 25

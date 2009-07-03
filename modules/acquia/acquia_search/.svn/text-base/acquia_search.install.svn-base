@@ -133,3 +133,11 @@ function _acquia_search_get_default_facets() {
 function acquia_search_uninstall() {
   // Nothing to do, but allows the module to be uninstalled.
 }
+
+/**
+ * Enable Apache Solr Search as default.
+ */
+function acquia_search_update_6000() {
+  variable_set('apachesolr_search_make_default', 1);
+  return array();
+}

@@ -1,4 +1,4 @@
-# $Id: fr.po,v 1.1.2.2 2008/10/09 04:13:00 quicksketch Exp $
+# $Id$
 #
 # French translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>

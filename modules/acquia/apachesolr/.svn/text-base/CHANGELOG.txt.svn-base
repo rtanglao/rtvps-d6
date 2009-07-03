@@ -1,4 +1,4 @@
-// $Id: CHANGELOG.txt,v 1.1.2.81 2009/06/11 12:39:05 pwolanin Exp $
+// $Id: CHANGELOG.txt,v 1.1.2.98 2009/07/02 09:13:07 robertDouglass Exp $
 
 Apache Solr integration x.x-x.x, xxxx-xx-xx
 ------------------------------
@@ -6,16 +6,32 @@ Apache Solr integration x.x-x.x, xxxx-xx-xx
 Apache Solr integration 6.x-1.x, xxxx-xx-xx
 ------------------------------
 
-Apache Solr integration 6.x-1.0-xxx, xxxx-xx-xx
+Apache Solr integration 6.x-1.0-RC1, 2009-07-02
 ------------------------------
+#502976 by pwolanin, Scott Reynolds, robertDouglass facet links and form submissions respect non ApacheSolr $_GET parameters. Note that this changes the interface API: get_url_querystring is now get_url_queryvalues and returns and array instead of a string.
+#507708 by pwolanin, fix sort parameters to use field aliases, validate in query object.
+#299539 by kleung11 and pwolanin, use 'administer search' for permission checking.
+#503644 by pwolanin and Jeremy, make sure we strip ctrl chars last, add logging.
+#505652 by bdurbin, add apachesolr-showhide class to Show more link.
+#472600 by janusman, JacobSingh, and pwolanin, optionally hijack taxonomy pages.
+#496650 by mkalkbrenner, make unclick links work after #463900.
+#495258 comment out timeAllowed params (partial roll-back of #490076)
+#495012 by pwolanin, fix Anonymous user and other 0-value facets.
+#463900 by pwolanin and JacobSingh, facet theme function clean-up.
+#405206 by pwolanin, allow Apache Solr to be the default, let core search index 0 nodes.
+#453310 by pwolanin, allow easier theming of username display.
+#490076 by pwolanin, spellcheck more popular, maxqt to 20, limit search time.
+#358166 by David Lesieur, janusman, cptnCauliflower, and pwolanin, search for just facet(s).
+#489654 by JacobSingh, and pwolanin, allow users to set their index as "read only".
 
 Apache Solr integration 6.x-1.0-beta11, 2009-06-11
 ------------------------------
+#348218 by David Lesieur, janusman, and pwolanin, retain filters for next search.
 #401046 by pwolanin, revist urlencoding of query strings.
-#467810 by aufumy, Pass in page number and caller to apachesolr_search_execute
-#481838 by JacobSingh and pwolanin, enable plus sign in search when using clean URLs
-#480814 by mkalkbrenner and pwolanin, add more detail to logging on errors
-#464758 by pwolanin, 4th param to htmlspecialchars breaks PHP < 5.2.3
+#467810 by aufumy, Pass in page number and caller to apachesolr_search_execute.
+#481838 by JacobSingh and pwolanin, enable plus sign in search when using clean URLs.
+#480814 by mkalkbrenner and pwolanin, add more detail to logging on errors.
+#464758 by pwolanin, 4th param to htmlspecialchars breaks PHP < 5.2.3.
 #466328 by pwolanin, fix classes for sort links.
 
 Apache Solr integration 6.x-1.0-beta10, 2009-05-14

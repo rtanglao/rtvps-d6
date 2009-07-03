@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/throttle
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/throttle
 END
 throttle.info
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/throttle/throttle.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/throttle/throttle.info
 END
 throttle.admin.inc
 K 25

@@ -1,5 +1,5 @@
 <?php
-// $Id: mollom.module,v 1.2.2.62 2009/05/25 12:57:54 dries Exp $
+// $Id: mollom.module,v 1.2.2.64 2009/06/18 10:04:46 dries Exp $
 
 /**
  * @file
@@ -48,6 +48,7 @@ function mollom_link($type, $object = NULL) {
     $links['comment_spam'] = array(
       'title' => t('mark as abuse'),
       'href' => "mollom/comment/$object->cid",
+      'html' => TRUE,
     );
 
     return $links;
@@ -57,6 +58,7 @@ function mollom_link($type, $object = NULL) {
     $links['node_spam'] = array(
       'title' => t('Delete post'),
       'href' => "mollom/node/$object->nid",
+      'html' => TRUE,
     );
 
     return $links;
@@ -85,7 +87,7 @@ function mollom_menu() {
     'title' => 'Report and delete',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('mollom_report_contact'),
-    'access arguments' => array(TRUE), // Everyone can report contact form feedback.
+    'access callback' => TRUE, // Everyone can report contact form feedback.
     'type' => MENU_CALLBACK,
   );
   $items['admin/settings/mollom'] = array(
@@ -840,7 +842,9 @@ function mollom_expand_element($element, $edit, &$form_state, $form) {
     );
   }
 
-  if (!empty($form['#post'])) {
+  // If this form can be submitted by drupal_process_form(), we process it
+  // through our validation handlers.
+  if (!empty($form['#programmed']) || (!empty($form['#post']) && (isset($form['#post']['form_id']) && ($form['#post']['form_id'] == $form['form_id']['#value'])))) {
     _mollom_debug("mollom_expand_element: submitted handler");
 
     // First, perform captcha validation if required.

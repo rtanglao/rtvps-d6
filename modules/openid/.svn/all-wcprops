@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/openid
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/openid
 END
 login-bg.png
 K 25
@@ -13,7 +13,7 @@ openid.module
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/openid/openid.module
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/openid/openid.module
 END
 openid.install
 K 25
@@ -43,7 +43,7 @@ openid.info
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/openid/openid.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/openid/openid.info
 END
 xrds.inc
 K 25

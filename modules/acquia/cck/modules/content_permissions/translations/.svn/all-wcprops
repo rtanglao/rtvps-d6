@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 98
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/content_permissions/translations
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/content_permissions/translations
 END
 modules-content_permissions.de.po
 K 25
@@ -31,7 +31,7 @@ modules-content_permissions.pot
 K 25
 svn:wc:ra_dav:version-url
 V 130
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/modules/content_permissions/translations/modules-content_permissions.pot
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/content_permissions/translations/modules-content_permissions.pot
 END
 modules-content_permissions.fr.po
 K 25

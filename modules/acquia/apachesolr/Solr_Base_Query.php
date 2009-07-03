@@ -1,5 +1,5 @@
 <?php
-// $Id: Solr_Base_Query.php,v 1.1.4.35 2009/06/11 12:39:05 pwolanin Exp $
+// $Id: Solr_Base_Query.php,v 1.1.4.40 2009/07/02 08:50:46 robertDouglass Exp $
 
 class Solr_Base_Query implements Drupal_Solr_Query_Interface {
 
@@ -101,6 +101,9 @@ class Solr_Base_Query implements Drupal_Solr_Query_Interface {
 
   protected $available_sorts;
 
+  // Makes sure we always have a valid sort.
+  protected $solrsort = array('#name' => 'score', '#direction' => 'asc');
+
   /**
    * @param $solr
    *   An instantiated Apache_Solr_Service Object.
@@ -111,10 +114,10 @@ class Solr_Base_Query implements Drupal_Solr_Query_Interface {
    *   may come from search_get_keys().
    *
    * @param $filterstring
-   *   Key and value pairs that are applied as a filter query.
+   *   Key and value pairs that are applied as filter queries.
    *
    * @param $sortstring
-   *   Visible string telling solr how to sort - added to output querystring.
+   *   Visible string telling solr how to sort - added to GET query params.
    *
    * @param $base_path
    *   The search base path (without the keywords) for this query.
@@ -123,11 +126,11 @@ class Solr_Base_Query implements Drupal_Solr_Query_Interface {
     $this->solr = $solr;
     $this->keys = trim($keys);
     $this->filterstring = trim($filterstring);
-    $this->solrsort = trim($sortstring);
-    $this->base_path = $base_path;
-    $this->id = ++self::$idCount;
     $this->parse_filters();
     $this->available_sorts = $this->default_sorts();
+    $this->parse_sortstring($sortstring);
+    $this->base_path = $base_path;
+    $this->id = ++self::$idCount;
   }
 
   function __clone() {
@@ -181,7 +184,7 @@ class Solr_Base_Query implements Drupal_Solr_Query_Interface {
 
   public function has_filter($name, $value) {
     foreach ($this->fields as $pos => $values) {
-      if (!empty($values['#name']) && !empty($values['#value']) && $values['#name'] == $name && $values['#value'] == $value) {
+      if (isset($values['#name']) && isset($values['#value']) && $values['#name'] == $name && $values['#value'] == $value) {
         return TRUE;
       }
     }
@@ -233,43 +236,76 @@ class Solr_Base_Query implements Drupal_Solr_Query_Interface {
     $this->subqueries = array();
   }
 
-  public function set_solrsort($sortstring) {
-    $this->solrsort = trim($sortstring);
+  protected function parse_sortstring($sortstring) {
+    // Substitute any field aliases with real field names.
+    $sortstring = strtr(trim($sortstring), array_flip($this->field_map));
+    // Score is a special case - it's the default sort for Solr.
+    if ('' == $sortstring) {
+      $this->set_solrsort('score', 'asc');
+    }
+    else {
+      // Validate and set sort parameter
+      $fields = implode('|', array_keys($this->available_sorts));
+      if (preg_match('/^(?:('. $fields .') (asc|desc),?)+$/', $sortstring, $matches)) {
+        // We only use the last match.
+        $this->set_solrsort($matches[1], $matches[2]);
+      }
+    }
+  }
+
+  public function set_solrsort($name, $direction) {
+    if (isset($this->available_sorts[$name])) {
+      $this->solrsort = array('#name' => $name, '#direction' => $direction);
+    }
+  }
+
+  public function get_solrsort() {
+    return $this->solrsort;
   }
 
   public function get_available_sorts() {
     return $this->available_sorts;
   }
 
-  public function set_available_sort($field, $sort) {
-    $this->available_sorts[$field] = $sort;
+  public function set_available_sort($name, $sort) {
+    // We expect non-aliased sorts to be added.
+    $this->available_sorts[$name] = $sort;
+  }
+
+  public function remove_available_sort($name) {
+    unset($this->available_sorts[$name]);
   }
 
   /**
    * Returns a default list of sorts.
    */
   protected function default_sorts() {
+    // The array keys must always be real Solr index fields.
     return array(
-      'relevancy' => array('name' => t('Relevancy'), 'default' => 'asc'),
-      'sort_title' => array('name' => t('Title'), 'default' => 'asc'),
-      'type' => array('name' => t('Type'), 'default' => 'asc'),
-      'sort_name' => array('name' => t('Author'), 'default' => 'asc'),
-      'created' => array('name' => t('Date'), 'default' => 'desc'),
+      'score' => array('title' => t('Relevancy'), 'default' => 'asc'),
+      'sort_title' => array('title' => t('Title'), 'default' => 'asc'),
+      'type' => array('title' => t('Type'), 'default' => 'asc'),
+      'sort_name' => array('title' => t('Author'), 'default' => 'asc'),
+      'created' => array('title' => t('Date'), 'default' => 'desc'),
     );
   }
 
   /**
    * Return filters and sort in a form suitable for a query param to url().
    */
-  public function get_url_querystring() {
-    $querystring = '';
+   public function get_url_queryvalues() {
+    $queryvalues = array();
     if ($fq = $this->rebuild_fq(TRUE)) {
-      $querystring = 'filters='. rawurlencode(implode(' ', $fq));
+      $queryvalues['filters'] = implode(' ', $fq);
     }
-    if ($this->solrsort) {
-      $querystring .= ($querystring ? '&' : '') .'solrsort='. rawurlencode($this->solrsort);
+    $solrsort = $this->solrsort;
+    if ($solrsort && ($solrsort['#name'] != 'score' || $solrsort['#direction'] != 'asc')) {
+      if (isset($this->field_map[$solrsort['#name']])) {
+        $solrsort['#name'] = $this->field_map[$solrsort['#name']];
+      }
+      $queryvalues['solrsort'] = $solrsort['#name'] .' '. $solrsort['#direction'];
     }
-    return $querystring;
+    return $queryvalues;
   }
 
   public function get_fq() {
@@ -283,7 +319,7 @@ class Solr_Base_Query implements Drupal_Solr_Query_Interface {
   public function get_query_basic() {
     return $this->rebuild_query();
   }
-  
+
   /**
    * Return the search path.
    *

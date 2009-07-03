@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/admin_menu/translations
 https://svn.acquia.com/drupal
 
 
 
-2009-06-05T20:09:58.567167Z
-4979
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2009-06-18T04:57:57.000000Z
-cec3d8c13172550b76e56d4304afc1da
-2009-03-27T13:49:27.090492Z
-4875
+2009-07-03T06:49:41.000000Z
+f1f9981652950c98f4f27b14308448e0
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 pt-br.po
@@ -92,10 +92,10 @@ file
 
 
 
-2009-06-18T04:57:57.000000Z
-f299fd3a6c2ed7daa4839f0cda42dbdf
-2009-03-27T13:49:27.090492Z
-4875
+2009-07-03T06:49:41.000000Z
+918d6ecd41e70d3f0beaeeb16641487d
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 sv.po

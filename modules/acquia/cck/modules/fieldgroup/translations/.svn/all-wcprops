@@ -1,13 +1,25 @@
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/translations
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/translations
+END
+modules-fieldgroup-panels-content_types.pot
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/translations/modules-fieldgroup-panels-content_types.pot
+END
+modules-fieldgroup-panels-content_types.de.po
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/translations/modules-fieldgroup-panels-content_types.de.po
 END
 modules-fieldgroup.pot
 K 25
 svn:wc:ra_dav:version-url
 V 112
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/translations/modules-fieldgroup.pot
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/translations/modules-fieldgroup.pot
 END
 modules-fieldgroup.fr.po
 K 25
@@ -19,7 +31,7 @@ modules-fieldgroup.de.po
 K 25
 svn:wc:ra_dav:version-url
 V 114
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/translations/modules-fieldgroup.de.po
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/translations/modules-fieldgroup.de.po
 END
 modules-fieldgroup.sv.po
 K 25

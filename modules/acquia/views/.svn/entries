@@ -1,7 +1,7 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/views
 https://svn.acquia.com/drupal
 
@@ -26,6 +26,12 @@ svn:special svn:externals svn:needs-lock
 
 08d20552-8ba5-4116-8c9e-e96c1c1f3480
 
+translations
+dir
+
+plugins
+dir
+
 views.module
 file
 
@@ -37,12 +43,6 @@ file
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
-
-plugins
-dir
-
-translations
-dir
 
 views_ui.info
 file
@@ -68,13 +68,13 @@ f55f987c6d5e638cf681dae84dc7f43c
 4999
 buildbot
 
-css
+help
 dir
 
 docs
 dir
 
-help
+css
 dir
 
 views_export
@@ -95,9 +95,6 @@ file
 4875
 buildbot
 
-theme
-dir
-
 views.install
 file
 
@@ -110,7 +107,7 @@ file
 4999
 buildbot
 
-images
+theme
 dir
 
 CHANGELOG.txt
@@ -124,6 +121,9 @@ file
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+images
+dir
 
 includes
 dir

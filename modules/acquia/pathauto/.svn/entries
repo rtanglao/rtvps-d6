@@ -1,7 +1,7 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/pathauto
 https://svn.acquia.com/drupal
 
@@ -41,18 +41,6 @@ buildbot
 translations
 dir
 
-INSTALL.txt
-file
-
-
-
-
-2009-06-18T04:57:38.000000Z
-b9053640a91551f18decf49e4566a5da
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-
 pathauto.admin.inc
 file
 
@@ -61,6 +49,18 @@ file
 
 2009-06-18T04:57:38.000000Z
 27ff8bbd4bc3aee626a7b6ad611aaf0c
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+INSTALL.txt
+file
+
+
+
+
+2009-06-18T04:57:38.000000Z
+b9053640a91551f18decf49e4566a5da
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -89,18 +89,6 @@ d17f0edf05ed16fcc83e568b0bec395d
 4875
 buildbot
 
-pathauto_taxonomy.inc
-file
-
-
-
-
-2009-06-18T04:57:38.000000Z
-8ea95bf7cc98b13097f77c385ccf51ee
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-
 pathauto_user.inc
 file
 
@@ -109,6 +97,18 @@ file
 
 2009-06-18T04:57:38.000000Z
 737af7d10e3b2d8010f9674d8f08f0ac
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+pathauto_taxonomy.inc
+file
+
+
+
+
+2009-06-18T04:57:38.000000Z
+8ea95bf7cc98b13097f77c385ccf51ee
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -137,6 +137,9 @@ file
 4875
 buildbot
 
+tests
+dir
+
 pathauto_node.inc
 file
 
@@ -148,9 +151,6 @@ file
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
-
-tests
-dir
 
 CHANGELOG.txt
 file

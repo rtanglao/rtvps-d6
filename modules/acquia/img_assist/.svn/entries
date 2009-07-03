@@ -1,7 +1,7 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/img_assist
 https://svn.acquia.com/drupal
 
@@ -26,10 +26,10 @@ svn:special svn:externals svn:needs-lock
 
 08d20552-8ba5-4116-8c9e-e96c1c1f3480
 
-translations
+plugins
 dir
 
-plugins
+translations
 dir
 
 img_assist.module
@@ -100,18 +100,6 @@ buildbot
 theme
 dir
 
-CHANGELOG.txt
-file
-
-
-
-
-2009-06-18T04:57:53.000000Z
-673147a28be5ccfcda8cd90beb83bc26
-2009-03-27T16:42:00.079189Z
-4877
-buildbot
-
 img_assist_tinymce.js
 file
 
@@ -120,6 +108,18 @@ file
 
 2009-06-18T04:57:53.000000Z
 c3081fa31e9c3e335618355b9c2eb913
+2009-03-27T16:42:00.079189Z
+4877
+buildbot
+
+CHANGELOG.txt
+file
+
+
+
+
+2009-06-18T04:57:53.000000Z
+673147a28be5ccfcda8cd90beb83bc26
 2009-03-27T16:42:00.079189Z
 4877
 buildbot

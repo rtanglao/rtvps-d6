@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/content_permissions
 https://svn.acquia.com/drupal
 
 
 
-2009-06-11T18:07:09.713535Z
-4999
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
-1103edf591766a8b693024fb96fbad99
-2009-06-11T18:07:09.713535Z
-4999
+2009-07-03T06:49:41.000000Z
+da26d028100107e3db71fe947e2c371b
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 translations

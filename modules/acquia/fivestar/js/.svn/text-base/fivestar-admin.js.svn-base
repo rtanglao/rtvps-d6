@@ -1,4 +1,4 @@
-// $Id: fivestar-admin.js,v 1.1.4.3 2009/03/24 21:59:32 quicksketch Exp $
+// $Id: fivestar-admin.js,v 1.1.4.4 2009/05/10 20:56:24 quicksketch Exp $
 
 /**
  * Fivestar admin interface enhancments.
@@ -204,7 +204,7 @@ fivestarPreview.prototype.update = function() {
         response = Drupal.parseJson(response);
       }
       $(self.preview).html(response.data).hide();
-      $('div.fivestar-form-item', self.preview).rating();
+      $('div.fivestar-form-item', self.preview).fivestar();
       $('input.fivestar-submit', self.preview).hide();
       $(self.preview).show();
     };

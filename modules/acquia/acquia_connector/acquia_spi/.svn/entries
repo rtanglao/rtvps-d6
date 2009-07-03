@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/acquia_connector/acquia_spi
 https://svn.acquia.com/drupal
 
 
 
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -56,9 +56,9 @@ file
 
 
 
-2009-06-18T04:58:00.000000Z
-aac85d1c3e2249281a11fd58fde65651
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-03T06:49:42.000000Z
+12e09f12e063c231d9ec8cb36dd088a0
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 

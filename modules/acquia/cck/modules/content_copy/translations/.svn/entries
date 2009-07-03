@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/translations
 https://svn.acquia.com/drupal
 
 
 
-2009-06-11T18:07:09.713535Z
-4999
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -56,10 +56,10 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
-f2e9bd759d589d16da27872253af7895
-2009-03-27T16:42:00.079189Z
-4877
+2009-07-03T06:49:41.000000Z
+ea25d42b22b3a523bcbd94aa2164b15b
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 modules-content_copy.fr.po

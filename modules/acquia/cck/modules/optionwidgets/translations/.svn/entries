@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/optionwidgets/translations
 https://svn.acquia.com/drupal
 
 
 
-2009-06-11T18:07:09.713535Z
-4999
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2009-06-18T04:57:50.000000Z
-ebe72458789ee696032980c748f3eeaf
-2009-03-27T16:42:00.079189Z
-4877
+2009-07-03T06:49:41.000000Z
+ac7b97dddb5ece85ca5d7dbe4d49b610
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 modules-optionwidgets.fr.po

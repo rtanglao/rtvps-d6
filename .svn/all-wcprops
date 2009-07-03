@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 38
-/drupal/!svn/ver/4999/branches/1.x-6.x
+/drupal/!svn/ver/5049/branches/1.x-6.x
 END
 INSTALL.txt
 K 25
@@ -9,17 +9,17 @@ svn:wc:ra_dav:version-url
 V 50
 /drupal/!svn/ver/4875/branches/1.x-6.x/INSTALL.txt
 END
-robots.txt
-K 25
-svn:wc:ra_dav:version-url
-V 49
-/drupal/!svn/ver/4875/branches/1.x-6.x/robots.txt
-END
 COPYRIGHT.txt
 K 25
 svn:wc:ra_dav:version-url
 V 52
 /drupal/!svn/ver/4875/branches/1.x-6.x/COPYRIGHT.txt
+END
+robots.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/drupal/!svn/ver/4875/branches/1.x-6.x/robots.txt
 END
 cron.php
 K 25
@@ -27,17 +27,17 @@ svn:wc:ra_dav:version-url
 V 47
 /drupal/!svn/ver/4875/branches/1.x-6.x/cron.php
 END
-INSTALL.mysql.txt
-K 25
-svn:wc:ra_dav:version-url
-V 56
-/drupal/!svn/ver/4875/branches/1.x-6.x/INSTALL.mysql.txt
-END
 MAINTAINERS.txt
 K 25
 svn:wc:ra_dav:version-url
 V 54
 /drupal/!svn/ver/4946/branches/1.x-6.x/MAINTAINERS.txt
+END
+INSTALL.mysql.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/drupal/!svn/ver/4875/branches/1.x-6.x/INSTALL.mysql.txt
 END
 xmlrpc.php
 K 25
@@ -63,17 +63,17 @@ svn:wc:ra_dav:version-url
 V 50
 /drupal/!svn/ver/4875/branches/1.x-6.x/LICENSE.txt
 END
-CHANGELOG.txt
-K 25
-svn:wc:ra_dav:version-url
-V 52
-/drupal/!svn/ver/4965/branches/1.x-6.x/CHANGELOG.txt
-END
 UPGRADE.txt
 K 25
 svn:wc:ra_dav:version-url
 V 50
 /drupal/!svn/ver/4875/branches/1.x-6.x/UPGRADE.txt
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/drupal/!svn/ver/5049/branches/1.x-6.x/CHANGELOG.txt
 END
 update.php
 K 25

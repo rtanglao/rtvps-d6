@@ -5,7 +5,7 @@ package = Administration
 core = 6.x
 
 ; Information added by Acquia.com packaging script
-version = "6.x-1.4"
+version = "6.x-1.5"
 core = "6.x"
 project = "admin_menu"
 acquia = "1"

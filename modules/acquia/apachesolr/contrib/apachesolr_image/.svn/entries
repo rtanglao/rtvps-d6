@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/apachesolr/contrib/apachesolr_image
 https://svn.acquia.com/drupal
 
 
 
-2009-06-11T18:07:09.713535Z
-4999
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -44,9 +44,9 @@ file
 
 
 
-2009-06-18T04:57:34.000000Z
-dfc6d6f8139ba756eabf3312f0804026
-2009-06-11T18:07:09.713535Z
-4999
+2009-07-03T06:49:40.000000Z
+2a2d0a0ae0ec464f476019b790b54609
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 

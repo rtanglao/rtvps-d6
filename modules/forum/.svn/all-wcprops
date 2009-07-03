@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/forum
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/forum
 END
 forum.css
 K 25
@@ -31,7 +31,7 @@ forum.info
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/forum/forum.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/forum/forum.info
 END
 forum-list.tpl.php
 K 25
@@ -49,7 +49,7 @@ forum.admin.inc
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum.admin.inc
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/forum/forum.admin.inc
 END
 forum-submitted.tpl.php
 K 25
@@ -61,7 +61,7 @@ forum.module
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/forum/forum.module
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/forum/forum.module
 END
 forum.install
 K 25
@@ -79,5 +79,5 @@ forum.pages.inc
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/forum/forum.pages.inc
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/forum/forum.pages.inc
 END

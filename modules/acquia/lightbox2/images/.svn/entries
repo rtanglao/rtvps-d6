@@ -1,7 +1,7 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/lightbox2/images
 https://svn.acquia.com/drupal
 
@@ -26,14 +26,14 @@ svn:special svn:externals svn:needs-lock
 
 08d20552-8ba5-4116-8c9e-e96c1c1f3480
 
-prevlabel.gif
+prev.gif
 file
 
 
 
 
 2009-06-18T04:57:53.000000Z
-d935f4acf56e0b83218bbdb5835e4e23
+ef26ef0081ed01613cf6fa8b68019ca4
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -52,27 +52,14 @@ dba274f667630c5342dc6faf383936c6
 buildbot
 has-props
 
-prev.gif
+prevlabel.gif
 file
 
 
 
 
 2009-06-18T04:57:53.000000Z
-ef26ef0081ed01613cf6fa8b68019ca4
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-has-props
-
-contract.gif
-file
-
-
-
-
-2009-06-18T04:57:53.000000Z
-4a2694464547c4906faf3c27f6a5a63a
+d935f4acf56e0b83218bbdb5835e4e23
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -91,27 +78,14 @@ file
 buildbot
 has-props
 
-next.gif
+contract.gif
 file
 
 
 
 
 2009-06-18T04:57:53.000000Z
-804543daa860e91aabe9ba634e64ed2b
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-has-props
-
-next_alt.gif
-file
-
-
-
-
-2009-06-18T04:57:53.000000Z
-9910de01c6617a44cdac1c5be038ea53
+4a2694464547c4906faf3c27f6a5a63a
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -130,14 +104,27 @@ file
 buildbot
 has-props
 
-prev_hover.gif
+next_alt.gif
 file
 
 
 
 
 2009-06-18T04:57:53.000000Z
-96db85f99e758f35c6e45699f154e59a
+9910de01c6617a44cdac1c5be038ea53
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+has-props
+
+next.gif
+file
+
+
+
+
+2009-06-18T04:57:53.000000Z
+804543daa860e91aabe9ba634e64ed2b
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -151,6 +138,19 @@ file
 
 2009-06-18T04:57:53.000000Z
 51f5b9066c1db13dd9dca00839d8ded2
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+has-props
+
+prev_hover.gif
+file
+
+
+
+
+2009-06-18T04:57:53.000000Z
+96db85f99e758f35c6e45699f154e59a
 2009-03-27T13:49:27.090492Z
 4875
 buildbot

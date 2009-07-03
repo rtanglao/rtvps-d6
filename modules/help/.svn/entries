@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/help
 https://svn.acquia.com/drupal
 
 
 
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -44,10 +44,10 @@ file
 
 
 
-2009-06-18T04:58:02.000000Z
-d20f45b5f273d076b52536f0eacbb22e
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-03T06:49:42.000000Z
+f5297fcfbc5377ade2cdcde4c845a2dc
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 help.admin.inc

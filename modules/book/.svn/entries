@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/book
 https://svn.acquia.com/drupal
 
 
 
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -104,10 +104,10 @@ file
 
 
 
-2009-06-18T04:57:34.000000Z
-6db11bcf2636f2af4e87ac977c1c9aab
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-03T06:49:40.000000Z
+9d17c818f5a12e99bdf0c479596d0417
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 book-all-books-block.tpl.php

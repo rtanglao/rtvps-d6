@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 54
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/comment
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/comment
 END
 comment-folded.tpl.php
 K 25
@@ -25,7 +25,7 @@ comment.module
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/comment/comment.module
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/comment/comment.module
 END
 comment.tpl.php
 K 25
@@ -49,7 +49,7 @@ comment.pages.inc
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/comment/comment.pages.inc
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/comment/comment.pages.inc
 END
 comment.css
 K 25
@@ -61,7 +61,7 @@ comment.info
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/comment/comment.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/comment/comment.info
 END
 comment.js
 K 25

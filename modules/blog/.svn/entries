@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/blog
 https://svn.acquia.com/drupal
 
 
 
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -56,9 +56,9 @@ file
 
 
 
-2009-06-18T04:57:33.000000Z
-2dcb75b44238343f2529f065367c87bd
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-03T06:49:39.000000Z
+d5b4b1128db7b80c9f50cc4df9f51939
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 

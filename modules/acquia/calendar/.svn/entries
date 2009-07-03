@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/calendar
 https://svn.acquia.com/drupal
 
 
 
-2009-04-16T23:08:01.621631Z
-4917
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -44,6 +44,18 @@ dir
 translations
 dir
 
+calendar.info.acquiainfo
+file
+
+
+
+
+2009-07-03T06:49:41.000000Z
+fad3ccdfab20d05e4d94919618a2d895
+2009-07-02T20:47:26.048691Z
+5049
+buildbot
+
 theme
 dir
 
@@ -56,10 +68,10 @@ file
 
 
 
-2009-06-18T04:57:56.000000Z
-f657942a77817d08cc8d1e18b0789119
-2009-04-16T23:08:01.621631Z
-4917
+2009-07-03T06:49:41.000000Z
+65997324659f9ec58f89ad4e63ea356e
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 CHANGELOG.txt

@@ -1,4 +1,4 @@
-// $Id: CHANGELOG.txt,v 1.4.4.4 2008/09/19 18:27:19 eaton Exp $
+// $Id: CHANGELOG.txt,v 1.4.4.7 2009/06/24 19:52:37 eaton Exp $
 
 02/11/06
 --------
@@ -52,3 +52,9 @@ Views integration code seriously reworked (again) to use Views 2 'relationships'
 09/19/08
 --------
 Updated for compatibility with Views RC2, added the ability to filter Views relationships to votes cast by the current user, and added three default views to demonstrate the Views integration. Also added basic Simpletests, fixed a bug that manifested when modules cast votes with minimal information (nothing but a content id and a value, for example). Finally, added the ability to auto-generate dummy votes for testing purposes. This feature is only visible if Devel Generate module is installed and activated.
+
+06/20/09
+--------
+Changed hook_votingapi_content_types() to hook_votingapi_relationships(), since it only deals with Views relationships. Added extra documentation to API.txt and fixed assorted ugly bugs. Moved a bunch of API docs to votingapi.api.php so API.module can generate pretty docs for the hooks. Nodes and comments now have pre-configured relationships available, any other entity types need a hook_votingapi_relationships() implementation.
+
+Added votingapi_metadata() to gather metadata about defined value_types, tags, and aggregate functions. Modified the views relationship handler to use that function rather than querying the tables directly.

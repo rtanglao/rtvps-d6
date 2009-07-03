@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck
 END
 content.install
 K 25
@@ -19,13 +19,13 @@ content.info
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/content.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/content.info
 END
 CHANGELOG.txt
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/CHANGELOG.txt
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/CHANGELOG.txt
 END
 UPGRADE.txt
 K 25

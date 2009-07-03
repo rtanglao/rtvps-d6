@@ -1,0 +1,52 @@
+8
+
+dir
+5052
+https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/acquia_connector/translations
+https://svn.acquia.com/drupal
+
+
+
+2009-07-02T20:47:26.048691Z
+5049
+buildbot
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+08d20552-8ba5-4116-8c9e-e96c1c1f3480
+
+da.po
+file
+
+
+
+
+2009-07-03T06:49:42.000000Z
+32c27494a847d303001a2b9ab299b774
+2009-07-02T20:47:26.048691Z
+5049
+buildbot
+
+acquia_connector.pot
+file
+
+
+
+
+2009-07-03T06:49:42.000000Z
+d09efc4d389b578261cda1a9fadaa5d1
+2009-07-02T20:47:26.048691Z
+5049
+buildbot
+

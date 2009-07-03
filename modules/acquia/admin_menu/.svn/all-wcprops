@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/admin_menu
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/admin_menu
 END
 admin_menu.module
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.module
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.module
 END
 admin_menu.install
 K 25
@@ -31,19 +31,19 @@ admin_menu.inc
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.inc
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.inc
 END
 CHANGELOG.txt
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/admin_menu/CHANGELOG.txt
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/admin_menu/CHANGELOG.txt
 END
 admin_menu.info
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/admin_menu/admin_menu.info
 END
 admin_menu.js
 K 25

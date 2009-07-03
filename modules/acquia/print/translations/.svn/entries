@@ -1,7 +1,7 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/print/translations
 https://svn.acquia.com/drupal
 
@@ -50,18 +50,6 @@ b153576af413d58f7ae360b6da6ed0b3
 4965
 buildbot
 
-es.po
-file
-
-
-
-
-2009-06-18T04:57:39.000000Z
-89a6cdc2e73b28bebd6a1544989a5a4e
-2009-05-15T21:01:31.405510Z
-4965
-buildbot
-
 fr.po
 file
 
@@ -70,6 +58,18 @@ file
 
 2009-06-18T04:57:39.000000Z
 afb8e19695d97677f3b15ab7a4735626
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+es.po
+file
+
+
+
+
+2009-06-18T04:57:39.000000Z
+89a6cdc2e73b28bebd6a1544989a5a4e
 2009-05-15T21:01:31.405510Z
 4965
 buildbot
@@ -98,18 +98,6 @@ file
 4965
 buildbot
 
-hu.po
-file
-
-
-
-
-2009-06-18T04:57:39.000000Z
-9effc7e5668488b29f485362fb7b2ace
-2009-05-15T21:01:31.405510Z
-4965
-buildbot
-
 it.po
 file
 
@@ -118,6 +106,18 @@ file
 
 2009-06-18T04:57:39.000000Z
 319ca6218982ef648280a922c429e607
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+hu.po
+file
+
+
+
+
+2009-06-18T04:57:39.000000Z
+9effc7e5668488b29f485362fb7b2ace
 2009-05-15T21:01:31.405510Z
 4965
 buildbot
@@ -158,18 +158,6 @@ b83f2cf995c2b6e2df61d2e16f5121d5
 4965
 buildbot
 
-ro.po
-file
-
-
-
-
-2009-06-18T04:57:39.000000Z
-630733d9614d3c4ace207717d3b5bdd4
-2009-05-15T21:01:31.405510Z
-4965
-buildbot
-
 print.pot
 file
 
@@ -178,6 +166,18 @@ file
 
 2009-06-18T04:57:39.000000Z
 8e47258b5499dd2174906d295ce46eb6
+2009-05-15T21:01:31.405510Z
+4965
+buildbot
+
+ro.po
+file
+
+
+
+
+2009-06-18T04:57:39.000000Z
+630733d9614d3c4ace207717d3b5bdd4
 2009-05-15T21:01:31.405510Z
 4965
 buildbot

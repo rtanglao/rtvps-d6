@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/translations
 https://svn.acquia.com/drupal
 
 
 
-2009-06-11T18:07:09.713535Z
-4999
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -26,16 +26,40 @@ svn:special svn:externals svn:needs-lock
 
 08d20552-8ba5-4116-8c9e-e96c1c1f3480
 
+modules-fieldgroup-panels-content_types.pot
+file
+
+
+
+
+2009-07-03T06:49:41.000000Z
+faf032ca7471cd2cbd97eba276e80bfa
+2009-07-02T20:47:26.048691Z
+5049
+buildbot
+
+modules-fieldgroup-panels-content_types.de.po
+file
+
+
+
+
+2009-07-03T06:49:41.000000Z
+5c71ddea6159c9a6b7528b8b7635f665
+2009-07-02T20:47:26.048691Z
+5049
+buildbot
+
 modules-fieldgroup.pot
 file
 
 
 
 
-2009-06-18T04:57:50.000000Z
-63b05d9b63ff69e166a0a8a4253af627
-2009-03-27T16:42:00.079189Z
-4877
+2009-07-03T06:49:41.000000Z
+b336efcec03555443fc6651fc6a4f3e7
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 modules-fieldgroup.fr.po
@@ -56,10 +80,10 @@ file
 
 
 
-2009-06-18T04:57:50.000000Z
-4d6cad287b5a50c9f47b2a43da551b44
-2009-03-27T16:42:00.079189Z
-4877
+2009-07-03T06:49:41.000000Z
+bd64287ef80e2a50c16c365b7f4d3225
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 modules-fieldgroup.sv.po

@@ -1,13 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/translations
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/translations
 END
 modules-nodereference.nl.po
 K 25
 svn:wc:ra_dav:version-url
 V 120
 /drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/translations/modules-nodereference.nl.po
+END
+modules-nodereference-panels-relationships.de.po
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/translations/modules-nodereference-panels-relationships.de.po
 END
 modules-nodereference.hu.po
 K 25
@@ -19,13 +25,19 @@ modules-nodereference.pot
 K 25
 svn:wc:ra_dav:version-url
 V 118
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/translations/modules-nodereference.pot
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/translations/modules-nodereference.pot
 END
 modules-nodereference.fr.po
 K 25
 svn:wc:ra_dav:version-url
 V 120
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/translations/modules-nodereference.fr.po
+END
+modules-nodereference-panels-relationships.pot
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/translations/modules-nodereference-panels-relationships.pot
 END
 modules-nodereference.de.po
 K 25

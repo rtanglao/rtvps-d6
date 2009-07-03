@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 54
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/contact
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/contact
 END
 contact.module
 K 25
@@ -25,7 +25,7 @@ contact.info
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/contact/contact.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/contact/contact.info
 END
 contact.admin.inc
 K 25

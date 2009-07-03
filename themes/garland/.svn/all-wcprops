@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/drupal/!svn/ver/4965/branches/1.x-6.x/themes/garland
+/drupal/!svn/ver/5049/branches/1.x-6.x/themes/garland
 END
 maintenance-page.tpl.php
 K 25
@@ -31,7 +31,7 @@ garland.info
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/drupal/!svn/ver/4965/branches/1.x-6.x/themes/garland/garland.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/themes/garland/garland.info
 END
 print.css
 K 25

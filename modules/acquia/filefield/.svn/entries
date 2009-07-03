@@ -1,7 +1,7 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/filefield
 https://svn.acquia.com/drupal
 
@@ -44,6 +44,9 @@ d66df4c23b952d3973c8cdfd0858a3e9
 4946
 buildbot
 
+filefield_meta
+dir
+
 filefield.devel.inc
 file
 
@@ -55,9 +58,6 @@ file
 2009-04-30T23:24:28.696746Z
 4946
 buildbot
-
-filefield_meta
-dir
 
 field_file.inc
 file
@@ -86,14 +86,14 @@ buildbot
 views
 dir
 
-filefield_widget.inc
+filefield_field.inc
 file
 
 
 
 
 2009-06-18T04:57:38.000000Z
-ab6d583a3550668dbcb896eb784e3c3f
+55eb5add1d37d05af7f8b357d7bdf010
 2009-04-30T23:24:28.696746Z
 4946
 buildbot
@@ -110,14 +110,14 @@ file
 4946
 buildbot
 
-filefield_field.inc
+filefield_widget.inc
 file
 
 
 
 
 2009-06-18T04:57:38.000000Z
-55eb5add1d37d05af7f8b357d7bdf010
+ab6d583a3550668dbcb896eb784e3c3f
 2009-04-30T23:24:28.696746Z
 4946
 buildbot

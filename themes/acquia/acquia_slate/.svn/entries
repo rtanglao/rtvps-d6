@@ -1,7 +1,7 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/themes/acquia/acquia_slate
 https://svn.acquia.com/drupal
 
@@ -87,38 +87,14 @@ file
 4979
 buildbot
 
-theme-settings.php
+iepngfix.htc
 file
 
 
 
 
 2009-06-18T04:57:30.000000Z
-9986ec6a3a4e5169cdce44b2419a2bbe
-2009-06-05T20:09:58.567167Z
-4979
-buildbot
-
-page-front.tpl.php
-file
-
-
-
-
-2009-06-18T04:57:30.000000Z
-457d7be1607a3b73b3b3c670ddd3bed9
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-
-comment.tpl.php
-file
-
-
-
-
-2009-06-18T04:57:30.000000Z
-8b2b3dad8a731e52a2fdbcebe8f00b95
+fc6fa0c383b58b4118442881b438baf6
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -135,26 +111,38 @@ ace4960248274f6a5b608dfe606f7790
 4875
 buildbot
 
-iepngfix.htc
+comment.tpl.php
 file
 
 
 
 
 2009-06-18T04:57:30.000000Z
-fc6fa0c383b58b4118442881b438baf6
+8b2b3dad8a731e52a2fdbcebe8f00b95
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
 
-style.css
+page-front.tpl.php
 file
 
 
 
 
 2009-06-18T04:57:30.000000Z
-ddaaeffb579ddc823ece8afcb9fc5afd
+457d7be1607a3b73b3b3c670ddd3bed9
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+theme-settings.php
+file
+
+
+
+
+2009-06-18T04:57:30.000000Z
+9986ec6a3a4e5169cdce44b2419a2bbe
 2009-06-05T20:09:58.567167Z
 4979
 buildbot
@@ -169,6 +157,18 @@ file
 f478914131632e5213dd9ff43cc5148d
 2009-03-27T13:49:27.090492Z
 4875
+buildbot
+
+style.css
+file
+
+
+
+
+2009-06-18T04:57:30.000000Z
+ddaaeffb579ddc823ece8afcb9fc5afd
+2009-06-05T20:09:58.567167Z
+4979
 buildbot
 
 search-theme-form.tpl.php

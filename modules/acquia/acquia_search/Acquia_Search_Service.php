@@ -1,5 +1,5 @@
 <?php
-// $Id: Acquia_Search_Service.php 4999 2009-06-11 18:07:09Z buildbot $
+// $Id: Acquia_Search_Service.php 5049 2009-07-02 20:47:26Z buildbot $
 include_once './' . drupal_get_path('module', 'apachesolr') . '/Drupal_Apache_Solr_Service.php';
 include_once './' . drupal_get_path('module', 'acquia_agent') . '/acquia_agent_streams.inc';
 
@@ -54,6 +54,9 @@ class Acquia_Search_Service extends Drupal_Apache_Solr_Service {
    * @see Drupal_Apache_Solr_Service::_sendRawGet()
    */
   protected function _sendRawPost($url, $rawPost, $timeout = FALSE, $contentType = 'text/xml; charset=UTF-8')  {
+    if (variable_get('apachesolr_read_only', 0)) {
+      throw new Exception('Operating in read-only mode; updates are disabled.');
+    }
     $id = $this->add_request_id($url);
     list($cookie, $nonce) = acquia_search_auth_cookie($url, $rawPost);
     $request_headers = array(

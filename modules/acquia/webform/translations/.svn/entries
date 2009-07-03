@@ -1,7 +1,7 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/webform/translations
 https://svn.acquia.com/drupal
 
@@ -38,18 +38,6 @@ bedd40c07189e3fc7147d747a19d8c99
 4875
 buildbot
 
-fr.po
-file
-
-
-
-
-2009-06-18T04:57:52.000000Z
-01d8541ff18539feef242969606069c3
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-
 es.po
 file
 
@@ -58,6 +46,18 @@ file
 
 2009-06-18T04:57:52.000000Z
 c5d5bf9b3b9c622cfd9060035eea114b
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+fr.po
+file
+
+
+
+
+2009-06-18T04:57:52.000000Z
+01d8541ff18539feef242969606069c3
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -74,18 +74,6 @@ file
 4979
 buildbot
 
-it.po
-file
-
-
-
-
-2009-06-18T04:57:52.000000Z
-8e56188c31e7084ebf15cf13b4680346
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-
 hu.po
 file
 
@@ -94,6 +82,18 @@ file
 
 2009-06-18T04:57:52.000000Z
 fb141a6a02b0d7edbaf4e1dc4cbabc7f
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+it.po
+file
+
+
+
+
+2009-06-18T04:57:52.000000Z
+8e56188c31e7084ebf15cf13b4680346
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -146,18 +146,6 @@ file
 4875
 buildbot
 
-sv.po
-file
-
-
-
-
-2009-06-18T04:57:52.000000Z
-fb76f46844d3848a6d09c6c39393a091
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-
 de.po
 file
 
@@ -168,6 +156,18 @@ file
 c7cc97ab2443a0b8025726a3c1bff354
 2009-06-05T20:09:58.567167Z
 4979
+buildbot
+
+sv.po
+file
+
+
+
+
+2009-06-18T04:57:52.000000Z
+fb76f46844d3848a6d09c6c39393a091
+2009-03-27T13:49:27.090492Z
+4875
 buildbot
 
 ja.po

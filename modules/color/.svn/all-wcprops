@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/color
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/color
 END
 color.module
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/color/color.module
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/color/color.module
 END
 color.install
 K 25
@@ -31,7 +31,7 @@ color.info
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/color/color.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/color/color.info
 END
 color.js
 K 25

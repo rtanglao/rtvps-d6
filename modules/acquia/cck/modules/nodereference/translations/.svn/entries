@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/translations
 https://svn.acquia.com/drupal
 
 
 
-2009-06-11T18:07:09.713535Z
-4999
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -38,6 +38,18 @@ af89f478150b16507fbaa1dd2de67c42
 4999
 buildbot
 
+modules-nodereference-panels-relationships.de.po
+file
+
+
+
+
+2009-07-03T06:49:41.000000Z
+11c35223da0893f2d5a705049010bd32
+2009-07-02T20:47:26.048691Z
+5049
+buildbot
+
 modules-nodereference.hu.po
 file
 
@@ -56,10 +68,10 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
-55ed48890a8107df5c6e45612a88a4b2
-2009-03-27T16:42:00.079189Z
-4877
+2009-07-03T06:49:41.000000Z
+252966d5218e9f7402c639a1296db86c
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 modules-nodereference.fr.po
@@ -72,6 +84,18 @@ file
 90340a959897f5a6d9bc323f63005fdb
 2009-03-27T13:49:27.090492Z
 4875
+buildbot
+
+modules-nodereference-panels-relationships.pot
+file
+
+
+
+
+2009-07-03T06:49:41.000000Z
+e96197ed1aa18820a81fec04be4f4507
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 modules-nodereference.de.po

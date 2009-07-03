@@ -1,4 +1,4 @@
-/* $Id: README.txt,v 1.1.2.1.2.21 2009/06/11 12:39:05 pwolanin Exp $ */
+/* $Id: README.txt,v 1.1.2.1.2.24 2009/06/30 21:00:51 pwolanin Exp $ */
 
 This module integrates Drupal with the Apache Solr search platform. Solr search
 can be used as a replacement for core content search and boasts both extra
@@ -172,7 +172,7 @@ hook_apachesolr_modify_query(&$query, &$params, $caller);
 
         function my_module_apachesolr_modify_query(&$query, &$params, $caller) {
           // I only want to see articles by the admin!
-          $query->add_field("uid", 1);         
+          $query->add_filter("uid", 1);         
         }        
     
 hook_apachesolr_cck_fields_alter(&$mappings)
@@ -214,6 +214,8 @@ hook_apachesolr_node_exclude($node, $namespace)
 hook_apachesolr_update_index(&$document, $node)
 
   Allows a module to change the contents of the $document object before it is sent to the Solr Server.
+  To add a new field to the document, you should generally use one of the pre-defined dynamic fields. 
+  Follow the naming conventions for the type of data being added based on the schema.xml file.
 
 hook_apachesolr_search_result_alter(&$doc)
 
@@ -223,3 +225,11 @@ hook_apachesolr_search_result_alter(&$doc)
 hook_apachesolr_sort_links_alter(&$sort_links)
 
   Called by the sort link block code. Allows other modules to modify, add or remove sorts.
+
+
+Themers
+----------------
+
+See inline docs in apachesolr_theme and apachesolr_search_theme functions 
+within apachesolr.module and apachesolr_search.module.
+

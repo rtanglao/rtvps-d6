@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/locale
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/locale
 END
 locale.module
 K 25
@@ -25,5 +25,5 @@ locale.info
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/locale/locale.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/locale/locale.info
 END

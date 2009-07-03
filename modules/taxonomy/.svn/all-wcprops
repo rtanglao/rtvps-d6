@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/taxonomy
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/taxonomy
 END
 taxonomy.module
 K 25
@@ -31,7 +31,7 @@ taxonomy.info
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/taxonomy/taxonomy.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/taxonomy/taxonomy.info
 END
 taxonomy.js
 K 25

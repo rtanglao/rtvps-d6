@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/themes/garland
 https://svn.acquia.com/drupal
 
 
 
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -38,6 +38,18 @@ file
 4946
 buildbot
 
+print.css
+file
+
+
+
+
+2009-06-18T04:57:30.000000Z
+49cffa881c5197ef47596775326f9eda
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
 logo.png
 file
 
@@ -51,14 +63,14 @@ file
 buildbot
 has-props
 
-print.css
+style-rtl.css
 file
 
 
 
 
 2009-06-18T04:57:30.000000Z
-49cffa881c5197ef47596775326f9eda
+bde013324ba553c3f341cf027ac4d843
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -75,18 +87,6 @@ file
 4875
 buildbot
 
-style-rtl.css
-file
-
-
-
-
-2009-06-18T04:57:30.000000Z
-bde013324ba553c3f341cf027ac4d843
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-
 style.css
 file
 
@@ -95,18 +95,6 @@ file
 
 2009-06-18T04:57:30.000000Z
 e4b04cbc8839cbd8d5f6ef7c7c7bfea3
-2009-04-30T23:24:28.696746Z
-4946
-buildbot
-
-page.tpl.php
-file
-
-
-
-
-2009-06-18T04:57:30.000000Z
-8027e4bcf370cc4afe29ec51cfcb8e1f
 2009-04-30T23:24:28.696746Z
 4946
 buildbot
@@ -123,6 +111,18 @@ file
 4875
 buildbot
 has-props
+
+page.tpl.php
+file
+
+
+
+
+2009-06-18T04:57:30.000000Z
+8027e4bcf370cc4afe29ec51cfcb8e1f
+2009-04-30T23:24:28.696746Z
+4946
+buildbot
 
 template.php
 file
@@ -142,13 +142,16 @@ file
 
 
 
-2009-06-18T04:57:30.000000Z
-0717f24a2b9d7c21d531261c9942a7c9
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-03T06:49:39.000000Z
+119c6b99227cd638034cc647cfb8f581
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 images
+dir
+
+minnelli
 dir
 
 fix-ie-rtl.css
@@ -162,9 +165,6 @@ c63847f495398769afb3eecba672a047
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
-
-minnelli
-dir
 
 fix-ie.css
 file

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/block
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/block
 END
 block.install
 K 25
@@ -19,7 +19,7 @@ block.info
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/block/block.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/block/block.info
 END
 block.js
 K 25

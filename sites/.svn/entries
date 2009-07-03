@@ -1,15 +1,15 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/sites
 https://svn.acquia.com/drupal
 
 
 
-2009-05-23T17:07:23.383307Z
-4971
-brenda.boggs
+2009-07-02T20:47:26.048691Z
+5049
+buildbot
 
 
 svn:special svn:externals svn:needs-lock

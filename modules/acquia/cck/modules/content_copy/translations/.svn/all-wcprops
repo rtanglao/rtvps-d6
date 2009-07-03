@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/translations
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/translations
 END
 modules-content_copy.nl.po
 K 25
@@ -19,7 +19,7 @@ modules-content_copy.pot
 K 25
 svn:wc:ra_dav:version-url
 V 116
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/translations/modules-content_copy.pot
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/translations/modules-content_copy.pot
 END
 modules-content_copy.fr.po
 K 25

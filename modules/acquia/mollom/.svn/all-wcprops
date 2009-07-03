@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom
 END
 mollom.module
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/mollom.module
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom/mollom.module
 END
 INSTALL.txt
 K 25
@@ -31,7 +31,7 @@ mollom.info
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/mollom.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom/mollom.info
 END
 mollom.js
 K 25

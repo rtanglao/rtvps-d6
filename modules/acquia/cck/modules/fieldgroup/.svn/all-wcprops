@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup
 END
 fieldgroup.module
 K 25
@@ -37,7 +37,7 @@ fieldgroup.info
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/fieldgroup.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/fieldgroup.info
 END
 fieldgroup-simple.tpl.php
 K 25

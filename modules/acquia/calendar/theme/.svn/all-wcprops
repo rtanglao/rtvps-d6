@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/theme
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/calendar/theme
 END
 calendar-main.tpl.php
 K 25
@@ -61,7 +61,7 @@ theme.inc
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/theme/theme.inc
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/calendar/theme/theme.inc
 END
 calendar-day-node.tpl.php
 K 25

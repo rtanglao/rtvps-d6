@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/locale
 https://svn.acquia.com/drupal
 
 
 
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -68,9 +68,9 @@ file
 
 
 
-2009-06-18T04:57:34.000000Z
-c5cd8c8b07065c77814e0d3ce524c397
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-03T06:49:40.000000Z
+3aff689ff2fae37e8c934280598df445
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 

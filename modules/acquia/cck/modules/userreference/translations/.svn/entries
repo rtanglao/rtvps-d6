@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/userreference/translations
 https://svn.acquia.com/drupal
 
 
 
-2009-06-11T18:07:09.713535Z
-4999
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
-0d2c0810d61fd8e8be98067e16e1f2bd
-2009-03-27T16:42:00.079189Z
-4877
+2009-07-03T06:49:41.000000Z
+3756e92e538f924d5c7b5cf11c1ce972
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 modules-userreference.fr.po
@@ -48,6 +48,18 @@ file
 2ce521115f64cb2a32260a95df725d8f
 2009-03-27T13:49:27.090492Z
 4875
+buildbot
+
+modules-userreference-panels-relationships.pot
+file
+
+
+
+
+2009-07-03T06:49:41.000000Z
+d55cb5b4e020c620f18f4d91fb685bf2
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 modules-userreference.de.po
@@ -84,6 +96,18 @@ file
 3fc4ea6b627701d9714a5c8ae72cb224
 2009-06-11T18:07:09.713535Z
 4999
+buildbot
+
+modules-userreference-panels-relationships.de.po
+file
+
+
+
+
+2009-07-03T06:49:41.000000Z
+f6d42756d0a187c2e657e28b351dce28
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 modules-userreference.hu.po

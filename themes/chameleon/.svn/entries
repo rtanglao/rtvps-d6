@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/themes/chameleon
 https://svn.acquia.com/drupal
 
 
 
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -83,10 +83,10 @@ file
 
 
 
-2009-06-18T04:57:31.000000Z
-c9d620503eb04ab0a42776c8041e9f70
-2009-05-15T21:01:31.405510Z
-4965
+2009-07-03T06:49:39.000000Z
+bfe1a0c86aff9b740f5abfe3745c5b65
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 style-rtl.css

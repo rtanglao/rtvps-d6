@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/calendar
 END
 calendar.css
 K 25
@@ -9,11 +9,17 @@ svn:wc:ra_dav:version-url
 V 75
 /drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/calendar/calendar.css
 END
+calendar.info.acquiainfo
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/calendar/calendar.info.acquiainfo
+END
 calendar.info
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/calendar.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/calendar/calendar.info
 END
 CHANGELOG.txt
 K 25

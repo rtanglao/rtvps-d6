@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/drupal/!svn/ver/4965/branches/1.x-6.x/themes/chameleon
+/drupal/!svn/ver/5049/branches/1.x-6.x/themes/chameleon
 END
 common.css
 K 25
@@ -31,7 +31,7 @@ chameleon.info
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/drupal/!svn/ver/4965/branches/1.x-6.x/themes/chameleon/chameleon.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/themes/chameleon/chameleon.info
 END
 style-rtl.css
 K 25

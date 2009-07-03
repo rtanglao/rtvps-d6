@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/translation
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/translation
 END
 translation.module
 K 25
@@ -19,5 +19,5 @@ translation.info
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/translation/translation.info
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/translation/translation.info
 END

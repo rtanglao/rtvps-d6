@@ -54,6 +54,9 @@ class Acquia_Search_Service extends Drupal_Apache_Solr_Service {
    * @see Drupal_Apache_Solr_Service::_sendRawGet()
    */
   protected function _sendRawPost($url, $rawPost, $timeout = FALSE, $contentType = 'text/xml; charset=UTF-8')  {
+    if (variable_get('apachesolr_read_only', 0)) {
+      throw new Exception('Operating in read-only mode; updates are disabled.');
+    }
     $id = $this->add_request_id($url);
     list($cookie, $nonce) = acquia_search_auth_cookie($url, $rawPost);
     $request_headers = array(

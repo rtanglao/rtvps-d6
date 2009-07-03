@@ -1,5 +1,5 @@
 <?php
-// $Id: mollom.test,v 1.1.2.16 2009/03/29 04:47:06 dries Exp $
+// $Id: mollom.test,v 1.1.2.17 2009/06/10 07:05:56 dries Exp $
 
 /**
  * @file
@@ -61,7 +61,7 @@ class MollomWebTestCase extends DrupalWebTestCase {
 }
 
 class MollomAccessTestCase extends MollomWebTestCase {
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => t('Mollom access checking'),
       'description' => t('Confirm that there is a working key pair and that this status is correctly indicated on the module settings page for appropriate users.'),
@@ -121,7 +121,7 @@ class MollomAccessTestCase extends MollomWebTestCase {
 }
 
 class MollomFallbackTestCase extends MollomWebTestCase {
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => t('Fallback behavior'),
       'description' => t('Check that the module uses the correct fallback mechanism when one or more of the specified Mollom servers are not available.'),
@@ -214,7 +214,7 @@ class MollomFallbackTestCase extends MollomWebTestCase {
 }
 
 class MollomUserFormsTestCase extends MollomWebTestCase {
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => t('User registration and password protection'),
       'description' => t('Check that the user registration and password request forms can be protected.'),
@@ -293,7 +293,7 @@ class MollomUserFormsTestCase extends MollomWebTestCase {
 }
 
 class MollomCommentFormTestCase extends MollomWebTestCase {
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => t('Comment submission protection'),
       'description' => t('Check that the comment submission form can be protected.'),
@@ -467,7 +467,7 @@ class MollomCommentFormTestCase extends MollomWebTestCase {
 }
 
 class MollomContactFormTestCase extends MollomWebTestCase {
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => t('Contact form protection'),
       'description' => t('Check that the contact form can be protected.'),
@@ -552,7 +552,7 @@ class MollomContactFormTestCase extends MollomWebTestCase {
 
 class MollomResellerTestCase extends MollomWebTestCase {
 
-  function getInfo() {
+  public static function getInfo() {
     return array(
       'name' => t('Key provisioning for Mollom reseller'),
       'description' => t('Check that the reseller APIs are working properly.'),

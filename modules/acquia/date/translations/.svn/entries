@@ -1,7 +1,7 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/date/translations
 https://svn.acquia.com/drupal
 
@@ -194,18 +194,6 @@ b07ed0ff78ae25cb2e8263f0b29e0da5
 4999
 buildbot
 
-theme.es.po
-file
-
-
-
-
-2009-06-18T04:57:57.000000Z
-4ce4e664104b24b8a6b14a8eef62334d
-2009-06-11T18:07:09.713535Z
-4999
-buildbot
-
 theme.se.po
 file
 
@@ -218,14 +206,14 @@ file
 4999
 buildbot
 
-date_api.fr.po
+theme.es.po
 file
 
 
 
 
 2009-06-18T04:57:57.000000Z
-c55a32536252ae722f3b786f6f3ea5c7
+4ce4e664104b24b8a6b14a8eef62334d
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
@@ -242,14 +230,14 @@ file
 4999
 buildbot
 
-date_api.nl.po
+date_api.fr.po
 file
 
 
 
 
 2009-06-18T04:57:57.000000Z
-91707c3a3abfe2498c891c567e59e3d5
+c55a32536252ae722f3b786f6f3ea5c7
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
@@ -266,16 +254,16 @@ file
 4999
 buildbot
 
-date_api.it.po
+date_api.nl.po
 file
 
 
 
 
 2009-06-18T04:57:57.000000Z
-17b17e122129c84ed1eacd1d49d6d3fd
-2009-04-16T23:08:01.621631Z
-4917
+91707c3a3abfe2498c891c567e59e3d5
+2009-06-11T18:07:09.713535Z
+4999
 buildbot
 
 includes.it.po
@@ -286,6 +274,18 @@ file
 
 2009-06-18T04:57:57.000000Z
 8724578996a16e7d121e2f431264586d
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+date_api.it.po
+file
+
+
+
+
+2009-06-18T04:57:57.000000Z
+17b17e122129c84ed1eacd1d49d6d3fd
 2009-04-16T23:08:01.621631Z
 4917
 buildbot
@@ -302,18 +302,6 @@ file
 4999
 buildbot
 
-date_api.pt-br.po
-file
-
-
-
-
-2009-06-18T04:57:57.000000Z
-06bb6174017301fc8bee9191fc7f2697
-2009-06-11T18:07:09.713535Z
-4999
-buildbot
-
 includes.pt-br.po
 file
 
@@ -326,16 +314,16 @@ d31ab2a6f8091e50d67cf127021b6c73
 4999
 buildbot
 
-date_api.pot
+date_api.pt-br.po
 file
 
 
 
 
 2009-06-18T04:57:57.000000Z
-dc9c8bc9926957c862d8b43dfc35e442
-2009-04-16T23:08:01.621631Z
-4917
+06bb6174017301fc8bee9191fc7f2697
+2009-06-11T18:07:09.713535Z
+4999
 buildbot
 
 includes.pot
@@ -350,28 +338,28 @@ b6e3bc04e879d183e84ec7948da593dd
 4917
 buildbot
 
-date_api.sv.po
+date_api.pot
 file
 
 
 
 
 2009-06-18T04:57:57.000000Z
-d1ba2f7f3e1b1ff6fa0027339abcab32
-2009-06-11T18:07:09.713535Z
-4999
-buildbot
-
-date_api.de.po
-file
-
-
-
-
-2009-06-18T04:57:57.000000Z
-20d3b942b6426040d36642be85ff70d9
+dc9c8bc9926957c862d8b43dfc35e442
 2009-04-16T23:08:01.621631Z
 4917
+buildbot
+
+includes.sv.po
+file
+
+
+
+
+2009-06-18T04:57:57.000000Z
+5ef30e8bce9d394e3d46b15f7ac8c4b6
+2009-06-11T18:07:09.713535Z
+4999
 buildbot
 
 includes.de.po
@@ -386,14 +374,26 @@ file
 4917
 buildbot
 
-includes.sv.po
+date_api.de.po
 file
 
 
 
 
 2009-06-18T04:57:57.000000Z
-5ef30e8bce9d394e3d46b15f7ac8c4b6
+20d3b942b6426040d36642be85ff70d9
+2009-04-16T23:08:01.621631Z
+4917
+buildbot
+
+date_api.sv.po
+file
+
+
+
+
+2009-06-18T04:57:57.000000Z
+d1ba2f7f3e1b1ff6fa0027339abcab32
 2009-06-11T18:07:09.713535Z
 4999
 buildbot

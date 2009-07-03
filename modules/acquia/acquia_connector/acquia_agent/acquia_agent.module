@@ -1,5 +1,5 @@
 <?php
-// $Id: acquia_agent.module,v 1.16 2009/05/06 06:52:02 goba Exp $
+// $Id: acquia_agent.module,v 1.17.2.1 2009/06/21 15:13:45 pwolanin Exp $
 
 /**
  * @file
@@ -512,15 +512,10 @@ function acquia_agent_form_system_modules_alter(&$form, &$form_state) {
   if (isset($form['description']['acquia_search'])) {
     $subscription = acquia_agent_settings('acquia_subscription_data');
     
-    if (!module_exists('acquia_search') && empty($subscription['heartbeat_data']['search_service_enabled'])) {
+    if (!module_exists('acquia_search') && empty($subscription['active'])) {
       $form['status']['#disabled_modules'][] = 'acquia_search';
-      $text = 'Acquia Search requires an Acquia Network subscription and that you join the <a href="@network-url">Acquia Search beta program</a>';
-      if (empty($subscription['active'])) {
-        $message = t($text, array('@network-url' => 'http://acquia.com/products-services/acquia-search'));
-      }
-      else {
-        $message = t($text, array('@network-url' => url($subscription['href'] . '/health/search')));
-      }
+      $text = 'Acquia Search requires an <a href="@network-url">Acquia Network subscription</a>';
+      $message = t($text, array('@network-url' => 'http://acquia.com/products-services/acquia-search'));
       $form['description']['acquia_search']['#extra'] = '<div style="padding-left:5px; margin:8px 0px" class="messages warning" id="acquia-agent-no-search">'. $message .'</div>';
     }
   }

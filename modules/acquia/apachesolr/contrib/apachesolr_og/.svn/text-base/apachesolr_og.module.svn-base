@@ -1,5 +1,5 @@
 <?php
-// $Id: apachesolr_og.module,v 1.1.2.2 2009/04/30 17:23:13 pwolanin Exp $
+// $Id: apachesolr_og.module,v 1.1.2.4 2009/07/01 22:57:55 pwolanin Exp $
 
 /**
  * @file
@@ -16,7 +16,7 @@ function apachesolr_og_menu() {
       'description'      => 'Apache Solr OG facet settings for group posts.',
       'page callback'    => 'drupal_get_form',
       'page arguments'   => array('apachesolr_og_admin'),
-      'access arguments' => array('administer site configuration'),
+      'access arguments' => array('administer search'),
     ),
   );
 }
@@ -58,7 +58,7 @@ function apachesolr_og_apachesolr_update_index(&$document, $node) {
     foreach ($node->og_groups as $gid) {
       $document->setMultiValue(_apachesolr_og_gid_key(), $gid);
     }
-  } 
+  }
   elseif (isset($node->og_description) && variable_get('apachesolr_og_groupnode', 0)) {
     // Index the group node itself as in the group.
     $document->setMultiValue(_apachesolr_og_gid_key(), $node->nid);
@@ -155,7 +155,7 @@ function apachesolr_og_block($op = 'list', $delta = 0, $edit = array()) {
         if ($delta != _apachesolr_og_gid_key()) {
           return;
         }
-        
+
         $response = apachesolr_static_response_cache();
         if (empty($response)) {
           return;

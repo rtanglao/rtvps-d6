@@ -6,7 +6,7 @@
  *   Integration between Acquia Drupal and Acquia's hosted solr search service.
  */
 
-define('ACQUIA_SEARCH_VERSION', "6.x-1.4994");
+define('ACQUIA_SEARCH_VERSION', "6.x-1.5044");
 
 /**
  * Implementation of hook_enable().
@@ -30,6 +30,7 @@ function _acquia_search_set_variables() {
   if (!variable_get('apachesolr_failure', FALSE)) {
     variable_set('apachesolr_failure', 'show_drupal_results');
   }
+  variable_set('apachesolr_search_make_default', 1);
 }
 
 /**
@@ -50,76 +51,48 @@ function acquia_search_delete_variables() {
   variable_del('apachesolr_path');
   variable_del('apachesolr_service_class');
   variable_del('apachesolr_query_class');
+  variable_del('apachesolr_search_make_default');
 }
 
 /**
  * Implementation of hook_menu_alter().
  */
 function acquia_search_menu_alter(&$menu) {
-
-  if (isset($menu['search/node/%menu_tail'])) {
-    // Hide the node search tab.
-    $menu['search/node/%menu_tail']['type'] = MENU_CALLBACK;
-    unset($menu['search/node/%menu_tail']['title callback'], $menu['search/node/%menu_tail']['title arguments']);
-    $menu['search/node/%menu_tail']['title'] = 'Search';
-  }
-  if (isset($menu['search/apachesolr_search/%menu_tail'])) {
-    // Alter the solr search tab
-    $menu['search/apachesolr_search/%menu_tail']['weight'] = -10;
-    unset($menu['search/apachesolr_search/%menu_tail']['title callback'], $menu['search/apachesolr_search/%menu_tail']['title arguments']);
-    $menu['search/apachesolr_search/%menu_tail']['title'] = 'Content';
-  }
-  if (isset($menu['search'])) {
-    $menu['search']['page arguments'] = array('apachesolr_search');
-  }
-  
   if (isset($menu['admin/settings/apachesolr'])) {
     $menu['admin/settings/apachesolr']['title'] = 'Acquia Search';
   }
 }
 
 /**
- * Implementation of hook_form_alter().
+ * Implementation of hook_form_[form_id]_alter().
  */
-function acquia_search_form_alter(&$form, &$form_state, $form_id) {
+function acquia_search_form_apachesolr_delete_index_form_alter(&$form, $form_state) {
+  $form['markup']['#value'] = t('Acquia Search index controls');
+}
 
-  switch ($form_id) {
-    case 'search_block_form':
-    case 'search_theme_form':
-    case 'search_form':
-      if (!isset($form['#submit'])) {
-        $form['#submit'] = array();
-      }
-      foreach ($form['#submit'] as $key => $name) {
-        if ($name == 'search_form_submit' || $name == 'search_box_form_submit') {
-          unset($form['#submit'][$key]);
-          $form_submit = $name;
-        }
-      }
-      // Make this first, as the search module's would have been.
-      array_unshift($form['#submit'], 'acquia_search_'. $form_submit);
-      break;
-    case 'apachesolr_settings':
-      // Don't alter the form if there is no subscription.
-      if (acquia_agent_subscription_is_active()) {
-        $form['apachesolr_host'] = array(
-          '#type' => 'item',
-          '#title' => t("Search is being provided by the Acquia Search network service"),
-          '#value' => variable_get('apachesolr_host', 'localhost'),
-        );
-        unset($form['apachesolr_port'], $form['apachesolr_path']);
-        $form['apachesolr_failure']['#title'] = t("If your site cannot connect to the Acquia Search network service");
-        $form['#submit'][] = 'acquia_search_settings_submit';
-      }
-      break;
-    case 'apachesolr_delete_index_form':
-      $form['markup']['#value'] = t('Acquia Search index controls');
-      break;
-    case 'acquia_agent_settings_form':
-      $form['buttons']['submit']['#submit'][] = 'acquia_search_settings_submit';
-      $form['buttons']['delete']['#submit'][] = 'acquia_search_settings_submit';
-      break;
+/**
+ * Implementation of hook_form_[form_id]_alter().
+ */
+function acquia_search_form_apachesolr_settings_alter(&$form, $form_state) {
+  // Don't alter the form if there is no subscription.
+  if (acquia_agent_subscription_is_active()) {
+    $form['apachesolr_host'] = array(
+      '#type' => 'item',
+      '#title' => t("Search is being provided by the Acquia Search network service"),
+      '#value' => variable_get('apachesolr_host', 'localhost'),
+    );
+    unset($form['apachesolr_port'], $form['apachesolr_path']);
+    $form['apachesolr_failure']['#title'] = t("If your site cannot connect to the Acquia Search network service");
+    $form['#submit'][] = 'acquia_search_settings_submit';
   }
+}
+
+/**
+ * Implementation of hook_form_[form_id]_alter().
+ */
+function acquia_search_form_acquia_agent_settings_form_alter(&$form, $form_state) {
+  $form['buttons']['submit']['#submit'][] = 'acquia_search_settings_submit';
+  $form['buttons']['delete']['#submit'][] = 'acquia_search_settings_submit';
 }
 
 /**
@@ -132,21 +105,6 @@ function acquia_search_settings_submit($form, &$form_state) {
   else {
     acquia_search_delete_variables();
   }
-}
-
-/**
- * Process a search form submission.
- */
-function acquia_search_search_form_submit($form, &$form_state) {
-  $keys = $form_state['values']['processed_keys'];
-  if ($keys == '') {
-    form_set_error('keys', t('Please enter some keywords.'));
-    // Fall through to the drupal_goto() call.
-  }
-
-  $type = $form_state['values']['module'] ? $form_state['values']['module'] : 'apachesolr_search';
-  $form_state['redirect'] = 'search/'. $type .'/'. $keys;
-  return;
 }
 
 /**

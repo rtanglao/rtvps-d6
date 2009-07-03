@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/translations
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom/translations
 END
 mollom.pot
 K 25
@@ -50,6 +50,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 79
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/mollom/translations/pl.po
+END
+th.po
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom/translations/th.po
 END
 hu.po
 K 25

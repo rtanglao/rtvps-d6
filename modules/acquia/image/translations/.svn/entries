@@ -1,7 +1,7 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/image/translations
 https://svn.acquia.com/drupal
 
@@ -26,18 +26,6 @@ svn:special svn:externals svn:needs-lock
 
 08d20552-8ba5-4116-8c9e-e96c1c1f3480
 
-general.de.po
-file
-
-
-
-
-2009-06-18T04:57:36.000000Z
-cdad9a65b432f55fd7174d94648049fa
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-
 image.ca.po
 file
 
@@ -50,14 +38,14 @@ file
 4875
 buildbot
 
-image.pt-br.po
+general.de.po
 file
 
 
 
 
 2009-06-18T04:57:36.000000Z
-0f2e1fecf89e5354113f3d0b7133a002
+cdad9a65b432f55fd7174d94648049fa
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -74,6 +62,18 @@ file
 4875
 buildbot
 
+image.pt-br.po
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+0f2e1fecf89e5354113f3d0b7133a002
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
 image.pot
 file
 
@@ -86,18 +86,6 @@ file
 4875
 buildbot
 
-image.sv.po
-file
-
-
-
-
-2009-06-18T04:57:36.000000Z
-d162683a37dc2920c1b6667d0412a779
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-
 image.de.po
 file
 
@@ -106,6 +94,18 @@ file
 
 2009-06-18T04:57:36.000000Z
 0146c51a7226411e39d99b7b22924bd8
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image.sv.po
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+d162683a37dc2920c1b6667d0412a779
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
@@ -182,18 +182,6 @@ file
 4875
 buildbot
 
-image.es.po
-file
-
-
-
-
-2009-06-18T04:57:36.000000Z
-0ed4a5051d63b2dd2842663197ce9d06
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
-
 image.fr.po
 file
 
@@ -202,6 +190,18 @@ file
 
 2009-06-18T04:57:36.000000Z
 af7109a5077e0d51596934acf62e7990
+2009-03-27T13:49:27.090492Z
+4875
+buildbot
+
+image.es.po
+file
+
+
+
+
+2009-06-18T04:57:36.000000Z
+0ed4a5051d63b2dd2842663197ce9d06
 2009-03-27T13:49:27.090492Z
 4875
 buildbot

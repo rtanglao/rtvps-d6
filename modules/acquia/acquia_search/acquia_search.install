@@ -1,5 +1,5 @@
 <?php
-// $Id: acquia_search.install 4946 2009-04-30 23:24:28Z buildbot $
+// $Id: acquia_search.install 5049 2009-07-02 20:47:26Z buildbot $
 
 /**
  * Implementation of hook_requirements().
@@ -132,4 +132,12 @@ function _acquia_search_get_default_facets() {
  */
 function acquia_search_uninstall() {
   // Nothing to do, but allows the module to be uninstalled.
+}
+
+/**
+ * Enable Apache Solr Search as default.
+ */
+function acquia_search_update_6000() {
+  variable_set('apachesolr_search_make_default', 1);
+  return array();
 }

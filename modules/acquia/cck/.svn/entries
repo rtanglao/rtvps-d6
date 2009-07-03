@@ -1,14 +1,14 @@
 8
 
 dir
-5008
+5052
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck
 https://svn.acquia.com/drupal
 
 
 
-2009-06-11T18:07:09.713535Z
-4999
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 
@@ -68,10 +68,10 @@ file
 4999
 buildbot
 
-theme
+tests
 dir
 
-tests
+theme
 dir
 
 DEVELOPER.txt
@@ -92,10 +92,22 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
-083491fb051fda50c90fea5301a4fa04
-2009-06-11T18:07:09.713535Z
-4999
+2009-07-03T06:49:41.000000Z
+728db8c6bd8ce0419550e70f1f6049c6
+2009-07-02T20:47:26.048691Z
+5049
+buildbot
+
+CHANGELOG.txt
+file
+
+
+
+
+2009-07-03T06:49:41.000000Z
+e02821754bd3073891e1a84eabccff59
+2009-07-02T20:47:26.048691Z
+5049
 buildbot
 
 UPGRADE.txt
@@ -108,18 +120,6 @@ file
 ff2eaf51124a19adc2e55859ff2bd0e1
 2009-03-27T13:49:27.090492Z
 4875
-buildbot
-
-CHANGELOG.txt
-file
-
-
-
-
-2009-06-18T04:57:51.000000Z
-06de8c502dcccb87f4849be4bd4edd3c
-2009-06-11T18:07:09.713535Z
-4999
 buildbot
 
 includes
