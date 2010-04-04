@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 98
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_im_advanced/translations
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_im_advanced/translations
 END
 image_im_advanced.de.po
 K 25
@@ -9,15 +9,33 @@ svn:wc:ra_dav:version-url
 V 122
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_im_advanced/translations/image_im_advanced.de.po
 END
+image_im_advanced.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_im_advanced/translations/image_im_advanced.sv.po
+END
+image_im_advanced.nl.po
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_im_advanced/translations/image_im_advanced.nl.po
+END
+modules-image_im_advanced.ru.po
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_im_advanced/translations/modules-image_im_advanced.ru.po
+END
 image_im_advanced.el.po
 K 25
 svn:wc:ra_dav:version-url
 V 122
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_im_advanced/translations/image_im_advanced.el.po
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_im_advanced/translations/image_im_advanced.el.po
 END
 image_im_advanced.pot
 K 25
 svn:wc:ra_dav:version-url
 V 120
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_im_advanced/translations/image_im_advanced.pot
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_im_advanced/translations/image_im_advanced.pot
 END

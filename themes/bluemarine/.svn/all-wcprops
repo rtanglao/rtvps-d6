@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/drupal/!svn/ver/5049/branches/1.x-6.x/themes/bluemarine
+/drupal/!svn/ver/5200/branches/1.x-6.x/themes/bluemarine
 END
 page.tpl.php
 K 25
@@ -55,7 +55,7 @@ bluemarine.info
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/5049/branches/1.x-6.x/themes/bluemarine/bluemarine.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/themes/bluemarine/bluemarine.info
 END
 block.tpl.php
 K 25

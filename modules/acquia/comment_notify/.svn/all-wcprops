@@ -1,31 +1,37 @@
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify
 END
 comment_notify.install
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify/comment_notify.install
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/comment_notify.install
+END
+comment_notify-rtl.css
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/comment_notify-rtl.css
 END
 comment_notify.css
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify/comment_notify.css
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/comment_notify.css
 END
 INSTALL.TXT
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify/INSTALL.TXT
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/INSTALL.TXT
 END
 comment_notify.info
 K 25
 svn:wc:ra_dav:version-url
 V 88
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify/comment_notify.info
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/comment_notify.info
 END
 comment_notify.js
 K 25
@@ -33,9 +39,15 @@ svn:wc:ra_dav:version-url
 V 86
 /drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify/comment_notify.js
 END
+comment_notify.test
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/comment_notify.test
+END
 comment_notify.module
 K 25
 svn:wc:ra_dav:version-url
 V 90
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify/comment_notify.module
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/comment_notify.module
 END

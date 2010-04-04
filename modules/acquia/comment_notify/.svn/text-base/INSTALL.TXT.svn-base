@@ -1,4 +1,4 @@
-$Id: INSTALL.TXT,v 1.6 2009/03/03 14:45:13 greggles Exp $
+$Id: INSTALL.TXT,v 1.7 2009/11/07 18:48:34 greggles Exp $
 
 INSTALLATION
 ------------
@@ -18,6 +18,11 @@ http://example.com/admin/user/permissions#module-comment_notify
   -Determine which content types to activate it for
   -Determine which subscription modes are allowed
   -Configure the templates for the e-mails
+  
+5. Set your node-notify settings per user (optional)
+The module includes a feature to notify the node author of all comments on 
+their nodes. To enable this go to "My account" > Edit (e.g. user/1/edit)
+and change the settings there.
   
 OPTIONAL MODULES
 ----------------

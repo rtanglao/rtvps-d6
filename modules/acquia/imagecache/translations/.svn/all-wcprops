@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imagecache/translations
+/drupal/!svn/ver/5088/branches/1.x-6.x/modules/acquia/imagecache/translations
 END
 fr.po
 K 25
@@ -14,6 +14,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 83
 /drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imagecache/translations/de.po
+END
+nl.po
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/drupal/!svn/ver/5088/branches/1.x-6.x/modules/acquia/imagecache/translations/nl.po
 END
 ja.po
 K 25

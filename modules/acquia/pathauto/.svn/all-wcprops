@@ -1,31 +1,31 @@
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/pathauto
 END
 pathauto.info
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/pathauto.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/pathauto/pathauto.info
 END
 pathauto.js
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/pathauto.js
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/pathauto/pathauto.js
 END
 pathauto_node.inc
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/pathauto_node.inc
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/pathauto/pathauto_node.inc
 END
 pathauto.admin.inc
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/pathauto.admin.inc
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/pathauto/pathauto.admin.inc
 END
 INSTALL.txt
 K 25
@@ -43,31 +43,31 @@ API.txt
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/API.txt
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/pathauto/API.txt
 END
 pathauto.module
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/pathauto.module
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/pathauto/pathauto.module
 END
 pathauto.install
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/pathauto.install
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/pathauto/pathauto.install
 END
 pathauto_user.inc
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/pathauto_user.inc
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/pathauto/pathauto_user.inc
 END
 pathauto_taxonomy.inc
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/pathauto_taxonomy.inc
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/pathauto/pathauto_taxonomy.inc
 END
 README.txt
 K 25
@@ -79,7 +79,7 @@ pathauto.inc
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/pathauto.inc
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/pathauto/pathauto.inc
 END
 i18n-ascii.example.txt
 K 25

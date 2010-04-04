@@ -1,5 +1,5 @@
 <?php
-// $Id: comment_notify.module,v 1.54 2009/03/07 19:22:51 greggles Exp $
+// $Id: comment_notify.module,v 1.73 2009/11/17 15:20:10 greggles Exp $
 
 /**
  * @file
@@ -53,14 +53,23 @@ define('COMMENT_NOTIFY_NODE', 1);
 define('COMMENT_NOTIFY_COMMENT', 2);
 
 /**
- * Implementation of hook_help().
+ * Provide an array of available options for notification on a comment.
  */
-function comment_notify_help($path, $arg) {
-  switch ($path) {
-    case 'admin/modules#description':
-      return t('Comment follow-up e-mail notification for anonymous and registered users.');
-      break;
+function _comment_notify_options() {
+  $total_options = array(
+    COMMENT_NOTIFY_NODE     => t('All comments'),
+    COMMENT_NOTIFY_COMMENT  => t('Replies to my comment')
+  );
+
+  $available_options = array();
+  $options = variable_get('comment_notify_available_alerts', drupal_map_assoc(array(COMMENT_NOTIFY_NODE, COMMENT_NOTIFY_COMMENT)));
+  foreach ($options as $key => $available) {
+    if ($key == $available) {
+      $available_options[$available] = $total_options[$available];
+    }
   }
+
+  return $available_options;
 }
 
 /**
@@ -69,73 +78,72 @@ function comment_notify_help($path, $arg) {
 function comment_notify_form_alter(&$form, &$form_state, $form_id) {
   global $user;
 
-  // Only do alter the form if it's a comment form and the user has the permission to subscribe
-  if ($form_id != 'comment_form' || !user_access('subscribe to comments')) {
-    return;
-  }
-
-  // Only add the checkbox if this is an enabled content type
-  $node = node_load($form['nid']['#value']);
-  $enabled_types = variable_get('comment_notify_node_types', array($node->type => TRUE));
-  if (empty($enabled_types[$node->type])) {
-    return;
-  }
-
-  drupal_add_css(drupal_get_path('module', 'comment_notify') .'/comment_notify.css');
-  drupal_add_js(drupal_get_path('module', 'comment_notify') .'/comment_notify.js');
-
-  $total_options = array(
-    COMMENT_NOTIFY_NODE     => t('All comments'),
-    COMMENT_NOTIFY_COMMENT  => t('Replies to my comment')
-  );
-  $options = variable_get('comment_notify_available_alerts', array(COMMENT_NOTIFY_NODE, COMMENT_NOTIFY_COMMENT));
-  foreach ($options as $key => $available) {
-    if ($key == $available) {
-      $available_options[$available] = $total_options[$available];
-    }
-  }
-
-  // Add the checkbox for anonymous users and set the default based on admin settings.
-  if ($user->uid == 0) {
-    // If anonymous user's can't enter their e-mail don't tempt them with the checkbox.
-    if (empty($form['mail'])) {
+  // Only alter the form if it's a comment form and the user has the permission to subscribe.
+  if ($form_id == 'comment_form' && (user_access('subscribe to comments') || user_access('administer comments'))) {
+    // Only add the checkbox if this is an enabled content type
+    $node = node_load($form['nid']['#value'] ? $form['nid']['#value'] : $form['nid']['#default_value']);
+    $enabled_types = variable_get('comment_notify_node_types', drupal_map_assoc(array($node->type)));
+    if (empty($enabled_types[$node->type])) {
       return;
     }
-    $preference = variable_get('comment_notify_default_anon_mailalert', COMMENT_NOTIFY_DISABLED);
-  }
-  else {
-    $user_preference = db_result(db_query("SELECT comment_notify FROM {comment_notify_user_settings} WHERE uid = %d", $user->uid));
-    $preference = !empty($user_preference) ? $user_preference : variable_get('comment_notify_default_registered_mailalert', COMMENT_NOTIFY_DISABLED);
-  }
 
-  // If you want to hide this on your site see http://drupal.org/node/322482
-  $form['notify'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Notify me when new comments are posted'),
-    '#default_value' => $preference,
-  );
+    $available_options = _comment_notify_options();
 
-  if (count($available_options) > 1) {
-    $form['notify_type'] = array(
-      '#type' => 'radios',
-      '#options' => $available_options,
+    drupal_add_css(drupal_get_path('module', 'comment_notify') .'/comment_notify.css');
+    drupal_add_js(drupal_get_path('module', 'comment_notify') .'/comment_notify.js');
+
+    // Add the checkbox for anonymous users and set the default based on admin settings.
+    if ($user->uid == 0) {
+      // If anonymous user's can't enter their e-mail don't tempt them with the checkbox.
+      if (empty($form['mail'])) {
+        return;
+      }
+      $preference = variable_get('comment_notify_default_anon_mailalert', COMMENT_NOTIFY_DISABLED);
+    }
+    else {
+      $user_preference = db_result(db_query("SELECT comment_notify FROM {comment_notify_user_settings} WHERE uid = %d", $user->uid));
+      $preference = strlen($user_preference) ? $user_preference : variable_get('comment_notify_default_registered_mailalert', COMMENT_NOTIFY_DISABLED);
+    }
+
+    // If you want to hide this on your site see http://drupal.org/node/322482
+    $form['notify_settings'] = array(
+      '#prefix' => '<div class="clear-block">',
+      '#suffix' => '</div>',
     );
-  }
-  else {
-    $form['notify_type'] = array(
-      '#type' => 'hidden',
-    );
-  }
-  $form['notify_type']['#default_value'] = $preference;
 
-  // If this is an existing comment we set the default value based on their selection last time.
-  if ($form['cid']['#value'] != '') {
-    $notify = db_result(db_query("SELECT notify FROM {comment_notify} WHERE cid = %d", $form['cid']['#value']));
-    $form['notify']['#default_value'] = $notify;
-    $form['notify_type']['#default_value'] = $notify;
+    $form['notify_settings']['notify'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Notify me when new comments are posted'),
+      '#default_value' => $preference,
+    );
+
+    if (count($available_options) > 1) {
+      $form['notify_settings']['notify_type'] = array(
+        '#type' => 'radios',
+        '#options' => $available_options,
+        '#default_value' => $preference,
+      );
+    }
+    else {
+      $form['notify_settings']['notify_type'] = array(
+        '#type' => 'hidden',
+        '#value' => key($available_options),
+      );
+    }
+    $form['notify_settings']['notify_type']['#default_value'] = $preference;
+
+    // If this is an existing comment we set the default value based on their selection last time.
+    if ($form['cid']['#value'] != '') {
+      $notify = db_result(db_query("SELECT notify FROM {comment_notify} WHERE cid = %d", $form['cid']['#value']));
+      $form['notify_settings']['notify']['#default_value'] = $notify;
+      if (count($available_options) > 1) {
+        $form['notify_settings']['notify_type']['#default_value'] = $notify;
+      }
+      else {
+        $form['notify_settings']['notify_type']['#default_value'] = key($available_options);
+      }
+    }
   }
-  // TODO: I wish this didn't have to be here, but I can't figure out what makes it better.  Patches welcome.
-  $form['notify_clearit'] = array('#value' => '<br id="notify_clear">', '#weight' => 9);
 }
 
 /**
@@ -176,9 +184,10 @@ function comment_notify_menu() {
     'access arguments' => array('administer comment notify'),
     'type' => MENU_LOCAL_TASK,
   );
-  $items['comment_notify'] = array(
-    'title' => 'comment notify',
-    'page callback' => 'comment_notify_page',
+  $items['comment_notify/disable/%'] = array(
+    'title' => 'Disable comment notification',
+    'page callback' => 'comment_notify_disable_page',
+    'page arguments' => array(2),
     'access arguments' => array('access content'),
     'type' => MENU_CALLBACK
   );
@@ -189,33 +198,11 @@ function comment_notify_menu() {
 /**
  * Page callback to allow users to unsubscribe simply by visiting the page.
  */
-function comment_notify_page() {
-  global $user;
+function comment_notify_disable_page($hash) {
+  db_query("UPDATE {comment_notify} SET notify = 0 WHERE notify_hash = '%s'", $hash);
 
-  $op = $_POST['op'];
-  $edit = $_POST['edit'];
-
-  $page_content = ' ';
-  if (empty($op)) {
-    $op = arg(1);
-  }
-  $arg = arg(2);
-
-  switch ($op) {
-    case 'disable':
-      $key = $arg;
-      db_query("UPDATE {comment_notify} SET notify = 0 WHERE notify_hash = '%s'", $arg);
-
-      drupal_set_message(t('Your comment follow-up notification for this post was disabled. Thanks.'));
-      $title = t('Disabled comment follow-up notification feature for this post.');
-      break;
-    default;
-      $title = t('Comment notify');
-      break;
-  }
-
-  drupal_set_title($title);
-  return $page_content;
+  drupal_set_message(t('Your comment follow-up notification for this post was disabled. Thanks.'));
+  return ' ';
 }
 
 /**
@@ -259,8 +246,9 @@ function comment_notify_comment($comment, $op) {
 
       if ($comment['notify']) {
         $notify = $comment['notify_type'];
+        // If they don't have a preference, save one.
         $current = db_result(db_query("SELECT count(1) from {comment_notify_user_settings} WHERE uid = %d", $user->uid));
-        if ($current == 0) {
+        if ($current == 0 && $user->uid) {
           db_query("INSERT INTO {comment_notify_user_settings} (uid, comment_notify) VALUES (%d, %d)", $user->uid, $comment['notify_type']);
         }
       }
@@ -296,22 +284,36 @@ function comment_notify_user($type, &$edit, &$user, $category = NULL) {
           '#collapsible' => TRUE
         );
 
-        $form['comment_notify_settings']['node_notify_mailalert'] = array(
-          '#type' => 'checkbox',
-          '#title' => t('Receive node follow-up notification e-mails'),
-          '#default_value' => isset($edit['node_notify_mailalert']) ? $edit['node_notify_mailalert'] : FALSE,
-          '#description' => t('Check this box to receive an e-mail notification for follow-ups on your nodes (pages, forum topics, etc). You can not disable notifications for individual threads.')
-        );
+        // Only show the node followup UI if the user has permission to create nodes.
+        $nodes = FALSE;
+        foreach (node_get_types() as $type) {
+          if (user_access('create '. $type->type .' content')) {
+            $nodes = TRUE;
+            break;
+          }
+        }
+        if (user_access('administer nodes') || $nodes) {
+          $form['comment_notify_settings']['node_notify_mailalert'] = array(
+            '#type' => 'checkbox',
+            '#title' => t('Receive node follow-up notification e-mails'),
+            '#default_value' => isset($edit['node_notify_mailalert']) ? $edit['node_notify_mailalert'] : variable_get('node_notify_default_mailalert', FALSE),
+            '#description' => t('Check this box to receive an e-mail notification for follow-ups on your nodes (pages, forum topics, etc). You can not disable notifications for individual threads.')
+          );
+        }
+        else {
+          $form['comment_notify_settings']['node_notify_mailalert'] = array(
+            '#type' => 'hidden',
+            '#value' => COMMENT_NOTIFY_DISABLED,
+          );
+        }
 
+        $available_options[COMMENT_NOTIFY_DISABLED] = t('No notifications');
+        $available_options += _comment_notify_options();
         $form['comment_notify_settings']['comment_notify_mailalert'] = array(
           '#type' => 'select',
           '#title' => t('Receive comment follow-up notification e-mails'),
           '#default_value' => isset($edit['comment_notify_mailalert']) ? $edit['comment_notify_mailalert'] : variable_get('comment_notify_default_registered_mailalert', COMMENT_NOTIFY_DISABLED),
-          '#options' => array(
-            COMMENT_NOTIFY_DISABLED => t('No notifications'),
-            COMMENT_NOTIFY_NODE     => t('All comments'),
-            COMMENT_NOTIFY_COMMENT  => t('Replies to my comment')
-          ),
+          '#options' => $available_options,
           '#description' => t("Check this box to receive e-mail notification for follow-up comments to comments you posted. You can later disable this on a post-by-post basis... so if you leave this to YES, you can still disable follow-up notifications for comments you don't want follow-up mails anymore - i.e. for very popular posts.")
         );
         return $form;
@@ -321,10 +323,8 @@ function comment_notify_user($type, &$edit, &$user, $category = NULL) {
     case 'submit':
       // Save the values of node_notify_mailalert and comment_notify_mailalert
       // to {comment_notify_user_settings}.
-      if (db_result(db_query('SELECT uid FROM {comment_notify_user_settings} WHERE uid = %d', $user->uid))) {
-        db_query('UPDATE {comment_notify_user_settings} SET node_notify = %d, comment_notify = %d WHERE uid = %d', $edit['node_notify_mailalert'], $edit['comment_notify_mailalert'], $user->uid);
-      }
-      else {
+      db_query('UPDATE {comment_notify_user_settings} SET node_notify = %d, comment_notify = %d WHERE uid = %d', $edit['node_notify_mailalert'], $edit['comment_notify_mailalert'], $user->uid);
+      if (!db_affected_rows()) {
         db_query('INSERT INTO {comment_notify_user_settings} (uid, node_notify, comment_notify) VALUES (%d, %d, %d)', $user->uid, $edit['node_notify_mailalert'], $edit['comment_notify_mailalert']);
       }
 
@@ -380,6 +380,18 @@ function _comment_notify_mailalert($comment) {
   }
 
   $node = node_load($nid);
+
+  // Render up the node and comment.
+  $node_teaser = node_view($node, TRUE, TRUE, FALSE);
+  $node_body = node_view($node, FALSE, TRUE, FALSE);
+  $comment_text = check_markup($comment->comment, $comment->format);
+
+  // No mails if this is not an enabled content type.
+  $enabled_types = variable_get('comment_notify_node_types', array($node->type => TRUE));
+  if (empty($enabled_types[$node->type])) {
+    return;
+  }
+
   if (!isset($comment->mail)) {
     $comment_account = user_load(array('name' => $comment->name));
     $comment_mail = $comment_account->mail;
@@ -391,38 +403,44 @@ function _comment_notify_mailalert($comment) {
 
   // Send to a subscribed author if they are not the current commenter
   $author = user_load(array('uid' => $node->uid));
-  if (!empty($author->node_notify_mailalert) && $author->node_notify_mailalert == 1 && $user->mail != $author->mail) {
+  if (!empty($author->node_notify_mailalert) && $author->node_notify_mailalert == 1 && $user->uid != $author->uid && node_access('view', $node, $author)) {
+
     // Get the author's language.
     $language = user_preferred_language($author);
     $message['subject'] = t('!site :: new comment for your post.', array('!site' => variable_get('site_name', 'drupal')));
     $message['body'] = t(
       variable_get('node_notify_default_mailtext', AUTHOR_MAILTEXT),
       array(
+        '!cid' => $cid,
         '!commname' => $comment->name,
-        '!commtext' => $comment->comment,
+        '!commtext' => drupal_html_to_text($comment_text),
         '!commsubj' => $comment->subject,
         '!comment_url' => url('node/'. $nid, array('absolute' => TRUE, 'fragment' => 'comment-'. $cid)),
         '!node_title' =>  $node->title,
-        '!node_teaser' => $node->teaser,
+        '!node_teaser' => drupal_html_to_text($node_teaser),
         '!mission' => variable_get('site_mission', ''),
-        '!node_body' =>  $node->body,
+        '!nid' =>  $nid,
+        '!node_body' =>  drupal_html_to_text($node_body),
         '!name' => $author->name,
         '!site' => variable_get('site_name', 'drupal'),
         '!uri' => $base_url,
         '!uri_brief' => preg_replace('!^https?://!', '', $base_url),
         '!date' => format_date(time()),
         '!login_uri' => url('user', array('absolute' => TRUE)),
-        '!edit_uri' => url('user/'. $alert->uid .'/edit', array('absolute' => TRUE))
+        '!edit_uri' => url('user/'. $author->uid .'/edit', array('absolute' => TRUE))
       )
     );
     drupal_mail('comment_notify', 'comment_notify_mail', $author->mail, $language, $message);
     $sent_to[] = $author->mail;
   }
 
+  // For "reply to my comments" notifications, figure out what thread this is.
+  $thread = db_result(db_query("SELECT thread FROM {comments} WHERE cid = %d", $cid));
+
   //Get the list of commenters to notify
-  $result = db_query("SELECT DISTINCT c.cid, c.uid, c.name, c.nid, c.mail AS cmail, u.mail AS umail, u.init AS uinit, c.uid, c.name, cn.notify, cn.notify_hash
+  $result = db_query(db_rewrite_sql("SELECT c.cid, c.nid, c.uid, c.name, c.mail AS cmail, u.mail AS umail, u.init AS uinit, c.uid, c.name, cn.notify, cn.notify_hash, c.thread
     FROM {comments} c INNER JOIN {comment_notify} cn on c.cid = cn.cid LEFT OUTER JOIN {users} u ON c.uid = u.uid
-    WHERE nid = %d AND cn.notify > 0 AND c.status = 0 AND (u.status = 1 OR u.uid = 0)", $nid
+    WHERE c.nid = %d AND cn.notify > 0 AND c.status = 0 AND (u.status = 1 OR u.uid = 0)", 'c', 'cid'), $nid
   );
   // TODO? the original big query had stuff making sure the mail was populated and contained .+@.+ Perhaps check for that here and set notify = 0 if that is the case for this cid
 
@@ -430,7 +448,8 @@ function _comment_notify_mailalert($comment) {
     $umail = empty($alert->umail) ? $alert->uinit : $alert->umail;
     $mail = empty($alert->cmail) ? $umail : $alert->cmail;
 
-    if ($alert->notify == COMMENT_NOTIFY_COMMENT && $alert->cid != $comment->pid) {
+    $relevant_thread = substr($thread, 0, drupal_strlen($alert->thread) -1);
+    if ($alert->notify == COMMENT_NOTIFY_COMMENT && strcmp($relevant_thread . '/', $alert->thread) != 0) {
       continue;
     }
     if ($mail != $comment_mail && !in_array($mail, $sent_to) && $alert->uid != $comment->uid) {
@@ -441,20 +460,27 @@ function _comment_notify_mailalert($comment) {
       }
       else {
         $language = language_default();
+        $recipient_user = drupal_anonymous_user();
+      }
+      // Make sure they have access to this node before showing a bunch of node information.
+      if (!node_access('view', $node, $recipient_user)) {
+        continue;
       }
 
       $message['subject'] = t('!site :: new comment for your post.', array('!site' => variable_get('site_name', 'drupal')));
       $message['body'] = t(
         variable_get('comment_notify_default_mailtext', DEFAULT_MAILTEXT),
         array(
+          '!cid' => $cid,
           '!commname' => $comment->name,
-          '!commtext' => $comment->comment,
+          '!commtext' => drupal_html_to_text($comment_text),
           '!commsubj' => $comment->subject,
           '!comment_url' => url('node/'. $nid, array('absolute' => TRUE, 'fragment' => 'comment-'. $cid)),
           '!node_title' =>  $node->title,
-          '!node_teaser' => $node->teaser,
+          '!node_teaser' => drupal_html_to_text($node_teaser),
           '!mission' => variable_get('site_mission', ''),
-          '!node_body' =>  $node->body,
+          '!nid' =>  $nid,
+          '!node_body' =>  drupal_html_to_text($node_body),
           '!name' => $alert->name,
           '!site' => variable_get('site_name', 'drupal'),
           '!uri' => $base_url,
@@ -496,11 +522,13 @@ function _comment_notify_mailalert($comment) {
   db_query('UPDATE {comment_notify} SET notified = 1 WHERE cid = %d', $cid);
 }
 
+/**
+ * Implementation of hook_mail().
+ */
 function comment_notify_mail($key, &$message, $params) {
   $message['subject'] = $params['subject'];
   $message['body'][] = $params['body'];
 }
-
 
 /**
  * Callback for an administrative form to unsubscribe users by e-mail address.
@@ -566,7 +594,7 @@ function comment_notify_settings() {
   }
 
   if (!empty($anonymous_problems)) {
-    drupal_set_message(t('Anonymous commenters have the permission to subscribe to comments but cannot leave their contact infromation on the following content types: !types.  You should either disable subscriptions on those types here, revoke the permission for anonymous users, or enable anonymous users to leave their contact information in the comment settings.', array('!types' => implode(', ', $anonymous_problems))));
+    drupal_set_message(t('Anonymous commenters have the permission to subscribe to comments but cannot leave their contact infromation on the following content types: !types.  You should either disable subscriptions on those types here, revoke the permission for anonymous users, or enable anonymous users to leave their contact information in the comment settings.', array('!types' => implode(', ', $anonymous_problems))), 'status', FALSE);
   }
 
   $form['comment_notify_settings']['comment_notify_node_types'] = array(
@@ -589,12 +617,8 @@ function comment_notify_settings() {
     )
   );
 
-  $available_options = array(
-      COMMENT_NOTIFY_DISABLED => t('No notifications'),
-      COMMENT_NOTIFY_NODE     => t('All comments'),
-      COMMENT_NOTIFY_COMMENT  => t('Replies to my comment')
-    );
-
+  $available_options[COMMENT_NOTIFY_DISABLED] = t('No notifications');
+  $available_options += _comment_notify_options();
   $form['comment_notify_settings']['comment_notify_default_anon_mailalert'] = array(
     '#type' => 'select',
     '#title' => t('Default state for the notification selection box for anonymous users'),
@@ -605,11 +629,18 @@ function comment_notify_settings() {
 
   $form['comment_notify_settings']['comment_notify_default_registered_mailalert'] = array(
     '#type' => 'select',
-    '#title' => t('Default state for the notification selection box for registered users.'),
+    '#title' => t('Default state for the notification selection box for registered users'),
     '#return_value' => 1,
     '#default_value' => variable_get('comment_notify_default_registered_mailalert', COMMENT_NOTIFY_NODE),
     '#description' => t('This flag presets the flag for the follow-up notification on the form that anon users will see when posting a comment'),
     '#options' => $available_options,
+  );
+
+  $form['comment_notify_settings']['node_notify_default_mailalert'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Subscribe users to their node follow-up notification emails by default'),
+    '#default_value' => variable_get('node_notify_default_mailalert', FALSE),
+    '#description' => t('If this is checked, new users will receive e-mail notifications for follow-ups on their nodes by default until they individually disable the feature.'),
   );
 
 
@@ -619,10 +650,12 @@ function comment_notify_settings() {
     '#description' => t(
       'You can use the following variables to be replaced:
       <ul>
+      <li>!cid = the comment id for the comment
       <li>!commname = the username who posted the comment
       <li>!commtext = the text of the posted comment
       <li>!commsubj = the subject of the posted comment
       <li>!comment_url = the full url of the post and comment - note: if you have paging enabled, this does not work correct - set your max comments per page so that all fit on one page or reverse order them
+      <li>!nid = the node id the comment was posted on
       <li>!node_title = the title of the node that was commented on
       <li>!node_teaser = the teaser of the node that was commented on
       <li>!node_body = the body of the node that was commented on
@@ -634,7 +667,7 @@ function comment_notify_settings() {
       <li>!date = the current time
       <li>!login_uri  uri to login the user
       <li>!edit_uri = uri to edit user profile
-      <li>!link1 the QUICKLINK to disable future follow-up otifications for the user
+      <li>!link1 the QUICKLINK to disable future follow-up notifications for the user
       </ul>'
     ),
     '#default_value' => variable_get('comment_notify_default_mailtext', t(DEFAULT_MAILTEXT)),
@@ -649,10 +682,12 @@ function comment_notify_settings() {
     '#description' => t(
       'You can use the following variables to be replaced:
       <ul>
+      <li>!cid = the comment id for the comment
       <li>!commname = the username who posted the comment
       <li>!commtext = the text of the posted comment
       <li>!commsubj = the subject of the posted comment
       <li>!comment_url = the full url of the post and comment - note: if you have paging enabled, this does not work correct - set your max comments per page so that all fit on one page or reverse order them
+      <li>!nid = the node id the comment was posted on
       <li>!node_title = the title of the node that was commented on
       <li>!node_teaser = the teaser of the node that was commented on
       <li>!node_body = the body of the node that was commented on

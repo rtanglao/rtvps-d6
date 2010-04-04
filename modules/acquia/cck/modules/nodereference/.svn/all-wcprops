@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/nodereference
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/nodereference
 END
 nodereference.rules.inc
 K 25
@@ -13,17 +13,23 @@ nodereference.module
 K 25
 svn:wc:ra_dav:version-url
 V 100
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/nodereference.module
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/nodereference.module
 END
 nodereference.install
 K 25
 svn:wc:ra_dav:version-url
 V 101
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/nodereference.install
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/nodereference.install
+END
+nodereference.info.acquiainfo
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/nodereference.info.acquiainfo
 END
 nodereference.info
 K 25
 svn:wc:ra_dav:version-url
 V 98
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/nodereference.info
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/nodereference/nodereference.info
 END

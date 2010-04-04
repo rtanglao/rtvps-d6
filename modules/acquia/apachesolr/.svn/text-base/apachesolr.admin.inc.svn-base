@@ -1,5 +1,5 @@
 <?php
-// $Id: apachesolr.admin.inc,v 1.1.2.28 2009/07/02 09:11:09 robertDouglass Exp $
+// $Id: apachesolr.admin.inc,v 1.1.2.47 2010/02/27 01:54:50 pwolanin Exp $
 
 /**
  * @file
@@ -11,9 +11,15 @@ function apachesolr_settings() {
 
   // Perform a check to ensure the server is there
   if (empty($_POST)) {
-    $requirements = apachesolr_requirements('runtime');
-    $status = $requirements['apachesolr']['severity'] == 2 ? 'error' : 'status';
-    drupal_set_message($requirements['apachesolr']['value'], $status);
+    // update_help() loads install.inc via include_once, so not much
+    // point in working around it.
+    include_once './includes/install.inc';
+    module_load_include('install', 'apachesolr');
+
+    foreach (apachesolr_requirements('runtime') as $requirement) {
+      $status = $requirement['severity'] == REQUIREMENT_ERROR ? 'error' : 'status';
+      drupal_set_message($requirement['title'] . ': ' . $requirement['value'], $status);
+    }
   }
 
   $form['apachesolr_host'] = array(
@@ -21,12 +27,14 @@ function apachesolr_settings() {
     '#title' => t('Solr host name'),
     '#default_value' => variable_get('apachesolr_host', 'localhost'),
     '#description' => t('Host name of your Solr server, e.g. <code>localhost</code> or <code>example.com</code>.'),
+    '#required' => TRUE,
   );
   $form['apachesolr_port'] = array(
     '#type' => 'textfield',
     '#title' => t('Solr port'),
     '#default_value' => variable_get('apachesolr_port', '8983'),
     '#description' => t('Port on which the Solr server listens. The Jetty example server is 8983, while Tomcat is 8080 by default.'),
+    '#required' => TRUE,
   );
   $form['apachesolr_path'] = array(
     '#type' => 'textfield',
@@ -35,7 +43,7 @@ function apachesolr_settings() {
     '#description' => t('Path that identifies the Solr request handler to be used.'),
   );
 
-  $numbers = drupal_map_assoc(array(10, 20, 50, 100, 200));
+  $numbers = drupal_map_assoc(array(1, 5, 10, 20, 50, 100, 200));
   $form['apachesolr_cron_limit'] = array(
     '#type' => 'select',
     '#title' => t('Number of items to index per cron run'),
@@ -83,11 +91,22 @@ function apachesolr_settings() {
   $form['advanced']['apachesolr_read_only'] = array(
     '#type' => 'radios',
     '#title' => t('Index write access'),
-    '#default_value' => variable_get('apachesolr_read_only', 0),
-    '#options' => array(0 => t('Read and write (normal)'), 1 => t('Read only')),
+    '#default_value' => variable_get('apachesolr_read_only', APACHESOLR_READ_WRITE),
+    '#options' => array(APACHESOLR_READ_WRITE => t('Read and write (normal)'), APACHESOLR_READ_ONLY => t('Read only')),
     '#description' => t('<em>Read only</em> stops this site from sending updates to your search index. Useful for development sites.'),
   );
   return system_settings_form($form);
+}
+
+/**
+ * Validation function for the apachesolr_settings form.
+ */
+function apachesolr_settings_validate($form, &$form_state) {
+  $port = $form_state['values']['apachesolr_port'];
+  // TODO: Port range should be 0-65535, but 0 crashes apachesolr
+  if (!ctype_digit($port) || $port < 1 || $port > 65535) {
+    form_set_error('apachesolr_port', t('The port has to be an integer between 1 and 65535.'));
+  }
 }
 
 /**
@@ -113,20 +132,30 @@ function apachesolr_index_page() {
     $pending_docs = $delay_msg = $delete_msg = '';
     try {
       $stats_summary = $solr->getStatsSummary();
-      $delay_msg = '<p>' . t('<em>The server has a @autocommit_time delay before updates are processed.</em>', $stats_summary) . "</p>\n";
-      $delete_msg = '<p>' . t('Numer of pending deletions: @deletes_total', $stats_summary) . "</p>\n";
+      $solr_msg = '<p>' . t('Using schema.xml version: <strong>@schema_version</strong>', $stats_summary);
+      if ($stats_summary['@core_name']) {
+        $solr_msg .= '<br />' . t('Solr core name: <strong>@core_name</strong>', $stats_summary);
+      }
+      $delay_msg = '<br />' . t('<em>The server has a @autocommit_time delay before updates are processed.</em>', $stats_summary) . "</p>\n";
+      $delete_msg = '<p>' . t('Number of pending deletions: @deletes_total', $stats_summary) . "</p>\n";
     }
     catch (Exception $e) {
       watchdog('Apache Solr', nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
     }
-    $output .= $delay_msg;
+    $output .= $solr_msg . $delay_msg;
     $pending_msg = $stats_summary['@pending_docs'] ? t('(@pending_docs sent but not yet processed)', $stats_summary) : '';
     $output .= '<p>' . t('Number of documents in index: @num !pending', array('@num' => $data->index->numDocs, '!pending' => $pending_msg)) . "</p>\n";
     $output .= $delete_msg;
   }
   $output .= '<p>' . l(t('View more details on the search index contents'), 'admin/reports/apachesolr') . "</p>\n";
+  if (variable_get('apachesolr_read_only', APACHESOLR_READ_WRITE) == APACHESOLR_READ_WRITE) {
   // Display the Delete Index form.
   $output .= drupal_get_form('apachesolr_delete_index_form');
+  }
+  else {
+    drupal_set_message(t('The index is in read-only mode. Options for deleting and re-indexing are therefore not available. The index mode can be changed on the !settings_page', array('!settings_page' => l(t('settings page'), 'admin/settings/apachesolr'))), 'warning'); 
+  }
+  
 
   return $output;
 }
@@ -212,7 +241,7 @@ function apachesolr_enabled_facets_form_submit($form, &$form_state) {
   foreach ($form_state['values']['apachesolr_enabled_facets'] as $module => $facets) {
     $enabled[$module] = array_filter($facets);
   }
-  variable_set('apachesolr_enabled_facets', $enabled);
+  apachesolr_save_enabled_facets($enabled);
   drupal_set_message($form_state['values']['submit_message'], 'warning');
 }
 
@@ -301,7 +330,7 @@ function apachesolr_delete_index_form() {
   $form['reindex'] = array(
     '#type' => 'submit',
     '#value' => t('Re-index all content'),
-    '#submit' => array('apachesolr_clear_index'),
+    '#submit' => array('apachesolr_clear_index_submit'),
   );
   $form['reindex-desc'] = array(
     '#type' => 'item',
@@ -321,12 +350,40 @@ function apachesolr_delete_index_form() {
 }
 
 /**
- * Submit function for the 'Re-index all content' button.
+ * Submit function for the "Re-index all content" button.
  *
  * @see apachesolr_delete_index_form()
  */
 function apachesolr_clear_index($form, &$form_state) {
-  apachesolr_clear_last_index();
+  return apachesolr_comfirm_clear_index($form, $form_state);
+}
+
+/**
+ * Submit function for the "Re-index all content" button
+ * @see apachesolr_delete_index_form()
+ *
+ */
+function apachesolr_clear_index_submit($form, &$form_state) {
+  $form_state['redirect'] = 'admin/settings/apachesolr/index/clear/confirm';
+}
+
+/**
+ * Confirmation form for "Re-index all content" button
+ * @see apachesolr_clear_index_submit()
+ */
+function apachesolr_clear_index_confirm() {
+  $form = array();
+  return confirm_form($form, t('Are you sure you want to re-index?'), 'admin/settings/apachesolr/index', NULL, t('Re-index'), t('Cancel'));
+}
+
+/**
+ * Submit function for the "Re-index all content" confirmation form.
+ *
+ * @see apachesolr_clear_index_confirm()
+ */
+function apachesolr_clear_index_confirm_submit($form, &$form_state) {
+  $form_state['redirect'] = 'admin/settings/apachesolr/index';
+  apachesolr_rebuild_index_table();
 }
 
 
@@ -340,7 +397,7 @@ function apachesolr_delete_index_submit($form, &$form_state) {
 }
 
 /**
- * Confirmation form for 'Delete the index' button
+ * Confirmation form for "Delete the index" button
  * @see apachesolr_delete_index_submit()
  */
 function apachesolr_delete_index_confirm() {
@@ -349,7 +406,7 @@ function apachesolr_delete_index_confirm() {
 }
 
 /**
- * Submit function for the 'Delete the index' confirmation form.
+ * Submit function for the "Delete the index" confirmation form.
  *
  * @see apachesolr_delete_index_confirm()
  */
@@ -360,30 +417,41 @@ function apachesolr_delete_index_confirm_submit($form, &$form_state) {
     // This form can't be seen by anyone without 'administer search'
     // permission, so no need to check perms before displaying a run-cron link.
     drupal_set_message(t('The Apache Solr content index has been erased. You must now !run_cron until your entire site has been re-indexed.', array('!run_cron' => l(t('run cron'), 'admin/reports/status/run-cron', array('query' => array('destination' => 'admin/settings/apachesolr/index'))))));
+
   }
   catch (Exception $e) {
     watchdog('Apache Solr', nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
   }
-}
+}           
 
 /**
  * Utility function to delete the index and reset all index counters.
  *
+ * @param $type
+ *   a single content type to be deleted from the index.
+ *
  * @throws Exception
  */
-function apachesolr_delete_index() {
+function apachesolr_delete_index($type = NULL) {
   // Instantiate a new Solr object.
   $solr = apachesolr_get_solr();
-  $query = '*:*';
+  if ($type) {
+    $query = 'type:' . $type;
+  }
+  else {
+    $query = '*:*';
+  }
   // Allow other modules to modify the delete query.
   // For example, use the site hash so that you only delete this site's
   // content:  $query = 'hash:' . apachesolr_site_hash()
   drupal_alter('apachesolr_delete_index', $query);
   $solr->deleteByQuery($query);
   $solr->commit();
-  apachesolr_clear_last_index();
+  // Rebuild our node-tracking table.
+  apachesolr_rebuild_index_table();
   apachesolr_index_updated(time());
 }
+
 
 /**
  * Try to map a schema field name to a human-readable description.
@@ -401,14 +469,16 @@ function _apachesolr_field_name_map($field_name) {
       'taxonomy_names' => t('All taxonomy term names'),
       'tags_h1' => t('Body text inside H1 tags'),
       'tags_h2_h3' => t('Body text inside H2 or H3 tags'),
-      'tags_h4_h5_h6' => t('Body text inside H4, H4, or H6 tags'),
+      'tags_h4_h5_h6' => t('Body text inside H4, H5, or H6 tags'),
       'tags_inline' => t('Body text in inline tags like EM or STRONG'),
       'tags_a' => t('Body text inside links (A tags)'),
       'tid' => t('Taxonomy term IDs'),
     );
-    foreach(taxonomy_get_vocabularies() as $vocab) {
-      $map['ts_vid_'. $vocab->vid .'_names'] = t('Taxonomy term names only from the %name vocabulary', array('%name' => $vocab->name));
-      $map['im_vid_'. $vocab->vid] = t('Taxonomy term IDs from the %name vocabulary', array('%name' => $vocab->name));
+    if (module_exists('taxonomy')) {
+      foreach(taxonomy_get_vocabularies() as $vocab) {
+        $map['ts_vid_'. $vocab->vid .'_names'] = t('Taxonomy term names only from the %name vocabulary', array('%name' => $vocab->name));
+        $map['im_vid_'. $vocab->vid] = t('Taxonomy term IDs from the %name vocabulary', array('%name' => $vocab->name));
+      }
     }
     foreach (apachesolr_cck_fields() as $name => $field) {
       $map[apachesolr_index_key($field)] = t('CCK @type field %label', array('@type' => $field['index_type'], '%name' => $field['label']));

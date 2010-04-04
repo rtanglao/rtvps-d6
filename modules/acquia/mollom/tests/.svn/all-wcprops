@@ -1,11 +1,29 @@
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom/tests
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/tests
+END
+mollom_test.module
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/tests/mollom_test.module
+END
+mollom_test.install
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/tests/mollom_test.install
+END
+mollom_test.info
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/tests/mollom_test.info
 END
 mollom.test
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom/tests/mollom.test
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/tests/mollom.test
 END

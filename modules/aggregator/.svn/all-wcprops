@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/aggregator
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/aggregator
 END
 aggregator-summary-items.tpl.php
 K 25
@@ -67,7 +67,7 @@ aggregator.info
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/aggregator/aggregator.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/aggregator/aggregator.info
 END
 aggregator-summary-item.tpl.php
 K 25

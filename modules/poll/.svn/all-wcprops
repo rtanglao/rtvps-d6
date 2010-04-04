@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/poll
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/poll
 END
 poll.info
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/poll/poll.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/poll/poll.info
 END
 poll-results-block.tpl.php
 K 25
@@ -37,7 +37,7 @@ poll.module
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/poll/poll.module
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/poll/poll.module
 END
 poll.install
 K 25

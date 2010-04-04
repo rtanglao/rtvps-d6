@@ -1,7 +1,7 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/number/translations
 https://svn.acquia.com/drupal
 
@@ -32,11 +32,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
+2009-07-03T07:15:17.000000Z
 294c794199122cbeef6ad7ea9e37074e
 2009-07-02T20:47:26.048691Z
 5049
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3395
 
 modules-number.fr.po
 file
@@ -44,11 +66,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 bd3d002efcdcaa22bdce800aa5cd3544
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5152
 
 modules-number.de.po
 file
@@ -56,11 +100,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 bd374fcf5632288144cbb16867455a7d
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5344
 
 modules-number.sv.po
 file
@@ -68,11 +134,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 fd92f83a91f902d495085cd181ebaffb
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6439
 
 modules-number.nl.po
 file
@@ -80,11 +168,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 2f1a2e9d19a936c1aa31da72515dccd2
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6522
 
 modules-number.hu.po
 file
@@ -92,9 +202,31 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 8f3c4e84ac9fa72aea2f8d3d668d5406
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6610
 

@@ -1,13 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/images
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/images
 END
 status-active.gif
 K 25
 svn:wc:ra_dav:version-url
 V 84
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/images/status-active.gif
+END
+expanded-options.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/images/expanded-options.png
 END
 overridden.gif
 K 25

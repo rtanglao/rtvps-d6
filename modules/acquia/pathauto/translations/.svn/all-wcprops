@@ -1,19 +1,67 @@
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/translations
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/pathauto/translations
+END
+ar.po
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/pathauto/translations/ar.po
+END
+cs.po
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/pathauto/translations/cs.po
+END
+fr.po
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/pathauto/translations/fr.po
+END
+es.po
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/pathauto/translations/es.po
+END
+pathauto.pot
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/translations/pathauto.pot
+END
+nl.po
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/pathauto/translations/nl.po
+END
+pl.po
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/pathauto/translations/pl.po
+END
+hu.po
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/pathauto/translations/hu.po
+END
+sk.po
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/pathauto/translations/sk.po
 END
 da.po
 K 25
 svn:wc:ra_dav:version-url
 V 81
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/translations/da.po
-END
-cs.po
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/translations/cs.po
 END
 tr.po
 K 25
@@ -25,19 +73,7 @@ ru.po
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/translations/ru.po
-END
-es.po
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/translations/es.po
-END
-fr.po
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/translations/fr.po
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/pathauto/translations/ru.po
 END
 de.po
 K 25
@@ -45,17 +81,11 @@ svn:wc:ra_dav:version-url
 V 81
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/translations/de.po
 END
-nl.po
+sv.po
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/translations/nl.po
-END
-pathauto.pot
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/pathauto/translations/pathauto.pot
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/pathauto/translations/sv.po
 END
 ja.po
 K 25

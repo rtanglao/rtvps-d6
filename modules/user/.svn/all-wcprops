@@ -1,19 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/user
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/user
 END
 user-profile.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user-profile.tpl.php
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/user/user-profile.tpl.php
 END
 user.module
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/user/user.module
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/user/user.module
 END
 user.install
 K 25
@@ -31,7 +31,7 @@ user.pages.inc
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user.pages.inc
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/user/user.pages.inc
 END
 user.css
 K 25
@@ -43,7 +43,7 @@ user.info
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/user/user.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/user/user.info
 END
 user.js
 K 25
@@ -73,5 +73,5 @@ user.admin.inc
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/user/user.admin.inc
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/user/user.admin.inc
 END

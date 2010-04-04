@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_php4
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date_php4
 END
 date_php4.inc
 K 25
@@ -25,7 +25,7 @@ date_php4.info
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4.info
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date_php4/date_php4.info
 END
 date_php4_calc.inc
 K 25

@@ -1,35 +1,35 @@
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_import
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_import
 END
 image_import.module
 K 25
 svn:wc:ra_dav:version-url
 V 100
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_import/image_import.module
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_import/image_import.module
 END
 image_import.install
 K 25
 svn:wc:ra_dav:version-url
 V 101
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_import/image_import.install
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_import/image_import.install
 END
 image_import.pages.inc
 K 25
 svn:wc:ra_dav:version-url
 V 103
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_import/image_import.pages.inc
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_import/image_import.pages.inc
 END
 image_import.info
 K 25
 svn:wc:ra_dav:version-url
 V 98
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_import/image_import.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_import/image_import.info
 END
 image_import.admin.inc
 K 25
 svn:wc:ra_dav:version-url
 V 103
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_import/image_import.admin.inc
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_import/image_import.admin.inc
 END

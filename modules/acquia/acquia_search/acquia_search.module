@@ -1,12 +1,12 @@
 <?php
-// $Id: acquia_search.module 5049 2009-07-02 20:47:26Z buildbot $
+// $Id: acquia_search.module 5200 2010-03-04 21:55:23Z buildbot $
 
 /**
  * @file
  *   Integration between Acquia Drupal and Acquia's hosted solr search service.
  */
 
-define('ACQUIA_SEARCH_VERSION', "6.x-1.5044");
+define('ACQUIA_SEARCH_VERSION', "6.x-1.5193");
 
 /**
  * Implementation of hook_enable().
@@ -38,8 +38,6 @@ function _acquia_search_set_variables() {
  */
 function acquia_search_disable() {
   acquia_search_delete_variables();
-  // Disable all the associated search modules.
-  module_disable(array('apachesolr', 'apachesolr_search', 'apachesolr_nodeaccess', 'apachesolr_image', 'apachesolr_og', 'apachesolr_og', 'apachesolr_attachments'));
 }
 
 /**
@@ -50,7 +48,6 @@ function acquia_search_delete_variables() {
   variable_del('apachesolr_port');
   variable_del('apachesolr_path');
   variable_del('apachesolr_service_class');
-  variable_del('apachesolr_query_class');
   variable_del('apachesolr_search_make_default');
 }
 
@@ -81,7 +78,8 @@ function acquia_search_form_apachesolr_settings_alter(&$form, $form_state) {
       '#title' => t("Search is being provided by the Acquia Search network service"),
       '#value' => variable_get('apachesolr_host', 'localhost'),
     );
-    unset($form['apachesolr_port'], $form['apachesolr_path']);
+    $form['apachesolr_port']['#type'] = 'value';
+    $form['apachesolr_path']['#type'] = 'value';
     $form['apachesolr_failure']['#title'] = t("If your site cannot connect to the Acquia Search network service");
     $form['#submit'][] = 'acquia_search_settings_submit';
   }
@@ -128,12 +126,14 @@ function acquia_search_search_box_form_submit($form, &$form_state) {
  * @param $string
  *  A string - the data to be authenticated, or empty to just use the path
  *  and query from the url to build the authenticator.
+ * @param $derived_key
+ *  Optional string to supply the derived key.
  *
  * @return
  *  An array containing the string to be added as the content of the
  *  Cookie header to the request and the nonce.
  */
-function acquia_search_auth_cookie(&$url, $string = '') {
+function acquia_search_auth_cookie(&$url, $string = '', $derived_key = NULL) {
   $uri = parse_url($url);
 
   // Add a scheme - should always be https if available.
@@ -152,10 +152,10 @@ function acquia_search_auth_cookie(&$url, $string = '') {
   $nonce = md5(acquia_agent_random_bytes(55));
 
   if ($string) {
-    $auth_header = acquia_search_authenticator($string, $nonce);
+    $auth_header = acquia_search_authenticator($string, $nonce, $derived_key);
   }
   else {
-    $auth_header = acquia_search_authenticator($path . $query, $nonce);
+    $auth_header = acquia_search_authenticator($path . $query, $nonce, $derived_key);
   }
   return array($auth_header, $nonce);
 }
@@ -165,17 +165,24 @@ function acquia_search_auth_cookie(&$url, $string = '') {
  */
 function _acquia_search_derived_key() {
   static $derived_key;
-  if (empty($derived_key)) {
+  if (!isset($derived_key)) {
     $key = acquia_agent_settings('acquia_key');
     $subscription = acquia_agent_settings('acquia_subscription_data');
-    // We use the expiration date in key derivation since this is a shared
+    $identifier = acquia_agent_settings('acquia_identifier');
+    // We use a salt from acquia.com in key derivation since this is a shared
     // value that we could change on the AN side if needed to force any
     // or all clients to use a new derived key.  We also use a string
     // ('solr') specific to the service, since we want each service using a
     // derived key to have a separate one.
-    $salt = isset($subscription['derived_key_salt']) ? $subscription['derived_key_salt'] : '';
-    $derivation_string = acquia_agent_settings('acquia_identifier') . 'solr' . $salt;
-    $derived_key = _acquia_search_hmac($key, str_pad($derivation_string, 80, $derivation_string));
+    if (empty($subscription['active']) || empty($key) || empty($identifier)) {
+      // Expired or invalid subscription - don't continue.
+      $derived_key = '';
+    }
+    else {
+      $salt = isset($subscription['derived_key_salt']) ? $subscription['derived_key_salt'] : '';
+      $derivation_string = $identifier . 'solr' . $salt;
+      $derived_key = _acquia_search_hmac($key, str_pad($derivation_string, 80, $derivation_string));
+    }
   }
   return $derived_key;
 }
@@ -187,8 +194,14 @@ function acquia_search_authenticator($string, $nonce, $derived_key = NULL) {
   if (empty($derived_key)) {
     $derived_key = _acquia_search_derived_key();
   }
-  $time = time();
-  return 'acquia_solr_time='. $time .'; acquia_solr_nonce='. $nonce .'; acquia_solr_hmac='. _acquia_search_hmac($derived_key, $time . $nonce . $string) .';';
+  if (empty($derived_key)) {
+    // Expired or invalid subscription - don't continue.
+    return '';
+  }
+  else {
+    $time = time();
+    return 'acquia_solr_time='. $time .'; acquia_solr_nonce='. $nonce .'; acquia_solr_hmac='. _acquia_search_hmac($derived_key, $time . $nonce . $string) .';';
+  }
 }
 
 /**

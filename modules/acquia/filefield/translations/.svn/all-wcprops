@@ -1,13 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/filefield/translations
+/drupal/!svn/ver/5126/branches/1.x-6.x/modules/acquia/filefield/translations
 END
 general.de.po
 K 25
 svn:wc:ra_dav:version-url
 V 90
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/filefield/translations/general.de.po
+END
+da.po
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/filefield/translations/da.po
 END
 filefield.pot
 K 25
@@ -19,13 +25,25 @@ fr.po
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/filefield/translations/fr.po
+/drupal/!svn/ver/5126/branches/1.x-6.x/modules/acquia/filefield/translations/fr.po
 END
 sv.po
 K 25
 svn:wc:ra_dav:version-url
 V 82
 /drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/filefield/translations/sv.po
+END
+fr-ca.po
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/drupal/!svn/ver/5126/branches/1.x-6.x/modules/acquia/filefield/translations/fr-ca.po
+END
+nl.po
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/filefield/translations/nl.po
 END
 filefield.de.po
 K 25

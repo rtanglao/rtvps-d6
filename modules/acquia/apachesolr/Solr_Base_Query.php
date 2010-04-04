@@ -1,5 +1,5 @@
 <?php
-// $Id: Solr_Base_Query.php,v 1.1.4.40 2009/07/02 08:50:46 robertDouglass Exp $
+// $Id: Solr_Base_Query.php,v 1.1.4.44 2009/12/10 17:43:28 pwolanin Exp $
 
 class Solr_Base_Query implements Drupal_Solr_Query_Interface {
 
@@ -128,7 +128,8 @@ class Solr_Base_Query implements Drupal_Solr_Query_Interface {
     $this->filterstring = trim($filterstring);
     $this->parse_filters();
     $this->available_sorts = $this->default_sorts();
-    $this->parse_sortstring($sortstring);
+    $this->sortstring = trim($sortstring);
+    $this->parse_sortstring();
     $this->base_path = $base_path;
     $this->id = ++self::$idCount;
   }
@@ -137,8 +138,8 @@ class Solr_Base_Query implements Drupal_Solr_Query_Interface {
     $this->id = ++self::$idCount;
   }
 
-  public function add_filter($field, $value, $exclude = FALSE) {
-    $this->fields[] = array('#exclude' => $exclude, '#name' => $field, '#value' => trim($value));
+  public function add_filter($field, $value, $exclude = FALSE, $callbacks = array()) {
+    $this->fields[] = array('#exclude' => $exclude, '#name' => $field, '#value' => trim($value), '#callbacks' => $callbacks);
   }
 
   /**
@@ -236,9 +237,9 @@ class Solr_Base_Query implements Drupal_Solr_Query_Interface {
     $this->subqueries = array();
   }
 
-  protected function parse_sortstring($sortstring) {
+  protected function parse_sortstring() {
     // Substitute any field aliases with real field names.
-    $sortstring = strtr(trim($sortstring), array_flip($this->field_map));
+    $sortstring = strtr($this->sortstring, array_flip($this->field_map));
     // Score is a special case - it's the default sort for Solr.
     if ('' == $sortstring) {
       $this->set_solrsort('score', 'asc');
@@ -270,10 +271,14 @@ class Solr_Base_Query implements Drupal_Solr_Query_Interface {
   public function set_available_sort($name, $sort) {
     // We expect non-aliased sorts to be added.
     $this->available_sorts[$name] = $sort;
+    // Re-parse the sortstring.
+    $this->parse_sortstring();
   }
 
   public function remove_available_sort($name) {
     unset($this->available_sorts[$name]);
+    // Re-parse the sortstring.
+    $this->parse_sortstring();
   }
 
   /**
@@ -327,7 +332,7 @@ class Solr_Base_Query implements Drupal_Solr_Query_Interface {
    *   Optional. When set, this string overrides the query's current keywords.
    */
   public function get_path($new_keywords = NULL) {
-    if ($new_keywords) {
+    if (isset($new_keywords)) {
       return $this->base_path . '/' . $new_keywords;
     }
     return $this->base_path . '/' . $this->get_query_basic();

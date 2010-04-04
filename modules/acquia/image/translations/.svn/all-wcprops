@@ -1,13 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations
-END
-general.de.po
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/general.de.po
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/translations
 END
 image.ca.po
 K 25
@@ -15,35 +9,47 @@ svn:wc:ra_dav:version-url
 V 84
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.ca.po
 END
+general.de.po
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/general.de.po
+END
+general.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/translations/general.sv.po
+END
+image.da.po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/translations/image.da.po
+END
 image.pt-br.po
 K 25
 svn:wc:ra_dav:version-url
 V 87
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.pt-br.po
 END
-image.da.po
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.da.po
-END
 image.pot
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.pot
-END
-image.sv.po
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.sv.po
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/translations/image.pot
 END
 image.de.po
 K 25
 svn:wc:ra_dav:version-url
 V 84
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.de.po
+END
+image.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/translations/image.sv.po
 END
 image.ja.po
 K 25
@@ -57,17 +63,35 @@ svn:wc:ra_dav:version-url
 V 84
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.he.po
 END
+modules-image.ru.po
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/translations/modules-image.ru.po
+END
 image.fi.po
 K 25
 svn:wc:ra_dav:version-url
 V 84
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.fi.po
 END
+uk.po
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/5183/branches/1.x-6.x/modules/acquia/image/translations/uk.po
+END
 image.el.po
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.el.po
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/translations/image.el.po
+END
+uk-ua.po
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/5183/branches/1.x-6.x/modules/acquia/image/translations/uk-ua.po
 END
 image.ar.po
 K 25
@@ -75,23 +99,29 @@ svn:wc:ra_dav:version-url
 V 84
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.ar.po
 END
+general.nl.po
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/translations/general.nl.po
+END
 image.cs.po
 K 25
 svn:wc:ra_dav:version-url
 V 84
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.cs.po
 END
-image.es.po
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.es.po
-END
 image.fr.po
 K 25
 svn:wc:ra_dav:version-url
 V 84
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.fr.po
+END
+image.es.po
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.es.po
 END
 image.eu.po
 K 25
@@ -103,7 +133,7 @@ image.nl.po
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/translations/image.nl.po
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/translations/image.nl.po
 END
 image.pl.po
 K 25

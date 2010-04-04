@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/print/css
+/drupal/!svn/ver/5088/branches/1.x-6.x/modules/acquia/print/css
 END
 print-rtl.css
 K 25
@@ -25,5 +25,5 @@ printlinks.css
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/print/css/printlinks.css
+/drupal/!svn/ver/5088/branches/1.x-6.x/modules/acquia/print/css/printlinks.css
 END

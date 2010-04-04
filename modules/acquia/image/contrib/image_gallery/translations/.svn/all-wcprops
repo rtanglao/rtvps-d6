@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/translations
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/translations
 END
 image_gallery.da.po
 K 25
@@ -13,7 +13,7 @@ image_gallery.pot
 K 25
 svn:wc:ra_dav:version-url
 V 112
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/translations/image_gallery.pot
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/translations/image_gallery.pot
 END
 image_gallery.es.po
 K 25
@@ -27,6 +27,18 @@ svn:wc:ra_dav:version-url
 V 114
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/translations/image_gallery.de.po
 END
+image_gallery.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/translations/image_gallery.sv.po
+END
+image_gallery.nl.po
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/translations/image_gallery.nl.po
+END
 image_gallery.he.po
 K 25
 svn:wc:ra_dav:version-url
@@ -38,6 +50,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 114
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/translations/image_gallery.hu.po
+END
+modules-image_gallery.ru.po
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/translations/modules-image_gallery.ru.po
 END
 image_gallery.sk.po
 K 25
@@ -55,5 +73,5 @@ image_gallery.el.po
 K 25
 svn:wc:ra_dav:version-url
 V 114
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/translations/image_gallery.el.po
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/translations/image_gallery.el.po
 END

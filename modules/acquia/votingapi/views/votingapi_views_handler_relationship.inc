@@ -1,5 +1,5 @@
 <?php
-// $Id: votingapi_views_handler_relationship.inc,v 1.1.2.5 2009/06/24 19:52:37 eaton Exp $
+// $Id: votingapi_views_handler_relationship.inc,v 1.1.2.8 2009/08/15 17:58:06 eaton Exp $
 
 /**
  * @file
@@ -67,25 +67,60 @@ class votingapi_views_handler_relationship extends views_handler_relationship {
       '#description' => t('For each piece of content, many pieces of voting data may be saved. Use these options to specify exactly which types should be available via this relationship. <strong>Warning!</strong> Leaving any of these filters empty may result in multiple copies of each piece of content being displayed in listings.'),
       '#tree' => TRUE,
     );
+    
+    $default = $this->options['votingapi']['value_type'];
+    if (!isset($options['value_types'][$default])) {
+      $default = '**OTHER**';
+    }
     $form['votingapi']['value_type'] = array(
       '#title' => t('Value type'),
       '#type' => 'select',
       '#options' => $options['value_types'],
-      '#default_value' => $this->options['votingapi']['value_type'],
+      '#default_value' => $default,
     );
+    $form['votingapi']['value_type']['#options']['**OTHER**'] = t(' -Other- ');
+    $form['votingapi']['value_type_other'] = array(
+      '#type' => 'textfield',
+      '#default_value' => $this->options['votingapi']['value_type'],
+      '#process' => array('views_process_dependency'),
+      '#dependency' => array('edit-options-votingapi-value-type' => array('**OTHER**')),
+    );
+    
+    $default = $this->options['votingapi']['tag'];
+    if (!isset($options['tags'][$default])) {
+      $default = '**OTHER**';
+    }
     $form['votingapi']['tag'] = array(
       '#title' => t('Vote tag'),
       '#type' => 'select',
       '#options' => $options['tags'],
+      '#default_value' => $default,
+    );
+    $form['votingapi']['tag']['#options']['**OTHER**'] = t(' -Other- ');
+    $form['votingapi']['tag_other'] = array(
+      '#type' => 'textfield',
       '#default_value' => $this->options['votingapi']['tag'],
+      '#process' => array('views_process_dependency'),
+      '#dependency' => array('edit-options-votingapi-tag' => array('**OTHER**')),
     );
 
     if ($this->definition['base'] == 'votingapi_cache') {
+      $default = $this->options['votingapi']['function'];
+      if (!isset($options['functions'][$default])) {
+        $default = '**OTHER**';
+      }
       $form['votingapi']['function'] = array(
         '#title' => t('Aggregation function'),
         '#type' => 'select',
         '#options' => $options['functions'],
+        '#default_value' => $default,
+      );
+      $form['votingapi']['function']['#options']['**OTHER**'] = t(' -Other- ');
+      $form['votingapi']['function_other'] = array(
+        '#type' => 'textfield',
         '#default_value' => $this->options['votingapi']['function'],
+        '#process' => array('views_process_dependency'),
+        '#dependency' => array('edit-options-votingapi-function' => array('**OTHER**')),
       );
     }
     else {
@@ -95,6 +130,29 @@ class votingapi_views_handler_relationship extends views_handler_relationship {
         '#return_value' => TRUE,
         '#default_value' => $this->options['current_user'],
       );
+    }
+  }
+  
+  /**
+   * Perform any necessary changes to the form values prior to storage.
+   * There is no need for this function to actually store the data.
+   */
+  function options_submit($form, &$form_state) {
+    $v = $form_state['values']['options']['votingapi'];
+    if ($v['value_type'] == '**OTHER**') {
+      $form_state['values']['options']['votingapi']['value_type'] = $v['value_type_other'];
+    }
+
+    if ($v['tag'] == '**OTHER**') {
+      $form_state['values']['options']['votingapi']['tag'] = $v['tag_other'];
+    }
+
+    if ($v['function'] == '**OTHER**') {
+      $form_state['values']['options']['votingapi']['function'] = $v['function_other'];
+    }
+    
+    foreach (array('function_other', 'value_type_other', 'tag_other') as $key) {
+      unset($form_state['values']['options']['votingapi'][$key]);
     }
   }
 
@@ -108,7 +166,7 @@ class votingapi_views_handler_relationship extends views_handler_relationship {
     $def = $this->definition;
     $def['table'] = $this->definition['base'];
     $def['field'] = 'content_id';
-    $def['left_table'] = $this->table;
+    $def['left_table'] = $this->relationship ? $this->relationship : $this->table;
     $def['left_field'] = $this->field;
     if (!empty($this->options['required'])) {
       $def['type'] = 'INNER';

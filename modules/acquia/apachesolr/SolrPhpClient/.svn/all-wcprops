@@ -1,7 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient/ChangeLog
 END
 COPYING
 K 25

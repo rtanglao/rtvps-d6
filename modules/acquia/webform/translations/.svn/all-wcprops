@@ -1,37 +1,31 @@
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/webform/translations
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations
 END
 cs.po
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/cs.po
-END
-fr.po
-K 25
-svn:wc:ra_dav:version-url
-V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/fr.po
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/cs.po
 END
 es.po
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/es.po
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/es.po
+END
+fr.po
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/fr.po
 END
 nl.po
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/webform/translations/nl.po
-END
-it.po
-K 25
-svn:wc:ra_dav:version-url
-V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/it.po
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/nl.po
 END
 hu.po
 K 25
@@ -39,11 +33,23 @@ svn:wc:ra_dav:version-url
 V 80
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/hu.po
 END
+it.po
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/it.po
+END
 sk.po
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/sk.po
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/sk.po
+END
+uk.po
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/uk.po
 END
 da.po
 K 25
@@ -55,31 +61,31 @@ webform.pot
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/webform/translations/webform.pot
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/webform.pot
 END
 ru.po
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/ru.po
-END
-sv.po
-K 25
-svn:wc:ra_dav:version-url
-V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/sv.po
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/ru.po
 END
 de.po
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4979/branches/1.x-6.x/modules/acquia/webform/translations/de.po
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/de.po
+END
+sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/sv.po
 END
 ja.po
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/ja.po
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/ja.po
 END
 he.po
 K 25
@@ -87,9 +93,15 @@ svn:wc:ra_dav:version-url
 V 80
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/he.po
 END
+fi.po
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/fi.po
+END
 el.po
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/webform/translations/el.po
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/webform/translations/el.po
 END

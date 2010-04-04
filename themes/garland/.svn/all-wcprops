@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/drupal/!svn/ver/5049/branches/1.x-6.x/themes/garland
+/drupal/!svn/ver/5200/branches/1.x-6.x/themes/garland
 END
 maintenance-page.tpl.php
 K 25
@@ -25,13 +25,13 @@ template.php
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/drupal/!svn/ver/4875/branches/1.x-6.x/themes/garland/template.php
+/drupal/!svn/ver/5108/branches/1.x-6.x/themes/garland/template.php
 END
 garland.info
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/drupal/!svn/ver/5049/branches/1.x-6.x/themes/garland/garland.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/themes/garland/garland.info
 END
 print.css
 K 25
@@ -61,7 +61,7 @@ style.css
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/drupal/!svn/ver/4946/branches/1.x-6.x/themes/garland/style.css
+/drupal/!svn/ver/5108/branches/1.x-6.x/themes/garland/style.css
 END
 fix-ie-rtl.css
 K 25

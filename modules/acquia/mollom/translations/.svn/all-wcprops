@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom/translations
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/translations
 END
 mollom.pot
 K 25
@@ -13,59 +13,77 @@ da.po
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/mollom/translations/da.po
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/mollom/translations/da.po
+END
+pt-pt.po
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/mollom/translations/pt-pt.po
 END
 es.po
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/mollom/translations/es.po
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/translations/es.po
 END
 fr.po
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/translations/fr.po
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/mollom/translations/fr.po
 END
 de.po
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/translations/de.po
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/translations/de.po
 END
 sv.po
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/translations/sv.po
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/mollom/translations/sv.po
 END
 ja.po
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/mollom/translations/ja.po
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/mollom/translations/ja.po
+END
+nn.po
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/translations/nn.po
 END
 pl.po
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/mollom/translations/pl.po
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/mollom/translations/pl.po
 END
 th.po
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom/translations/th.po
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/mollom/translations/th.po
 END
 hu.po
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/mollom/translations/hu.po
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/translations/hu.po
 END
 it.po
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/mollom/translations/it.po
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/mollom/translations/it.po
+END
+nb.po
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/translations/nb.po
 END

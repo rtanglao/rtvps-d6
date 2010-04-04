@@ -1,4 +1,4 @@
-/* $Id: README.txt,v 1.1.2.1.2.24 2009/06/30 21:00:51 pwolanin Exp $ */
+/* $Id: README.txt,v 1.1.2.1.2.34 2009/12/21 19:54:32 pwolanin Exp $ */
 
 This module integrates Drupal with the Apache Solr search platform. Solr search
 can be used as a replacement for core content search and boasts both extra
@@ -32,28 +32,34 @@ Get the PHP library from the external project. The project is
 found at:  http://code.google.com/p/solr-php-client/
 From the apachesolr module directory, run this command:
 
-svn checkout -r6 http://solr-php-client.googlecode.com/svn/trunk/ SolrPhpClient
+svn checkout -r22 http://solr-php-client.googlecode.com/svn/trunk/ SolrPhpClient
 
-Note that revision 6 is the currently tested and suggested revision. 
+Alternately you may download and extract the library from
+http://code.google.com/p/solr-php-client/downloads/list
+
+Make sure to select a r22 archive, either of these two:
+http://solr-php-client.googlecode.com/files/SolrPhpClient.r22.2009-11-09.zip
+http://solr-php-client.googlecode.com/files/SolrPhpClient.r22.2009-11-09.tgz
+
+Note that revision 22 is the currently tested and required revision. 
 Make sure that the final directory is named SolrPhpClient under the apachesolr
-module directory.  Note: the 2009-03-11 version of the library from the 
-googlecode page is r5 and will not work with beta6+.
+module directory.  
 
 If you are maintaing your code base in subversion, you may choose instead to 
 use svn export or svn externals. For an export (writing a copy to your local
 directory without .svn files to track changes) use:
 
-svn export -r6 http://solr-php-client.googlecode.com/svn/trunk/ SolrPhpClient
+svn export -r22 http://solr-php-client.googlecode.com/svn/trunk/ SolrPhpClient
 
 Instead of checking out, externals can be used too. Externals can be seen as 
 (remote) symlinks in svn. This requires your own project in your own svn ]
 repository, off course. In the apachesolr module directory, issue the command:
 
-svn propedit svn:externals
+svn propedit svn:externals .
 
 Your editor will open. Add a line
 
-SolrPhpClient -r6 http://solr-php-client.googlecode.com/svn/trunk/
+SolrPhpClient -r22 http://solr-php-client.googlecode.com/svn/trunk/
 
 On exports and checkouts, svn will grab the externals, but it will keep the 
 references on the remote server.
@@ -63,10 +69,7 @@ download, which includes all the items which are not in Drupal.org CVS due to
 CVS use policy. See the download link here: 
 http://acquia.com/documentation/acquia-search/activation
 
-Download Solr trunk (candidate 1.4.x build) from a nightly build or build it
-from svn.  http://people.apache.org/builds/lucene/solr/nightly/
-
-Once Solr 1.4 is released, you will be able to download from:
+Download Solr 1.4 from:
 http://www.apache.org/dyn/closer.cgi/lucene/solr/
 
 Unpack the tarball somewhere not visible to the web (not in your apache docroot
@@ -128,6 +131,9 @@ behavior:
  - apachesolr_tags_to_index: the list of HTML tags that the module will index
    (see apachesolr_add_tags_to_document()).
 
+ - apachesolr_exclude_comments_types: an array of node types.  Any type listed
+   will have any attached comments excluded from the index.
+
  - apachesolr_ping_timeout: the timeout (in seconds) after which the module will
    consider the Apache Solr server unavailable.
 
@@ -142,6 +148,10 @@ behavior:
    with the Apache Solr server.
 
  - apachesolr_query_class: the default query class to use.
+
+ - apachesolr_cron_mass_limit: update or delete at most this many documents in
+   each Solr request, such as when making {apachesolr_search_node} consistent
+   with {node}.
 
 Troubleshooting
 --------------
@@ -174,7 +184,23 @@ hook_apachesolr_modify_query(&$query, &$params, $caller);
           // I only want to see articles by the admin!
           $query->add_filter("uid", 1);         
         }        
-    
+
+hook_apachesolr_prepare_query(&$query, &$params, $caller);
+
+  This is pretty much the same as hook_apachesolr_modify_query() but runs earlier
+  and before the query is statically cached. It can e.g. be used to add
+  available sorts to the query.
+
+  Example:
+
+        function my_module_apachesolr_prepare_query(&$query) {
+          // Add a sort on the node ID.
+          $query->set_available_sort('nid', array(
+            'title' => t('Node ID'),
+            'default' => 'asc',
+          ));
+        }
+
 hook_apachesolr_cck_fields_alter(&$mappings)
 
   Add or alter index mappings for CCK types.  The default mappings array handles just 
@@ -225,7 +251,6 @@ hook_apachesolr_search_result_alter(&$doc)
 hook_apachesolr_sort_links_alter(&$sort_links)
 
   Called by the sort link block code. Allows other modules to modify, add or remove sorts.
-
 
 Themers
 ----------------

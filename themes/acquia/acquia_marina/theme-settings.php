@@ -1,68 +1,40 @@
 <?php
-// $Id: theme-settings.php,v 1.1.2.8 2009/05/13 09:38:00 jwolf Exp $
+// $Id: theme-settings.php,v 1.3.2.3 2009/06/13 10:22:57 jwolf Exp $
+
 
 /**
-* Implementation of THEMEHOOK_settings() function.
-*
-* @param $saved_settings
-*   array An array of saved settings for this theme.
-* @return
-*   array A form array.
-*/
-function phptemplate_settings($saved_settings) {
-
-  // Only open one of the general or node setting fieldsets at a time
-  $js = <<<SCRIPT
-    $(document).ready(function(){
-      $("fieldset.general_settings > legend > a").click(function(){
-      	if(!$("fieldset.node_settings").hasClass("collapsed")) {
-          Drupal.toggleFieldset($("fieldset.node_settings"));
-      	}
-      });
-      $("fieldset.node_settings > legend > a").click(function(){
-      	if (!$("fieldset.general_settings").hasClass("collapsed")) {
-          Drupal.toggleFieldset($("fieldset.general_settings"));
-      	}
-      });
-    });
-SCRIPT;
-  drupal_add_js($js, 'inline');
-
-  // Get the node types
-  $node_types = node_get_types('names');
- 
-  /**
-   * The default values for the theme variables. Make sure $defaults exactly
-   * matches the $defaults in the template.php file.
-   */
+ * Theme setting defaults
+ */
+function acquia_marina_default_theme_settings() {
   $defaults = array(
-    'user_notverified_display'              => 1,
+    'mission_statement_pages'               => 'home',
     'breadcrumb_display'                    => 0,
+    'user_notverified_display'              => 1,
     'search_snippet'                        => 1,
     'search_info_type'                      => 1,
     'search_info_user'                      => 1,
     'search_info_date'                      => 1,
     'search_info_comment'                   => 1,
     'search_info_upload'                    => 1,
-    'mission_statement_pages'               => 'home',
-    'front_page_title_display'              => 'title_slogan',
-    'page_title_display_custom'             => '',
-    'other_page_title_display'              => 'ptitle_slogan',
-    'other_page_title_display_custom'       => '',
-    'configurable_separator'                => ' | ',
-    'meta_keywords'                         => '',
-    'meta_description'                      => '',
-    'taxonomy_display_default'              => 'only',
-    'taxonomy_format_default'               => 'vocab',
-    'taxonomy_enable_content_type'          => 0,
     'submitted_by_author_default'           => 1,
     'submitted_by_date_default'             => 1,
     'submitted_by_enable_content_type'      => 0,
+    'taxonomy_display_default'              => 'only',
+    'taxonomy_format_default'               => 'vocab',
+    'taxonomy_enable_content_type'          => 0,
     'readmore_default'                      => t('Read more'),
     'readmore_title_default'                => t('Read the rest of this posting.'),
     'readmore_prefix_default'               => '',
     'readmore_suffix_default'               => '',
     'readmore_enable_content_type'          => 0,
+    'comment_node_default'                  => t('Add new comment'),
+    'comment_node_title_default'            => t('Share your thoughts and opinions related to this posting.'),
+    'comment_node_prefix_default'           => '',
+    'comment_node_suffix_default'           => '',
+    'comment_add_default'                   => t('Add new comment'),
+    'comment_add_title_default'             => t('Add a new comment to this page.'),
+    'comment_add_prefix_default'            => '',
+    'comment_add_suffix_default'            => '',
     'comment_singular_default'              => t('1 comment'),
     'comment_plural_default'                => t('@count comments'),
     'comment_title_default'                 => t('Jump to the first comment of this posting.'),
@@ -73,32 +45,40 @@ SCRIPT;
     'comment_new_title_default'             => t('Jump to the first new comment of this posting.'),
     'comment_new_prefix_default'            => '',
     'comment_new_suffix_default'            => '',
-    'comment_add_default'                   => t('Add new comment'),
-    'comment_add_title_default'             => t('Add a new comment to this page.'),
-    'comment_add_prefix_default'            => '',
-    'comment_add_suffix_default'            => '',
-    'comment_node_default'                  => t('Add new comment'),
-    'comment_node_title_default'            => t('Share your thoughts and opinions related to this posting.'),
-    'comment_node_prefix_default'           => '',
-    'comment_node_suffix_default'           => '',
     'comment_enable_content_type'           => 0,
+    'front_page_title_display'              => 'title_slogan',
+    'page_title_display_custom'             => '',
+    'other_page_title_display'              => 'ptitle_slogan',
+    'other_page_title_display_custom'       => '',
+    'configurable_separator'                => ' | ',
+    'meta_keywords'                         => '',
+    'meta_description'                      => '',
     'rebuild_registry'                      => 0,
+    'fix_css_limit'                         => 0,
   );
   
-  // Make the default content-type settings the same as the default theme settings,
-  // so we can tell if content-type-specific settings have been altered.
+  // Add site-wide theme settings
   $defaults = array_merge($defaults, theme_get_settings());
   
-  // Set the default values for content-type-specific settings
+  // Set initial content-type-specific settings to defaults
+  $node_types = node_get_types('names');
   foreach ($node_types as $type => $name) {
-    $defaults["taxonomy_display_{$type}"]         = $defaults['taxonomy_display_default'];
-    $defaults["taxonomy_format_{$type}"]          = $defaults['taxonomy_format_default'];
     $defaults["submitted_by_author_{$type}"]      = $defaults['submitted_by_author_default'];
     $defaults["submitted_by_date_{$type}"]        = $defaults['submitted_by_date_default'];
+    $defaults["taxonomy_display_{$type}"]         = $defaults['taxonomy_display_default'];
+    $defaults["taxonomy_format_{$type}"]          = $defaults['taxonomy_format_default'];
     $defaults["readmore_{$type}"]                 = $defaults['readmore_default'];
     $defaults["readmore_title_{$type}"]           = $defaults['readmore_title_default'];
     $defaults["readmore_prefix_{$type}"]          = $defaults['readmore_prefix_default'];
     $defaults["readmore_suffix_{$type}"]          = $defaults['readmore_suffix_default'];
+    $defaults["comment_node_{$type}"]             = $defaults['comment_node_default'];
+    $defaults["comment_node_title_{$type}"]       = $defaults['comment_node_title_default'];
+    $defaults["comment_node_prefix_{$type}"]      = $defaults['comment_node_prefix_default'];
+    $defaults["comment_node_suffix_{$type}"]      = $defaults['comment_node_suffix_default'];
+    $defaults["comment_add_{$type}"]              = $defaults['comment_add_default'];
+    $defaults["comment_add_title_{$type}"]        = $defaults['comment_add_title_default'];
+    $defaults["comment_add_prefix_{$type}"]       = $defaults['comment_add_prefix_default'];
+    $defaults["comment_add_suffix_{$type}"]       = $defaults['comment_add_suffix_default'];
     $defaults["comment_singular_{$type}"]         = $defaults['comment_singular_default'];
     $defaults["comment_plural_{$type}"]           = $defaults['comment_plural_default'];
     $defaults["comment_title_{$type}"]            = $defaults['comment_title_default'];
@@ -109,50 +89,66 @@ SCRIPT;
     $defaults["comment_new_title_{$type}"]        = $defaults['comment_new_title_default'];
     $defaults["comment_new_prefix_{$type}"]       = $defaults['comment_new_prefix_default'];
     $defaults["comment_new_suffix_{$type}"]       = $defaults['comment_new_suffix_default'];
-    $defaults["comment_add_{$type}"]              = $defaults['comment_add_default'];
-    $defaults["comment_add_title_{$type}"]        = $defaults['comment_add_title_default'];
-    $defaults["comment_add_prefix_{$type}"]       = $defaults['comment_add_prefix_default'];
-    $defaults["comment_add_suffix_{$type}"]       = $defaults['comment_add_suffix_default'];
-    $defaults["comment_node_{$type}"]             = $defaults['comment_node_default'];
-    $defaults["comment_node_title_{$type}"]       = $defaults['comment_node_title_default'];
-    $defaults["comment_node_prefix_{$type}"]      = $defaults['comment_node_prefix_default'];
-    $defaults["comment_node_suffix_{$type}"]      = $defaults['comment_node_suffix_default'];
   }
     
-  // Merge the saved variables and their default values
-  $settings = array_merge($defaults, $saved_settings);
+  // Add custom theme setting defaults if present
+  $defaults['theme_width'] = 'fixed';
+  $defaults['theme_fonts'] = 'fonts_1';
   
-  // If content type-specifc settings are not enabled, reset the values
-  if ($settings['readmore_enable_content_type'] == 0) {
-    foreach ($node_types as $type => $name) {
-      $settings["readmore_{$type}"]                    = $settings['readmore_default'];
-      $settings["readmore_title_{$type}"]              = $settings['readmore_title_default'];
-      $settings["readmore_prefix_{$type}"]             = $settings['readmore_prefix_default'];
-      $settings["readmore_suffix_{$type}"]             = $settings['readmore_suffix_default'];
+  return $defaults;
+}
+
+
+/**
+ * Theme setting initialization
+ * if updated, unsaved, or registry rebuild mode
+ */
+function acquia_marina_initialize_theme_settings($theme_name) {
+  $theme_settings = theme_get_settings($theme_name);
+  if (is_null($theme_settings['fix_css_limit']) || $theme_settings['rebuild_registry'] == 1) {
+    // Rebuild theme registry & notify user
+    if($theme_settings['rebuild_registry'] == 1) {
+      drupal_rebuild_theme_registry();
+      drupal_set_message(t('Theme registry rebuild completed. <a href="!link">Turn off</a> this feature for production websites.', array('!link' => url('admin/build/themes/settings/' . $GLOBALS['theme']))), 'warning');
     }
-  }
-  if ($settings['comment_enable_content_type'] == 0) {
-    foreach ($node_types as $type => $name) {
-      $defaults["comment_singular_{$type}"]         = $defaults['comment_singular_default'];
-      $defaults["comment_plural_{$type}"]           = $defaults['comment_plural_default'];
-      $defaults["comment_title_{$type}"]            = $defaults['comment_title_default'];
-      $defaults["comment_prefix_{$type}"]           = $defaults['comment_prefix_default'];
-      $defaults["comment_suffix_{$type}"]           = $defaults['comment_suffix_default'];
-      $defaults["comment_new_singular_{$type}"]     = $defaults['comment_new_singular_default'];
-      $defaults["comment_new_plural_{$type}"]       = $defaults['comment_new_plural_default'];
-      $defaults["comment_new_title_{$type}"]        = $defaults['comment_new_title_default'];
-      $defaults["comment_new_prefix_{$type}"]       = $defaults['comment_new_prefix_default'];
-      $defaults["comment_new_suffix_{$type}"]       = $defaults['comment_new_suffix_default'];
-      $defaults["comment_add_{$type}"]              = $defaults['comment_add_default'];
-      $defaults["comment_add_title_{$type}"]        = $defaults['comment_add_title_default'];
-      $defaults["comment_add_prefix_{$type}"]       = $defaults['comment_add_prefix_default'];
-      $defaults["comment_add_suffix_{$type}"]       = $defaults['comment_add_suffix_default'];
-      $defaults["comment_node_{$type}"]             = $defaults['comment_node_default'];
-      $defaults["comment_node_title_{$type}"]       = $defaults['comment_node_title_default'];
-      $defaults["comment_node_prefix_{$type}"]      = $defaults['comment_node_prefix_default'];
-      $defaults["comment_node_suffix_{$type}"]      = $defaults['comment_node_suffix_default'];
+  
+    // Retrieve saved or site-wide theme settings
+    $theme_setting_name = str_replace('/', '_', 'theme_'. $theme_name .'_settings');
+    $settings = (variable_get($theme_setting_name, FALSE)) ? theme_get_settings($theme_name) : theme_get_settings();
+  
+    // Skip toggle_node_info_ settings
+    if (module_exists('node')) {
+      foreach (node_get_types() as $type => $name) {
+        unset($settings['toggle_node_info_'. $type]);
+      }
     }
+  
+    // Retrieve default theme settings
+    $defaults = acquia_marina_default_theme_settings();
+  
+    // Set combined default & saved theme settings
+    variable_set($theme_setting_name, array_merge($defaults, $settings));
+  
+    // Force theme settings refresh
+    theme_get_setting('', TRUE);
   }
+}
+
+
+/**
+* Implementation of THEMEHOOK_settings() function.
+*
+* @param $saved_settings
+*   array An array of saved settings for this theme.
+* @return
+*   array A form array.
+*/
+function acquia_marina_settings($saved_settings) {
+  global $base_url;
+
+  // Retrieve & combine default and saved theme settings
+  $defaults = acquia_marina_default_theme_settings();
+  $settings = array_merge($defaults, $saved_settings);
   
   // Create theme settings form widgets using Forms API
   
@@ -162,7 +158,7 @@ SCRIPT;
     '#title' => t('Acquia Marina settings'),
     '#description' => t('Use these settings to change what and how information is displayed in your theme.'),
     '#collapsible' => TRUE,
-    '#collapsed' => false,
+    '#collapsed' => FALSE,
   );
   
   // General Settings
@@ -171,8 +167,8 @@ SCRIPT;
     '#title' => t('General settings'),
     '#collapsible' => TRUE,
     '#collapsed' => FALSE,
-    '#attributes' => array('class' => 'general_settings'),
-  );
+    );
+  
   
   // Mission Statement
   $form['tnt_container']['general_settings']['mission_statement'] = array(
@@ -264,14 +260,13 @@ SCRIPT;
     '#title' => t('Node settings'),
     '#description' => t('Here you can make adjustments to which information is shown with your content, and how it is displayed.  You can modify these settings so they apply to all content types, or check the "Use content-type specific settings" box to customize them for each content type.  For example, you may want to show the date on stories, but not pages.'),
     '#collapsible' => TRUE,
-    '#collapsed' => TRUE,
-    '#attributes' => array('class' => 'node_settings'),
+    '#collapsed' => FALSE,
   );
   
   // Author & Date Settings
   $form['tnt_container']['node_type_specific']['submitted_by_container'] = array(
     '#type' => 'fieldset',
-    '#title' => t('Author & date'),
+    '#title' => t('Author and date'),
     '#collapsible' => TRUE,
     '#collapsed' => TRUE,
   );
@@ -664,12 +659,12 @@ SCRIPT;
   $form['tnt_container']['seo']['page_format_titles'] = array(
     '#type' => 'fieldset',
     '#title' => t('Page titles'),
-    '#description'   => t('This is the title that displays in the title bar of your web browser. Your site title, slogan, and mission can all be set on your Site Information page. [NOTE: For more advanced page title functionality, consider using the "Page Title" module.  However, the Page titles theme settings do not work in combination with the "Page Title" module and will be disabled if you have it enabled.]'),
+    '#description'   => t('This is the title that displays in the title bar of your web browser. Your site title, slogan, and mission can all be set on your Site Information page'),
     '#collapsible' => TRUE,
     '#collapsed' => TRUE,
   );
+  // front page title
   if (module_exists('page_title') == FALSE) {
-    // front page title
     $form['tnt_container']['seo']['page_format_titles']['front_page_format_titles'] = array(
       '#type' => 'fieldset',
       '#title' => t('Front page title'),
@@ -684,11 +679,11 @@ SCRIPT;
       '#collapsed' => FALSE,
       '#default_value' => $settings['front_page_title_display'],
       '#options' => array(
-                      'title_slogan' => t('Site title | Site slogan'),
-                      'slogan_title' => t('Site slogan | Site title'),
-                      'title_mission' => t('Site title | Site mission'),
-                      'custom' => t('Custom (below)'),
-                    ),
+                    'title_slogan' => t('Site title | Site slogan'),
+                    'slogan_title' => t('Site slogan | Site title'),
+                    'title_mission' => t('Site title | Site mission'),
+                    'custom' => t('Custom (below)'),
+                  ),
     );
     $form['tnt_container']['seo']['page_format_titles']['front_page_format_titles']['page_title_display_custom'] = array(
       '#type' => 'textfield',
@@ -711,12 +706,12 @@ SCRIPT;
       '#collapsed' => FALSE,
       '#default_value' => $settings['other_page_title_display'],
       '#options' => array(
-                      'ptitle_slogan' => t('Page title | Site slogan'),
-                      'ptitle_stitle' => t('Page title | Site title'),
-                      'ptitle_smission' => t('Page title | Site mission'),
-                      'ptitle_custom' => t('Page title | Custom (below)'),
-                      'custom' => t('Custom (below)'),
-                    ),
+                    'ptitle_slogan' => t('Page title | Site slogan'),
+                    'ptitle_stitle' => t('Page title | Site title'),
+                    'ptitle_smission' => t('Page title | Site mission'),
+                    'ptitle_custom' => t('Page title | Custom (below)'),
+                    'custom' => t('Custom (below)'),
+                  ),
     );
     $form['tnt_container']['seo']['page_format_titles']['other_page_format_titles']['other_page_title_display_custom'] = array(
       '#type' => 'textfield',
@@ -734,14 +729,14 @@ SCRIPT;
       '#default_value' => $settings['configurable_separator'],
     );
   } else {
-      $form['tnt_container']['seo']['page_format_titles']['#description'] = 'NOTICE: You currently have the "Page Title" module installed and enabled, so the Page titles theme settings have been disabled to prevent conflicts.  If you wish to re-enable the Page titles theme settings, you must first disable the "Page Title" module.';
-      $form['tnt_container']['seo']['page_format_titles']['configurable_separator']['#disabled'] = 'disabled';
+    $form['tnt_container']['seo']['page_format_titles']['#description'] = 'NOTICE: You currently have the "Page Title" module installed and enabled, so the Page titles theme settings have been disabled to prevent conflicts.  If you wish to re-enable the Page titles theme settings, you must first disable the "Page Title" module.';
+    $form['tnt_container']['seo']['page_format_titles']['configurable_separator']['#disabled'] = 'disabled';
   }
   // Metadata
   $form['tnt_container']['seo']['meta'] = array(
     '#type' => 'fieldset',
     '#title' => t('Meta tags'),
-    '#description' => t('Meta tags are not used as much by search engines anymore, but the meta description is important: it will be shown as the description of your link in search engine results. [NOTE: For more advanced meta tag functionality, consider using the "Meta Tags (or nodewords)" module.  However, the Meta tags theme settings do not work in combination with the "Meta Tags" module and will be disabled if you have it enabled.]'),
+    '#description' => t('Meta tags aren\'t used much by search engines anymore, but the meta description is important -- this is what will be shown as the description of your link in search engine results.  NOTE: For more advanced meta tag functionality, check out the Meta Tags (aka. Node Words) module.  These theme settings do not work in conjunction with this module and will not appear if you have it enabled.'),
     '#collapsible' => TRUE,
     '#collapsed' => TRUE,
   );
@@ -760,11 +755,13 @@ SCRIPT;
       '#rows' => 6,
       '#default_value' => $settings['meta_description'],
     );
-  } else {
-      $form['tnt_container']['seo']['meta']['#description'] = 'NOTICE: You currently have the "Meta Tags (or nodewords)" module installed and enabled, so the Meta tags theme settings have been disabled to prevent conflicts.  If you wish to re-enable the Meta tags theme settings, you must first disable the "Meta Tags" module.';
-      $form['tnt_container']['seo']['meta']['meta_keywords']['#disabled'] = 'disabled';
-      $form['tnt_container']['seo']['meta']['meta_description']['#disabled'] = 'disabled';
   }
+  else {
+    $form['tnt_container']['seo']['meta']['#description'] = 'NOTICE: You currently have the "nodewords" module installed and enabled, so the meta tag theme settings have been disabled to prevent conflicts.  If you later wish to re-enable the meta tag theme settings, you must first disable the "nodewords" module.';
+    $form['tnt_container']['seo']['meta']['meta_keywords']['#disabled'] = 'disabled';
+    $form['tnt_container']['seo']['meta']['meta_description']['#disabled'] = 'disabled';
+  }
+
   // Development settings
   $form['tnt_container']['themedev'] = array(
     '#type' => 'fieldset',
@@ -774,9 +771,60 @@ SCRIPT;
   );
  $form['tnt_container']['themedev']['rebuild_registry'] = array(
     '#type' => 'checkbox',
-    '#title' => t('Rebuild theme registry on every page.'),
+    '#title' => t('Rebuild theme registry for every page.'),
     '#default_value' => $settings['rebuild_registry'],
-    '#description' => t('During theme development, it can be very useful to continuously <a href="!link">rebuild the theme registry</a>. WARNING: this is a huge performance penalty and must be turned off on production websites.', array('!link' => 'http://drupal.org/node/173880#theme-registry')),
+    '#description' => t('This setting is useful while developing themes (see <a href="!link">rebuilding the theme registry</a>). However, it <strong>significantly degrades performance</strong> and should be turned off for any production website.', array('!link' => 'http://drupal.org/node/173880#theme-registry')),
+  );
+ $form['tnt_container']['themedev']['fix_css_limit'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Fix IE stylesheet limit.'),
+    '#default_value' => $settings['fix_css_limit'],
+    '#description' => t('This setting groups css files so Internet Explorer can see more than 30 of them. This is useful when you cannot use aggregation (e.g., when developing or using private file downloads). But because it degrades performance and can load files out of order, CSS aggregation (<a href="!link">Optimize CSS files</a>) is <strong>strongly</strong> recommended instead for any production website.', array('!link' => $base_url .'/admin/settings/performance')),
+  );
+
+  //
+  // Add custom settings, if present
+  //
+  // Custom settings
+  $form['tnt_container']['custom_settings'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Custom settings'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  // Theme width
+  $form['tnt_container']['custom_settings']['theme_width_config'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Theme width'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+  );
+  $form['tnt_container']['custom_settings']['theme_width_config']['theme_width'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Select a fixed or fluid width'),
+    '#default_value' => $settings['theme_width'] ? $settings['theme_width'] : 'fixed',
+    '#options'       => array(
+      'fixed' => t('<strong>DEFAULT</strong> - Fixed'),
+      'fluid' => t('Fluid'),
+    ),
+  );
+  // Theme fonts
+  $form['tnt_container']['custom_settings']['theme_fonts_config'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Theme fonts'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+  );
+  $form['tnt_container']['custom_settings']['theme_fonts_config']['theme_fonts'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Select a font family'),
+    '#default_value' => $settings['theme_fonts'] ? $settings['theme_fonts'] : 'fonts_1',
+    '#options'       => array(
+      'fonts_1' => t('<strong>DEFAULT</strong> - Tahoma, Verdana, Arial, Helvetica, sans-serif'),
+      'fonts_2' => t('Lucida Grande, Lucida Sans Unicode, Verdana, Helvetica, Arial, sans-serif'),
+      'fonts_3' => t('Helvetica, Arial, sans-serif'),
+      'fonts_4' => t('Georgia, Garamond, Times New Roman, serif'),
+    ),
   );
 
   // Return theme settings form

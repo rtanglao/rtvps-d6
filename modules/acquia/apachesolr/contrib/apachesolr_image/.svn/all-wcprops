@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/apachesolr/contrib/apachesolr_image
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/apachesolr/contrib/apachesolr_image
 END
 apachesolr_image.module
 K 25
 svn:wc:ra_dav:version-url
 V 113
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/apachesolr/contrib/apachesolr_image/apachesolr_image.module
+/drupal/!svn/ver/5183/branches/1.x-6.x/modules/acquia/apachesolr/contrib/apachesolr_image/apachesolr_image.module
 END
 apachesolr_image.info
 K 25
 svn:wc:ra_dav:version-url
 V 111
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/apachesolr/contrib/apachesolr_image/apachesolr_image.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/apachesolr/contrib/apachesolr_image/apachesolr_image.info
 END

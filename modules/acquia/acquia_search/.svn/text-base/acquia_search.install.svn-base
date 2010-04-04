@@ -9,7 +9,9 @@ function acquia_search_requirements($phase) {
   // Ensure translations don't break at install time
   $t = get_t();
 
-  if ($phase == 'install') {
+  // Skip install checks if install.php is running. The weak install profile
+  // API means install.php calls hook_requirements for every module in a profile.
+  if ($phase == 'install' && MAINTENANCE_MODE != 'install') {
     if (module_invoke('acquia_agent', 'has_credentials')) {
       $severity = REQUIREMENT_OK;
     }

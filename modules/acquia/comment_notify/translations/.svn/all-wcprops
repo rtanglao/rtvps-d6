@@ -1,19 +1,55 @@
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify/translations
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/translations
+END
+da.po
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/translations/da.po
+END
+tr.po
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/translations/tr.po
+END
+ru.po
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/translations/ru.po
+END
+fr.po
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/translations/fr.po
 END
 de.po
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify/translations/de.po
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/translations/de.po
+END
+sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/translations/sv.po
 END
 comment_notify.pot
 K 25
 svn:wc:ra_dav:version-url
 V 100
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify/translations/comment_notify.pot
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/translations/comment_notify.pot
+END
+fi.po
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/translations/fi.po
 END
 nb.po
 K 25
@@ -21,9 +57,15 @@ svn:wc:ra_dav:version-url
 V 87
 /drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify/translations/nb.po
 END
+uk.po
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/translations/uk.po
+END
 el.po
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/comment_notify/translations/el.po
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/comment_notify/translations/el.po
 END

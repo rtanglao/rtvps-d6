@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/drupal/!svn/ver/4979/branches/1.x-6.x/themes/acquia/acquia_marina/images
+/drupal/!svn/ver/5200/branches/1.x-6.x/themes/acquia/acquia_marina/images
 END
 tab-left.png
 K 25
@@ -57,17 +57,17 @@ svn:wc:ra_dav:version-url
 V 88
 /drupal/!svn/ver/4875/branches/1.x-6.x/themes/acquia/acquia_marina/images/open-quote.gif
 END
-tab-right.png
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/drupal/!svn/ver/4875/branches/1.x-6.x/themes/acquia/acquia_marina/images/tab-right.png
-END
 close-quote.gif
 K 25
 svn:wc:ra_dav:version-url
 V 89
 /drupal/!svn/ver/4875/branches/1.x-6.x/themes/acquia/acquia_marina/images/close-quote.gif
+END
+tab-right.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/acquia/acquia_marina/images/tab-right.png
 END
 green-bullet-rtl.png
 K 25
@@ -75,17 +75,17 @@ svn:wc:ra_dav:version-url
 V 94
 /drupal/!svn/ver/4979/branches/1.x-6.x/themes/acquia/acquia_marina/images/green-bullet-rtl.png
 END
-block-gradient.png
-K 25
-svn:wc:ra_dav:version-url
-V 92
-/drupal/!svn/ver/4875/branches/1.x-6.x/themes/acquia/acquia_marina/images/block-gradient.png
-END
 green-bullet.png
 K 25
 svn:wc:ra_dav:version-url
 V 90
 /drupal/!svn/ver/4875/branches/1.x-6.x/themes/acquia/acquia_marina/images/green-bullet.png
+END
+block-gradient.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/drupal/!svn/ver/4875/branches/1.x-6.x/themes/acquia/acquia_marina/images/block-gradient.png
 END
 green-checkmark.png
 K 25

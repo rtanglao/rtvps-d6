@@ -1,10 +1,81 @@
-// $Id: CHANGELOG.txt,v 1.1.2.98 2009/07/02 09:13:07 robertDouglass Exp $
+// $Id: CHANGELOG.txt,v 1.1.2.158 2010/03/04 04:17:20 pwolanin Exp $
 
-Apache Solr integration x.x-x.x, xxxx-xx-xx
+Apache Solr Search Integration x.x-x.x, xxxx-xx-xx
 ------------------------------
 
-Apache Solr integration 6.x-1.x, xxxx-xx-xx
+Apache Solr Search Integration 6.x-1.x, xxxx-xx-xx
 ------------------------------
+
+Apache Solr Search Integration 6.x-1.0, 2010-03-03
+------------------------------
+#686390 by justindodge, pwolanin don't overwite existing class for facets.
+#623046 by robertDouglass, pwolanin make the results array more useful.
+#666936 by justindodge, pwolanin make Drupal.behaviors.apachesolr respect context.
+#672882 by David Lesieur, Fix Show more links on taxonomy facets.
+#679522 by pwolanin, Add gettableFiles to solr admin interface config.
+
+Apache Solr Search Integration 6.x-1.0-RC5, 2010-01-04
+------------------------------
+#630798 by robertDouglass, pwolanin - critical fix for cach_get() calls.
+#672518 by robertDouglass: Fixed Add new trie prefixes to helper function.
+#668396 by pwolanin, closer to fix from #655006 for PHP notices.
+#657648 by kcoop, Add Smaller Limit Options to Apache Solr Cron Indexing.
+#664818 by pounard, robertDouglass, pwolanin fix incorrect watchdog() call.
+#667650 by Dave Reid, Results of apachesolr_process_response() should return absolute URLs.
+#667124 by pwolanin, Use current query not altered query for the breadcrumb.
+#667110 by pwolanin, Replace bogus use of pager_query().
+#666648 by pwolanin, Make hook_apachesolr_update_index() more generic by taking a namespace param also.
+#662232 by pwolanin, use 'und' not 'zxx' for Language neutral per Drupal 7 change.
+#665186 by mkalkbrenner, fix README for Solr 1.4 release.
+#664572 by pwolanin, add schema and core name to admin screen.
+
+Apache Solr Search Integration 6.x-1.0-RC4, 2009-12-17
+------------------------------
+#528086 by pwolanin, better (but still problematic) handling of entities.
+#662232 by pwolanin, index zxx as the Language neutral code.
+#661952 by pwolanin, fix no results help text for dismax syntax.
+#348668 by pwolanin, add indexing of the 'node' entity string.
+#641954 by anarchivist, swentel, pwolanin, update schema.xml.
+#401234 by mkalkbrenner, janusman, and pwolanin, reflect hierarchical taxonomy vocabulary in facets.
+#650534 by Scott Reynolds, don't use c.last_comment_timestamp unless comment module enabled.
+#655006 by Scott Reynolds and pwolanin, prevent PHP notices around constants.
+#641452 by robertDouglass, prevent admin from trying to re-index when in read-only mode.
+#638572 by robertDouglass fix taxonomy facet sorting.
+#562458 by janusman, fix typo preventing menu_rebuild regarding taxonomy hijack.
+#628080 by pwolanin, update to use Solr PHP library r22 and check for it in hook_requirements.
+#630798 by joshk, robertDouglass make cache_apachesolr table to facilitate better memcache utilization.
+#621922 by robertDouglass make the "Show more" js more robust.
+#576040 by robertDouglass use Drush to download the SolrPhpClient: drush solr phpclient
+#570476 by robertDouglass add initial Drush support with commands drush solr delete index and drush solr reindex.
+#612024 by pwolanin, Add method to allow requests to additional Solr servelets.
+#611670 by pwolanin, Allow modules to abort the building of documents for indexing.
+#610656 by pwolanin, Don't request facets for non-enabled modules.
+
+Apache Solr Search Integration 6.x-1.0-RC3, 2009-10-15
+------------------------------
+#561082 by pwolanin, consolidate Solr delete queries on cron.
+#580404 by pwolanin, allow per-node-type comment exclusion.
+#597174 by Frando, add hook_apachesolr_prepare_query() to enable custom sorts.
+#590982 by swentel, fix warnings on indexing.
+#584902 by cpliakas, robertDouglass, make $extra a keyed array and prevent PHP warnings.
+#554136 by emackn, Jaza make results-per-page alterable.
+#557382 by Josh Waihi, Scott Reynolds mlt blocks were double encoding titles.
+#543226 by drunken monkey validate port on settings form.
+#502976 by Scott Reynolds, followup to Other GET parameters ignored by Apache Solr Facet Blocks.
+
+Apache Solr integration 6.x-1.0-RC2, 2009-07-29
+------------------------------
+#530196 by pwolanin, fix facecount form function calls in apachesolr_og.
+#530910 by Damien Tournoud, correct offset for determining indexed fields.
+#529606 by robertDouglass, fix schema.xml for Lucene changes.
+#528484 by robertDouglass switch to Drupal.behaviors in apachesolr.js
+#528516 by robertDouglass add apachesolr-facet and apachesolr-unclick CSS classes to unclick and facet links.
+#525918 by robertDouglass more forceful redindex; apachesolr_search_node table now completely rebuilt upon redindex.
+#515682 by robertDouglass, add confirmation form to re-index button.
+#509526 by pwolanin, {apachesolr_search_node} table should be rebuilt when index is deleted.
+#508364 by pwolanin, Don't offer non-indexed fields as search options.
+#508548 by pwolanin, Don't implode params['fq'] if it's not set.
+#528002 by janusman, Add RSS discovery to taxonomy hijack page
 
 Apache Solr integration 6.x-1.0-RC1, 2009-07-02
 ------------------------------

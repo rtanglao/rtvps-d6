@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/node
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/node
 END
 node.info
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/node/node.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/node/node.info
 END
 node.admin.inc
 K 25
@@ -19,19 +19,19 @@ content_types.inc
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/node/content_types.inc
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/node/content_types.inc
 END
 node.module
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/node/node.module
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/node/node.module
 END
 node.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/node/node.tpl.php
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/node/node.tpl.php
 END
 node.install
 K 25

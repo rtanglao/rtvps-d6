@@ -1,5 +1,5 @@
 <?php
-// $Id: page.tpl.php,v 1.1.2.5 2009/03/18 00:58:37 jwolf Exp $
+// $Id: page.tpl.php,v 1.2.2.1 2009/05/25 09:33:09 jwolf Exp $
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -10,17 +10,25 @@
     <?php print $head; ?>
     <?php print $styles; ?>
     <!--[if IE 7]>
-      <link rel="stylesheet" href="<?php print $base_path . $directory; ?>/ie7-fixes.css" type="text/css">
+      <?php print $ie7_styles; ?>
     <![endif]-->
     <!--[if lte IE 6]>
-      <link rel="stylesheet" href="<?php print $base_path . $directory; ?>/ie6-fixes.css" type="text/css">
+      <?php print $ie6_styles; ?>
     <![endif]-->
+    <?php if ($local_styles): ?>
+    <?php print $local_styles; ?>
+    <?php endif; ?>
     <?php print $scripts; ?>
   </head>
 
   <body class="<?php print $body_classes; ?>">
     <div id="page" class="clearfix">
-
+      
+      <?php if ($content): ?>
+        <div id="skip">
+          <a href="#main-content"><?php print t('Skip to Main Content'); ?></a>
+        </div>
+      <?php endif; ?>
       <div id="header-wrapper">
         <div id="header" class="clearfix">
           
@@ -33,11 +41,11 @@
           <div id="header-first">
             <?php if ($logo): ?> 
             <div id="logo">
-              <a href="<?php print $base_path ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" /></a>
+              <a href="<?php print check_url($front_page) ?>" title="<?php print t('Home') ?>"><img src="<?php print $logo ?>" alt="<?php print t('Home') ?>" /></a>
             </div>
             <?php endif; ?>
             <?php if ($site_name): ?>
-            <h1><a href="<?php print $base_path ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1>
+            <h1><a href="<?php print check_url($front_page) ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a></h1>
             <?php endif; ?>
             <?php if ($site_slogan): ?>
             <span id="slogan"><?php print $site_slogan; ?></span>
@@ -125,6 +133,7 @@
             <?php endif; ?>
             
             <div id="content">
+              <a name="main-content" id="main-content"></a>
               <?php if ($tabs): ?>
               <div id="content-tabs">
                 <?php print $tabs; ?>

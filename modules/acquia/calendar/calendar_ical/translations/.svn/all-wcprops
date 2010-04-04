@@ -1,11 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/calendar/calendar_ical/translations
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/calendar/calendar_ical/translations
 END
 calendar_ical.pot
 K 25
 svn:wc:ra_dav:version-url
 V 107
 /drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/calendar/calendar_ical/translations/calendar_ical.pot
+END
+calendar_ical.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/calendar/calendar_ical/translations/calendar_ical.sv.po
 END

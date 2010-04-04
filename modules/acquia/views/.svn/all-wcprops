@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views
 END
 views.module
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/views.module
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/views.module
 END
 views2.doxy
 K 25
@@ -19,25 +19,25 @@ views.install
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/views.install
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/views.install
 END
 views_ui.info
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/views_ui.info
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/views_ui.info
 END
 CHANGELOG.txt
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/CHANGELOG.txt
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/CHANGELOG.txt
 END
 views.info
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/views.info
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/views.info
 END
 documentation-standards.txt
 K 25

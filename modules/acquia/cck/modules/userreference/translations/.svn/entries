@@ -1,7 +1,7 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/userreference/translations
 https://svn.acquia.com/drupal
 
@@ -32,11 +32,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
+2009-07-03T07:15:17.000000Z
 3756e92e538f924d5c7b5cf11c1ce972
 2009-07-02T20:47:26.048691Z
 5049
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4160
 
 modules-userreference.fr.po
 file
@@ -44,11 +66,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 2ce521115f64cb2a32260a95df725d8f
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2734
 
 modules-userreference-panels-relationships.pot
 file
@@ -56,11 +100,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
+2009-07-03T07:15:17.000000Z
 d55cb5b4e020c620f18f4d91fb685bf2
 2009-07-02T20:47:26.048691Z
 5049
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1141
 
 modules-userreference.de.po
 file
@@ -68,11 +134,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 0265436d8d22ac456cbc17e3b5875b77
 2009-03-27T16:42:00.079189Z
 4877
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6392
 
 modules-userreference.sv.po
 file
@@ -80,11 +168,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 484ee89af44b8b9ac242cec79db29ec1
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4972
 
 modules-userreference.nl.po
 file
@@ -92,11 +202,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 3fc4ea6b627701d9714a5c8ae72cb224
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6726
 
 modules-userreference-panels-relationships.de.po
 file
@@ -104,11 +236,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
+2009-07-03T07:15:17.000000Z
 f6d42756d0a187c2e657e28b351dce28
 2009-07-02T20:47:26.048691Z
 5049
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1659
 
 modules-userreference.hu.po
 file
@@ -116,9 +270,31 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 a1d1b728ad326f2e1c04763a48fe9f5c
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5167
 

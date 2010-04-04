@@ -1,35 +1,41 @@
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/link/translations
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/link/translations
 END
-da.po
+link.ru.po
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/link/translations/da.po
+V 82
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/link/translations/link.ru.po
 END
-ru.po
+link.fr.po
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/link/translations/ru.po
+V 82
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/link/translations/link.fr.po
 END
-fr.po
+link.de.po
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/link/translations/fr.po
+V 82
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/link/translations/link.de.po
 END
-ja.po
+link.nl.po
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/link/translations/ja.po
+V 82
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/link/translations/link.nl.po
+END
+link.da.po
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/link/translations/link.da.po
 END
 link.pot
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/link/translations/link.pot
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/link/translations/link.pot
 END

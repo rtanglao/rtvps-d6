@@ -1,25 +1,25 @@
 K 25
 svn:wc:ra_dav:version-url
 V 62
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/fivestar
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/fivestar
 END
 fivestar_comment.info
 K 25
 svn:wc:ra_dav:version-url
 V 84
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/fivestar/fivestar_comment.info
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/fivestar/fivestar_comment.info
 END
 fivestar.module
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/fivestar/fivestar.module
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/fivestar/fivestar.module
 END
 fivestar.install
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/fivestar/fivestar.install
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/fivestar/fivestar.install
 END
 fivestar_color.inc
 K 25
@@ -49,11 +49,11 @@ fivestar.info
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/fivestar/fivestar.info
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/fivestar/fivestar.info
 END
 fivestar_field.inc
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/fivestar/fivestar_field.inc
+/drupal/!svn/ver/5136/branches/1.x-6.x/modules/acquia/fivestar/fivestar_field.inc
 END

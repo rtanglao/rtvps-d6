@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imagefield
+/drupal/!svn/ver/5126/branches/1.x-6.x/modules/acquia/imagefield
 END
 imagefield.info
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imagefield/imagefield.info
+/drupal/!svn/ver/5126/branches/1.x-6.x/modules/acquia/imagefield/imagefield.info
 END
 imagefield_formatter.inc
 K 25
@@ -19,7 +19,7 @@ imagefield_widget.inc
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imagefield/imagefield_widget.inc
+/drupal/!svn/ver/5126/branches/1.x-6.x/modules/acquia/imagefield/imagefield_widget.inc
 END
 UPGRADE.txt
 K 25
@@ -31,7 +31,7 @@ imagefield.module
 K 25
 svn:wc:ra_dav:version-url
 V 82
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/imagefield/imagefield.module
+/drupal/!svn/ver/5126/branches/1.x-6.x/modules/acquia/imagefield/imagefield.module
 END
 README.txt
 K 25

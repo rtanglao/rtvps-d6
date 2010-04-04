@@ -1,5 +1,5 @@
 <?php
-// $Id: comment_notify.install,v 1.14 2009/03/07 19:33:03 greggles Exp $
+// $Id: comment_notify.install,v 1.16 2009/04/08 01:52:02 greggles Exp $
 /**
  * @file
  * comment_notify.install.
@@ -41,7 +41,8 @@ function comment_notify_schema() {
     'description' => t('Stores information about which commenters on the site have subscriped to followup emails.'),
     'fields' => array(
       'cid' => array(
-        'type' => 'serial',
+        'type' => 'int',
+        'unsigned' => TRUE,
         'description' => 'The comment id from {comments}.cid',
         'not null' => TRUE,
         'disp-width' => '11'),
@@ -62,6 +63,7 @@ function comment_notify_schema() {
         'description' => 'A boolean indicator for whether or not a notification for the comment has been sent: 1 means yes, 0 means no.',
         'size' => 'tiny',
         'not null' => TRUE,
+        'default' => 0,
         'disp-width' => '11'),
     ),
     'primary key' => array('cid'),
@@ -71,7 +73,7 @@ function comment_notify_schema() {
   $schema['comment_notify_user_settings'] = array(
     'fields' => array(
         'uid' => array(
-          'type' => 'serial',
+          'type' => 'int',
           'unsigned' => TRUE,
           'description' => 'The user id from {users}.cid',
           'not null' => TRUE,
@@ -268,10 +270,33 @@ function comment_notify_update_6003() {
 function comment_notify_update_6004() {
   $ret = array();
 
-  db_add_field($ret, 'comment_notify', 'notified', array('type' => 'int', 'size' => 'small', 'unsigned' => TRUE, 'not null' => TRUE));
+  db_add_field($ret, 'comment_notify', 'notified', array('type' => 'int', 'size' => 'small', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0));
 
   // Set the value in the notified column to 1 for all existing records.
   $ret[] = update_sql('UPDATE {comment_notify} SET notified = 1');
+
+  return $ret;
+}
+
+/**
+ * Having our foreign keys auto_increment could lead to unexpected results.
+ */
+function comment_notify_update_6005() {
+  $ret = array();
+
+  db_change_field($ret, 'comment_notify', 'cid', 'cid',
+    array('type' => 'int',
+      'unsigned' => TRUE,
+      'description' => 'The comment id from {comments}.cid',
+      'not null' => TRUE,
+      'disp-width' => '11'));
+
+  db_change_field($ret, 'comment_notify_user_settings', 'uid', 'uid',
+    array('type' => 'int',
+      'unsigned' => TRUE,
+      'description' => 'The user id from {users}.cid',
+      'not null' => TRUE,
+      'disp-width' => '11'));
 
   return $ret;
 }

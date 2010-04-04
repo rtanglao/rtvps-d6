@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/calendar_ical
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/calendar/calendar_ical
 END
 calendar_ical_admin.inc
 K 25
@@ -31,7 +31,7 @@ calendar_plugin_style_ical.inc
 K 25
 svn:wc:ra_dav:version-url
 V 107
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/calendar_ical/calendar_plugin_style_ical.inc
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/calendar/calendar_ical/calendar_plugin_style_ical.inc
 END
 theme.inc
 K 25
@@ -49,7 +49,7 @@ calendar_ical.info
 K 25
 svn:wc:ra_dav:version-url
 V 95
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/calendar_ical/calendar_ical.info
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/calendar/calendar_ical/calendar_ical.info
 END
 calendar_plugin_display_ical.inc
 K 25

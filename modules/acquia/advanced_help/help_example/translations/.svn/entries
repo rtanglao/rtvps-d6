@@ -1,7 +1,7 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/advanced_help/help_example/translations
 https://svn.acquia.com/drupal
 
@@ -32,11 +32,33 @@ file
 
 
 
-2009-06-18T04:58:00.000000Z
+2009-06-21T23:17:50.000000Z
 46eff0ff55dcd2682e814f53aab4ef91
 2009-04-16T23:08:01.621631Z
 4917
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1281
 
 help_example.de.po
 file
@@ -44,9 +66,31 @@ file
 
 
 
-2009-06-18T04:58:00.000000Z
+2009-06-21T23:17:50.000000Z
 8ce3e1ce7f9de8f5efa1e5ec202414a8
 2009-04-16T23:08:01.621631Z
 4917
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1445
 

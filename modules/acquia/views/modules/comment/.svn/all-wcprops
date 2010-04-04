@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/modules/comment
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/modules/comment
 END
 views_handler_field_comment_link_reply.inc
 K 25
@@ -33,11 +33,11 @@ svn:wc:ra_dav:version-url
 V 119
 /drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/modules/comment/views_handler_argument_comment_user_uid.inc
 END
-views_plugin_row_comment_view.inc
+views_handler_field_comment_username.inc
 K 25
 svn:wc:ra_dav:version-url
-V 109
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/modules/comment/views_plugin_row_comment_view.inc
+V 116
+/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/views/modules/comment/views_handler_field_comment_username.inc
 END
 views_handler_field_comment_link_delete.inc
 K 25
@@ -45,11 +45,11 @@ svn:wc:ra_dav:version-url
 V 119
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/modules/comment/views_handler_field_comment_link_delete.inc
 END
-views_handler_field_comment_username.inc
+views_plugin_row_comment_view.inc
 K 25
 svn:wc:ra_dav:version-url
-V 116
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/views/modules/comment/views_handler_field_comment_username.inc
+V 109
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/modules/comment/views_plugin_row_comment_view.inc
 END
 views_handler_field_comment.inc
 K 25
@@ -57,17 +57,17 @@ svn:wc:ra_dav:version-url
 V 107
 /drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/modules/comment/views_handler_field_comment.inc
 END
-views_handler_field_node_new_comments.inc
-K 25
-svn:wc:ra_dav:version-url
-V 117
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/modules/comment/views_handler_field_node_new_comments.inc
-END
 views_handler_filter_comment_user_uid.inc
 K 25
 svn:wc:ra_dav:version-url
 V 117
 /drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/modules/comment/views_handler_filter_comment_user_uid.inc
+END
+views_handler_field_node_new_comments.inc
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/modules/comment/views_handler_field_node_new_comments.inc
 END
 views_handler_field_node_comment.inc
 K 25
@@ -109,7 +109,7 @@ views_handler_field_comment_node_link.inc
 K 25
 svn:wc:ra_dav:version-url
 V 117
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/modules/comment/views_handler_field_comment_node_link.inc
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/modules/comment/views_handler_field_comment_node_link.inc
 END
 views_handler_field_comment_link_edit.inc
 K 25

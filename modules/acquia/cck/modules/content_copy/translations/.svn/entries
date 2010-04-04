@@ -1,7 +1,7 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/translations
 https://svn.acquia.com/drupal
 
@@ -32,11 +32,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 bed32475135f01c0a404aec1ec925ea3
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5865
 
 modules-content_copy.hu.po
 file
@@ -44,11 +66,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 f5fbaf8890f770df1aa59f07baf81f31
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6934
 
 modules-content_copy.pot
 file
@@ -56,11 +100,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
+2009-07-03T07:15:17.000000Z
 ea25d42b22b3a523bcbd94aa2164b15b
 2009-07-02T20:47:26.048691Z
 5049
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4300
 
 modules-content_copy.fr.po
 file
@@ -68,11 +134,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 a71781abc67672958b65810231fe0f64
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6604
 
 modules-content_copy.de.po
 file
@@ -80,11 +168,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 bd23f01525f795c13fa20b660d58683b
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6830
 
 modules-content_copy.sv.po
 file
@@ -92,9 +202,31 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 cd8a9702524dd845f85b668fe63a0f87
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5938
 

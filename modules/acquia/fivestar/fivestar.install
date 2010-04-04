@@ -1,5 +1,5 @@
 <?php
-// $Id: fivestar.install,v 1.5.2.12 2009/04/30 02:56:10 quicksketch Exp $
+// $Id: fivestar.install,v 1.5.2.13 2009/10/22 00:23:29 ezrag Exp $
 
 /**
  * @file
@@ -30,6 +30,7 @@ function fivestar_uninstall() {
  */
 function fivestar_enable() {
   if (module_exists('content')) {
+    module_load_include('inc', 'fivestar', 'fivestar_field');
     content_notify('enable', 'fivestar');
   }
 }

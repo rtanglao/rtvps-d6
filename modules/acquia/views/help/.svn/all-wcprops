@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/help
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/help
 END
 api-tables.html
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/help/api-tables.html
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/help/api-tables.html
 END
 example-author-block.html
 K 25
@@ -111,11 +111,11 @@ svn:wc:ra_dav:version-url
 V 78
 /drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/help/argument.html
 END
-style-node.html
+style-grid.html
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/style-node.html
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/style-grid.html
 END
 field.html
 K 25
@@ -123,17 +123,11 @@ svn:wc:ra_dav:version-url
 V 75
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/field.html
 END
-style-grid.html
+style-node.html
 K 25
 svn:wc:ra_dav:version-url
 V 80
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/style-grid.html
-END
-style-table.html
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/style-table.html
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/style-node.html
 END
 filter.html
 K 25
@@ -141,17 +135,17 @@ svn:wc:ra_dav:version-url
 V 76
 /drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/help/filter.html
 END
+style-table.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/style-table.html
+END
 style-unformatted.html
 K 25
 svn:wc:ra_dav:version-url
 V 87
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/style-unformatted.html
-END
-display-default.html
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/display-default.html
 END
 sort.html
 K 25
@@ -159,17 +153,23 @@ svn:wc:ra_dav:version-url
 V 74
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/sort.html
 END
-view-type.html
+display-default.html
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/help/view-type.html
+V 85
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/display-default.html
 END
 new.html
 K 25
 svn:wc:ra_dav:version-url
 V 73
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/new.html
+END
+view-type.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/help/view-type.html
 END
 display-attachment.html
 K 25
@@ -187,7 +187,7 @@ views.help.ini
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/help/views.help.ini
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/help/views.help.ini
 END
 relationship.html
 K 25
@@ -200,6 +200,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 79
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/help/overrides.html
+END
+api-example.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/help/api-example.html
 END
 analyze-theme.html
 K 25

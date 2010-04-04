@@ -1,5 +1,5 @@
 <?php
-// $Id: fivestar_field.inc,v 1.3.2.19 2009/07/01 01:42:33 quicksketch Exp $
+// $Id: fivestar_field.inc,v 1.3.2.20 2009/10/05 01:06:26 ezrag Exp $
 
 /**
  * @file
@@ -287,11 +287,8 @@ function theme_fivestar_formatter_rating($element) {
  * Theme function for 'percentage' fivestar field formatter.
  */
 function theme_fivestar_formatter_percentage($element) {
-  if (empty($element['#item']['rating'])) {
-    $element['#item']['rating'] = 0;
-  }
-  if (empty($element['#item']['stars'])) {
-    $element['#item']['stars'] = 5;
+  if (empty($element['#item']['rating']) || empty($element['#field']['stars'])) {
+    return 0;
   }
 
   return round(100/$element['#item']['rating'], 1)/$element['#field']['stars'];

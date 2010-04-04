@@ -1,23 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
 V 90
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient/Apache/Solr
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient/Apache/Solr
 END
 Document.php
 K 25
 svn:wc:ra_dav:version-url
 V 103
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient/Apache/Solr/Document.php
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient/Apache/Solr/Document.php
 END
 Response.php
 K 25
 svn:wc:ra_dav:version-url
 V 103
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient/Apache/Solr/Response.php
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient/Apache/Solr/Response.php
 END
 Service.php
 K 25
 svn:wc:ra_dav:version-url
 V 102
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient/Apache/Solr/Service.php
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient/Apache/Solr/Service.php
 END

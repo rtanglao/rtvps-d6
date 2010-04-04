@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/blog
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/blog
 END
 blog.module
 K 25
@@ -13,11 +13,11 @@ blog.pages.inc
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/blog/blog.pages.inc
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/blog/blog.pages.inc
 END
 blog.info
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/blog/blog.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/blog/blog.info
 END

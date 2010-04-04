@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 54
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/profile
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/profile
 END
 profile.admin.inc
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/profile/profile.admin.inc
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/profile/profile.admin.inc
 END
 profile-wrapper.tpl.php
 K 25
@@ -43,7 +43,7 @@ profile.info
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/profile/profile.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/profile/profile.info
 END
 profile-listing.tpl.php
 K 25

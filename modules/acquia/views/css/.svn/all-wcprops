@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/css
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/css
 END
 views.css
 K 25
@@ -13,7 +13,7 @@ views-admin.css
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/css/views-admin.css
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/css/views-admin.css
 END
 views-tabs.css
 K 25
@@ -31,5 +31,5 @@ views-list.css
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/css/views-list.css
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/css/views-list.css
 END

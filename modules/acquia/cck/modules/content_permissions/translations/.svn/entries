@@ -1,7 +1,7 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/content_permissions/translations
 https://svn.acquia.com/drupal
 
@@ -32,11 +32,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 51e5978a467cf2550c8c0dd4dd429437
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2429
 
 modules-content_permissions.sv.po
 file
@@ -44,11 +66,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 7ef6a2e64dd40dc55d7955dc032cd330
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1749
 
 modules-content_permissions.nl.po
 file
@@ -56,11 +100,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 fbc4262b408b2ff72c538a36ac3a25ee
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1606
 
 modules-content_permissions.hu.po
 file
@@ -68,11 +134,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 2f0713e1a1e628f1948cfa5f4bf16cc3
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1762
 
 modules-content_permissions.pot
 file
@@ -80,11 +168,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
+2009-07-03T07:15:17.000000Z
 f827b1cb7017e1547df20ea094cf6fe9
 2009-07-02T20:47:26.048691Z
 5049
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1580
 
 modules-content_permissions.fr.po
 file
@@ -92,9 +202,31 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 bb9a8cae627be91d018a451a8d63cd1a
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1875
 

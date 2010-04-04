@@ -1,5 +1,5 @@
 <?php
-// $Id: fivestar.module,v 1.13.2.67 2009/07/01 04:03:50 quicksketch Exp $
+// $Id: fivestar.module,v 1.13.2.72 2009/10/04 17:16:48 ezrag Exp $
 
 /**
  * @file
@@ -697,7 +697,7 @@ function fivestar_vote($type, $cid, $tag, $value) {
     exit($output);
   }
 
-  _fivestar_cast_vote($type, $cid, $value, $tag, TRUE);
+  _fivestar_cast_vote($type, $cid, $value, $tag);
   votingapi_recalculate_results($type, $cid);
   $result = fivestar_get_votes($type, $cid, $tag);
 
@@ -1395,6 +1395,9 @@ function theme_fivestar_widget($form) {
 function theme_fivestar_static($rating, $stars = 5, $tag = 'vote') {
   $output = '';
   $output .= '<div class="fivestar-widget-static fivestar-widget-static-'. $tag .' fivestar-widget-static-'. $stars .' clear-block">';
+  if (empty($stars)) {
+    $stars = 5;
+  }
   $numeric_rating = $rating/(100/$stars);
   for ($n=1; $n <= $stars; $n++) {
     $star_value = ceil((100/$stars) * $n);
@@ -1689,7 +1692,10 @@ function fivestar_views_value_text_handler($value, $field, $columns) {
     return ceil(($value / 100) * $stars);
   }
   else {
-    return round(($value / 100) * $stars, 1);
+    if ($field->options['set_precision']) {
+      return round(($value / 100) * $stars, $field->options['precision']);
+    }
+    return ($value / 100) * $stars;
   }
 }
 
@@ -1776,4 +1782,35 @@ function fivestar_views_widget_handler($value, $field, $columns, $summary) {
   else {
     return theme('fivestar_static', $value, 5);
   }
+}
+
+
+/**
+ * Implementation of hook_votingapi_metadata_alter().
+ */
+function fivestar_votingapi_metadata_alter(&$data) {
+  static $tags;  
+  if (!isset($tags)) {
+    $tags = array();
+    
+    module_load_install('content');
+    module_load_include('inc', 'content', 'includes/content.admin');
+    module_load_include('inc', 'content', 'includes/content.crud');
+
+    // Grab the list of fields to update.
+    foreach (content_types_install() as $type_name => $fields) {
+      foreach ($fields as $field) {
+        if ($field['type'] == 'fivestar') {
+          if (!empty($field['axis'])) {
+            $data['tags'][$field['axis']] = array(
+              'name' => drupal_ucfirst($field['axis']),
+              'description' => t('Used by %field in the %type content type.', array('%type' => $type_name, '%field' => $field['field_name'])),
+              'module' => 'fivestar', // This is optional; we can add it for our own purposes.
+            );
+          }
+        }
+      }
+    }
+  }
+  return $tags;
 }

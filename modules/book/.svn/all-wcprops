@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/book
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/book
 END
 book-export-html.tpl.php
 K 25
@@ -43,7 +43,7 @@ book.info
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/book/book.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/book/book.info
 END
 book-all-books-block.tpl.php
 K 25

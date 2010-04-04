@@ -1,14 +1,14 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/number
 https://svn.acquia.com/drupal
 
 
 
-2009-07-02T20:47:26.048691Z
-5049
+2009-12-17T22:43:34.016499Z
+5174
 buildbot
 
 
@@ -26,6 +26,40 @@ svn:special svn:externals svn:needs-lock
 
 08d20552-8ba5-4116-8c9e-e96c1c1f3480
 
+number.info.acquiainfo
+file
+
+
+
+
+2010-03-30T00:28:40.000000Z
+757d24e91542440a5ade49002c11c5b3
+2009-12-17T22:43:34.016499Z
+5174
+buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25
+
 translations
 dir
 
@@ -35,11 +69,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
-5bc9e6eb3d6b046afbb31d5c8b52d772
-2009-07-02T20:47:26.048691Z
-5049
+2010-03-30T00:28:40.000000Z
+b272b23f47054e6112a27f7a6e9a52b7
+2009-12-17T22:43:34.016499Z
+5174
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+305
 
 help
 dir
@@ -50,11 +106,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
-8b4cc9b56e1f7ccd4b05bca381935ec2
-2009-06-11T18:07:09.713535Z
-4999
+2010-03-30T00:28:40.000000Z
+9231a9b9d3d763d5ac4914545ee058cc
+2009-12-17T22:43:34.016499Z
+5174
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+24426
 
 number.install
 file
@@ -62,9 +140,31 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 1fd7ea36c832d348a89aaaae53bd1868
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1261
 

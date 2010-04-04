@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/jcalendar
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/calendar/jcalendar
 END
 jcalendar.module
 K 25
 svn:wc:ra_dav:version-url
 V 89
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/calendar/jcalendar/jcalendar.module
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/calendar/jcalendar/jcalendar.module
 END
 jcalendar.css
 K 25
@@ -25,7 +25,7 @@ jcalendar.info
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/calendar/jcalendar/jcalendar.info
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/calendar/jcalendar/jcalendar.info
 END
 jcalendar.js
 K 25

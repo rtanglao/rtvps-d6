@@ -1,4 +1,4 @@
-/* $Id: style-rtl.css,v 1.2.2.2 2009/04/21 04:13:20 jwolf Exp $ */
+/* $Id: style-rtl.css,v 1.2.4.3 2009/12/27 20:03:06 jwolf Exp $ */
 
 html {
   direction: rtl; 
@@ -94,7 +94,7 @@ body.layout-main-last #sidebar-last .item-list ul li,
   padding-right: 15px;
 }
 
-#search-box {
+#header #search-box {
   float: left;
 }
 
@@ -330,6 +330,14 @@ body.layout-main-last #sidebar-last h2.block-title {
 #primary-menu ul.menu li ul li.hover ul.menu {
   right: 154px;
 }
+
+#primary-menu ul.menu li ul li a,
+#primary-menu ul.menu li ul li a:link,
+#primary-menu ul.menu li ul li a:visited {
+  padding: 4px 4px 0 0;
+  width: 131px;
+}
+
 
 /***************/
 /* BREADCRUMBS */

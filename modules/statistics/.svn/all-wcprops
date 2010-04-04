@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/statistics
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/statistics
 END
 statistics.install
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/statistics/statistics.install
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/statistics/statistics.install
 END
 statistics.pages.inc
 K 25
@@ -19,7 +19,7 @@ statistics.info
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/statistics/statistics.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/statistics/statistics.info
 END
 statistics.admin.inc
 K 25

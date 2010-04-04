@@ -1,15 +1,15 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/acquia_connector/acquia_spi
 https://svn.acquia.com/drupal
 
 
 
-2009-07-02T20:47:26.048691Z
-5049
-buildbot
+2009-07-16T19:06:16.260214Z
+5058
+katherine.senzee
 
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,33 @@ file
 
 
 
-2009-06-18T04:58:00.000000Z
+2009-06-21T23:17:50.000000Z
 a7f6542bea5e1fc725850bc883ee84e4
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
+2009-07-16T19:06:16.260214Z
+5058
+katherine.senzee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8809
 
 acquia_spi.install
 file
@@ -44,11 +66,33 @@ file
 
 
 
-2009-06-18T04:58:00.000000Z
+2009-06-21T23:17:50.000000Z
 b13f0afa8ccbff2ccd305bf19d1d1760
-2009-03-27T13:49:27.090492Z
-4875
-buildbot
+2009-07-16T19:06:16.260214Z
+5058
+katherine.senzee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+385
 
 acquia_spi.info
 file
@@ -56,9 +100,31 @@ file
 
 
 
-2009-07-03T06:49:42.000000Z
+2009-07-03T07:15:17.000000Z
 12e09f12e063c231d9ec8cb36dd088a0
-2009-07-02T20:47:26.048691Z
-5049
-buildbot
+2009-07-16T19:06:16.260214Z
+5058
+katherine.senzee
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+590
 

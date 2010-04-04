@@ -1,11 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 97
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/panels/content_types
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/panels/content_types
 END
 content_fieldgroup.inc
 K 25
 svn:wc:ra_dav:version-url
 V 120
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/panels/content_types/content_fieldgroup.inc
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/panels/content_types/content_fieldgroup.inc
+END
+icon_cck_field_group.png
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/panels/content_types/icon_cck_field_group.png
 END

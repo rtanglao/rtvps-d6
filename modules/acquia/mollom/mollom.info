@@ -1,10 +1,10 @@
-; $Id: mollom.info,v 1.2.2.1 2008/04/01 14:16:13 dries Exp $
+; $Id: mollom.info,v 1.2.2.2 2009/11/17 17:01:49 dries Exp $
 name = Mollom
-description = Protects against comment and contact form spam.
+description = Protects forms against spam.
 core = 6.x
 
 ; Information added by Acquia.com packaging script
-version = "6.x-1.9"
+version = "6.x-1.12"
 core = "6.x"
 project = "mollom"
 acquia = "1"

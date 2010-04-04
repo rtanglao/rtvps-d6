@@ -1,7 +1,7 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/date/date_locale/translations
 https://svn.acquia.com/drupal
 
@@ -32,11 +32,33 @@ file
 
 
 
-2009-06-18T04:57:58.000000Z
+2009-06-21T23:17:51.000000Z
 3809bf5e7285b88ecb0cee3c71ca10ca
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1843
 
 date_locale.de.po
 file
@@ -44,11 +66,33 @@ file
 
 
 
-2009-06-18T04:57:58.000000Z
+2009-06-21T23:17:51.000000Z
 1ad2b5d8dc478472c2fc986d79b4d7ca
 2009-04-16T23:08:01.621631Z
 4917
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1740
 
 date_locale.sv.po
 file
@@ -56,11 +100,33 @@ file
 
 
 
-2009-06-18T04:57:58.000000Z
+2009-06-21T23:17:51.000000Z
 edfb54f20c9a19b473e7c5f93a62f42c
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1754
 
 date_locale.pot
 file
@@ -68,9 +134,31 @@ file
 
 
 
-2009-06-18T04:57:58.000000Z
+2009-06-21T23:17:51.000000Z
 b7e94294e45c6d8f54fc5a75e796f9b5
 2009-04-16T23:08:01.621631Z
 4917
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1403
 

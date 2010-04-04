@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/content_copy
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/content_copy
 END
 content_copy.module
 K 25
 svn:wc:ra_dav:version-url
 V 98
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/content_copy.module
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/content_copy.module
 END
 content_copy_export_form.tpl.php
 K 25
@@ -15,9 +15,15 @@ svn:wc:ra_dav:version-url
 V 111
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/content_copy_export_form.tpl.php
 END
+content_copy.info.acquiainfo
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/content_copy.info.acquiainfo
+END
 content_copy.info
 K 25
 svn:wc:ra_dav:version-url
 V 96
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/content_copy.info
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/content_copy/content_copy.info
 END

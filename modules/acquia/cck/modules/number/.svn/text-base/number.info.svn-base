@@ -5,8 +5,9 @@ dependencies[] = content
 package = CCK
 core = 6.x
 ; Information added by Acquia.com packaging script
-version = "6.x-2.4"
+version = "6.x-2.x-dev"
 core = "6.x"
 project = "cck"
+datestamp = "1259967600"
 acquia = "1"
 

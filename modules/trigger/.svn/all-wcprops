@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 54
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/trigger
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/trigger
 END
 trigger.admin.inc
 K 25
@@ -25,5 +25,5 @@ trigger.info
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/trigger/trigger.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/trigger/trigger.info
 END

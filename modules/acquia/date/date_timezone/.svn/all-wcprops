@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_timezone
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date_timezone
 END
 date_timezone.info
 K 25
 svn:wc:ra_dav:version-url
 V 91
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_timezone/date_timezone.info
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date_timezone/date_timezone.info
 END
 date_timezone.js
 K 25

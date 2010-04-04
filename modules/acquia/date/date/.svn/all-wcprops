@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date
 END
 date_handler_field_multiple.inc
 K 25
@@ -13,7 +13,7 @@ date.module
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date/date.module
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date/date.module
 END
 date.views.inc
 K 25
@@ -31,19 +31,19 @@ date_elements.inc
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date/date_elements.inc
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date/date_elements.inc
 END
 date.install
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/date/date/date.install
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date/date.install
 END
 date_repeat.inc
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/date/date/date_repeat.inc
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/date/date/date_repeat.inc
 END
 date_token.inc
 K 25
@@ -55,7 +55,7 @@ date.info
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date/date.info
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date/date.info
 END
 date_content_generate.inc
 K 25
@@ -67,11 +67,11 @@ date_admin.inc
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/date/date/date_admin.inc
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/date/date/date_admin.inc
 END
 date.theme
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date/date.theme
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/date/date/date.theme
 END

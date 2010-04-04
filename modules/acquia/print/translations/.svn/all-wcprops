@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations
+/drupal/!svn/ver/5120/branches/1.x-6.x/modules/acquia/print/translations
 END
 pt-pt.po
 K 25
@@ -15,17 +15,17 @@ svn:wc:ra_dav:version-url
 V 78
 /drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/cs.po
 END
-es.po
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/es.po
-END
 fr.po
 K 25
 svn:wc:ra_dav:version-url
 V 78
 /drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/fr.po
+END
+es.po
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/es.po
 END
 nl.po
 K 25
@@ -39,17 +39,17 @@ svn:wc:ra_dav:version-url
 V 78
 /drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/pl.po
 END
-hu.po
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/hu.po
-END
 it.po
 K 25
 svn:wc:ra_dav:version-url
 V 78
 /drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/it.po
+END
+hu.po
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/5120/branches/1.x-6.x/modules/acquia/print/translations/hu.po
 END
 sk.po
 K 25
@@ -69,17 +69,17 @@ svn:wc:ra_dav:version-url
 V 78
 /drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/uk.po
 END
-ro.po
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/ro.po
-END
 print.pot
 K 25
 svn:wc:ra_dav:version-url
 V 82
 /drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/print.pot
+END
+ro.po
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/ro.po
 END
 ca.po
 K 25
@@ -115,7 +115,7 @@ de.po
 K 25
 svn:wc:ra_dav:version-url
 V 78
-/drupal/!svn/ver/4965/branches/1.x-6.x/modules/acquia/print/translations/de.po
+/drupal/!svn/ver/5088/branches/1.x-6.x/modules/acquia/print/translations/de.po
 END
 sv.po
 K 25

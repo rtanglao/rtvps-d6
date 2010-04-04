@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom
 END
 mollom.module
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom/mollom.module
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/mollom.module
 END
 INSTALL.txt
 K 25
@@ -19,7 +19,13 @@ mollom.install
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/mollom.install
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/mollom.install
+END
+mollom.pages.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/mollom.pages.inc
 END
 mollom.css
 K 25
@@ -27,15 +33,39 @@ svn:wc:ra_dav:version-url
 V 71
 /drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/mollom.css
 END
+mollom.inc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/mollom.inc
+END
+mollom-captcha-player.swf
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/mollom-captcha-player.swf
+END
 mollom.info
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/mollom/mollom.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/mollom.info
 END
 mollom.js
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/mollom/mollom.js
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/mollom.js
+END
+mollom.api.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/mollom.api.php
+END
+mollom.admin.inc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/mollom/mollom.admin.inc
 END

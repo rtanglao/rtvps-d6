@@ -1,5 +1,5 @@
 <?php
-// $Id: votingapi.views.inc,v 1.1.2.17 2009/06/25 21:07:48 eaton Exp $
+// $Id: votingapi.views.inc,v 1.1.2.18 2009/08/15 17:51:38 eaton Exp $
 
 /**
  * @file
@@ -285,6 +285,14 @@ function votingapi_views_data_alter(&$views_data) {
     'content_type' => 'comment',
     'base_table' => 'comments',
     'content_id_column' => 'cid',
+    'pseudo_vote' => 'votingapi_vote',    // for legacy compatability w/RC1.
+    'pseudo_cache' => 'votingapi_cache',  // for legacy compatability w/RC1.
+  );
+  $default_relationships[] = array(
+    'description' => t('users'),
+    'content_type' => 'user',
+    'base_table' => 'users',
+    'content_id_column' => 'uid',
     'pseudo_vote' => 'votingapi_vote',    // for legacy compatability w/RC1.
     'pseudo_cache' => 'votingapi_cache',  // for legacy compatability w/RC1.
   );

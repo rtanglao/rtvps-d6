@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/filter
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/filter
 END
 filter.info
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/filter/filter.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/filter/filter.info
 END
 filter.admin.inc
 K 25
@@ -19,7 +19,7 @@ filter.module
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/filter/filter.module
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/filter/filter.module
 END
 filter.install
 K 25

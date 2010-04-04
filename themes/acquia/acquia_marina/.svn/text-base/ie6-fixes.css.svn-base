@@ -1,11 +1,16 @@
 /**
- * $Id: ie6-fixes.css,v 1.1.2.6 2009/05/13 09:06:33 jwolf Exp $
+ * $Id: ie6-fixes.css,v 1.2.2.2 2009/12/22 06:47:47 jwolf Exp $
  * Acquia Marina
  */
 
 /****************************/
 /* IE6 FIXES                */
 /****************************/
+
+#header #search-box input.form-text {
+  width: 150px;
+}
+
 
 /* remove rounded bottom png for IE6 */
 #primary-menu ul.menu li ul {
@@ -117,7 +122,7 @@ div.admin .right {
 /**************************/
 div.pngfix,
 h2.pngfix { 
-  behavior: url(themes/acquia/acquia_marina/iepngfix.htc);   /* change path here and in iepngfix.htc to match theme location */ 
+  behavior: url(/themes/acquia/acquia_marina/iepngfix.htc);   /* change path here and in iepngfix.htc to match theme location */ 
 } 
 
 

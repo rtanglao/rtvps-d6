@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/filefield/views
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/filefield/views
 END
 filefield_handler_field_data.inc
 K 25
@@ -14,4 +14,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 89
 /drupal/!svn/ver/4946/branches/1.x-6.x/modules/acquia/filefield/views/filefield.views.inc
+END
+filefield.views_convert.inc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/filefield/views/filefield.views_convert.inc
 END

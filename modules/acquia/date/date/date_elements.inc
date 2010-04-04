@@ -1,5 +1,5 @@
 <?php
-//$Id: date_elements.inc,v 1.46.2.2.2.62 2009/05/14 14:58:04 karens Exp $
+//$Id: date_elements.inc,v 1.46.2.2.2.66 2009/09/16 11:07:18 karens Exp $
 /**
  * @file
  * Date forms and form themes and validation.
@@ -54,15 +54,10 @@ function _date_field_update($op, &$node, $field, &$items, $teaser, $page) {
 
   $values = $items;
   foreach ($values as $delta => $item) {
-    // Don't save empty values.
-    if (empty($item['value']) && $delta !== 0) {
-      unset($items[$delta]);
-      continue;
-    }
 
     // Special case for ISO dates which may have been given artificial values for
     // some date parts to make them into valid dates.
-    if ($field['type'] == DATE_ISO) {
+    if (!empty($item['value']) && $field['type'] == DATE_ISO) {
       $items[$delta]['value'] = date_limit_value($items[$delta]['value'], date_granularity($field), $field['type']);
       if ($field['todate']) {
         $items[$delta]['value2'] = date_limit_value($items[$delta]['value2'], date_granularity($field), $field['type']);
@@ -261,7 +256,7 @@ function _date_elements() {
  */
 function date_combo_process($element, $edit, &$form_state, $form) {
   if (isset($element['#access']) && empty($element['#access'])) {
-    return;
+    return $element;
   }
 
   $field_name = $element['#field_name'];
@@ -288,7 +283,6 @@ function date_combo_process($element, $edit, &$form_state, $form) {
     '#weight'        => $field['widget']['weight'],
     '#required'      => ($field['required'] && $delta == 0) ? 1 : 0,
     '#default_value' => isset($element['#value'][$from_field]) ? $element['#value'][$from_field] : '',
-    '#field'         => $field,
     '#delta'         => $delta,
     '#date_timezone' => $element['#date_timezone'],
     '#date_format'      => date_limit_format(date_input_format($element, $field), $field['granularity']),
@@ -578,7 +572,7 @@ function theme_date_combo($element) {
   
   // Group from/to items together in fieldset.
   $fieldset = array(
-    '#title' => t($field['widget']['label']) .' '. ($element['#delta'] > 0 ? intval($element['#delta'] + 1) : ''),
+    '#title' => check_plain($field['widget']['label']) .' '. ($element['#delta'] > 0 ? intval($element['#delta'] + 1) : ''),
     '#value' => $element['#children'],
     '#collapsible' => FALSE,
     '#collapsed' => FALSE,

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_locale
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date_locale
 END
 date_locale.module
 K 25
@@ -13,5 +13,5 @@ date_locale.info
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_locale/date_locale.info
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date_locale/date_locale.info
 END

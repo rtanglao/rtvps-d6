@@ -1,25 +1,31 @@
 K 25
 svn:wc:ra_dav:version-url
 V 79
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/userreference
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/userreference
 END
 userreference.module
 K 25
 svn:wc:ra_dav:version-url
 V 100
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/userreference/userreference.module
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/userreference/userreference.module
 END
 userreference.install
 K 25
 svn:wc:ra_dav:version-url
 V 101
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/cck/modules/userreference/userreference.install
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/userreference/userreference.install
+END
+userreference.info.acquiainfo
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/userreference/userreference.info.acquiainfo
 END
 userreference.info
 K 25
 svn:wc:ra_dav:version-url
 V 98
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/userreference/userreference.info
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/userreference/userreference.info
 END
 userreference.rules.inc
 K 25

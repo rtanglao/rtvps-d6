@@ -1,7 +1,7 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/translations
 https://svn.acquia.com/drupal
 
@@ -32,11 +32,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
+2009-07-03T07:15:17.000000Z
 faf032ca7471cd2cbd97eba276e80bfa
 2009-07-02T20:47:26.048691Z
 5049
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1072
 
 modules-fieldgroup-panels-content_types.de.po
 file
@@ -44,11 +66,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
+2009-07-03T07:15:17.000000Z
 5c71ddea6159c9a6b7528b8b7635f665
 2009-07-02T20:47:26.048691Z
 5049
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1668
 
 modules-fieldgroup.pot
 file
@@ -56,11 +100,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
+2009-07-03T07:15:17.000000Z
 b336efcec03555443fc6651fc6a4f3e7
 2009-07-02T20:47:26.048691Z
 5049
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3757
 
 modules-fieldgroup.fr.po
 file
@@ -68,11 +134,33 @@ file
 
 
 
-2009-06-18T04:57:50.000000Z
+2009-06-21T23:17:50.000000Z
 a6012778d2b89d64b327cac0c2c1cbb3
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3417
 
 modules-fieldgroup.de.po
 file
@@ -80,11 +168,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
+2009-07-03T07:15:17.000000Z
 bd64287ef80e2a50c16c365b7f4d3225
 2009-07-02T20:47:26.048691Z
 5049
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5379
 
 modules-fieldgroup.sv.po
 file
@@ -92,11 +202,33 @@ file
 
 
 
-2009-06-18T04:57:50.000000Z
+2009-06-21T23:17:50.000000Z
 c16df17a27d376e04d239c8ff57815f7
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5863
 
 modules-fieldgroup.nl.po
 file
@@ -104,11 +236,33 @@ file
 
 
 
-2009-06-18T04:57:50.000000Z
+2009-06-21T23:17:50.000000Z
 256b7619e910560b4f10176933ad1c39
 2009-06-11T18:07:09.713535Z
 4999
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5103
 
 modules-fieldgroup.hu.po
 file
@@ -116,9 +270,31 @@ file
 
 
 
-2009-06-18T04:57:50.000000Z
+2009-06-21T23:17:50.000000Z
 6da2810c63ad2947d33a912b2b42df64
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5267
 

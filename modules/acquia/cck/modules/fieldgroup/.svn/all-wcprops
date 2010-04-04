@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 76
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup
 END
 fieldgroup.module
 K 25
 svn:wc:ra_dav:version-url
 V 94
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/fieldgroup.module
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/fieldgroup.module
 END
 fieldgroup.install
 K 25
@@ -27,17 +27,17 @@ svn:wc:ra_dav:version-url
 V 91
 /drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/fieldgroup.css
 END
-fieldgroup.panels.inc
+fieldgroup.info.acquiainfo
 K 25
 svn:wc:ra_dav:version-url
-V 98
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/fieldgroup.panels.inc
+V 103
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/fieldgroup.info.acquiainfo
 END
 fieldgroup.info
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/fieldgroup.info
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/cck/modules/fieldgroup/fieldgroup.info
 END
 fieldgroup-simple.tpl.php
 K 25

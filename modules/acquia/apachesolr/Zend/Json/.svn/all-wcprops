@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json
 END
 Exception.php
 K 25
@@ -19,7 +19,7 @@ Decoder.php
 K 25
 svn:wc:ra_dav:version-url
 V 86
-/drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json/Decoder.php
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/apachesolr/Zend/Json/Decoder.php
 END
 Server.php
 K 25

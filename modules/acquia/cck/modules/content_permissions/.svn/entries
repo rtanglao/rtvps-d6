@@ -1,14 +1,14 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/cck/modules/content_permissions
 https://svn.acquia.com/drupal
 
 
 
-2009-07-02T20:47:26.048691Z
-5049
+2009-12-17T22:43:34.016499Z
+5174
 buildbot
 
 
@@ -32,11 +32,33 @@ file
 
 
 
-2009-07-03T06:49:41.000000Z
-da26d028100107e3db71fe947e2c371b
-2009-07-02T20:47:26.048691Z
-5049
+2010-03-30T00:28:40.000000Z
+19c8cda55169a0ad2350158a289eaafc
+2009-12-17T22:43:34.016499Z
+5174
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+346
 
 translations
 dir
@@ -47,11 +69,33 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
-7886a89cf0d375b6f023c79d979e03df
-2009-03-27T16:42:00.079189Z
-4877
+2010-03-30T00:28:40.000000Z
+8d7af524b46dfcd62d5cde70699f8d90
+2009-09-17T21:43:49.172500Z
+5108
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+649
 
 content_permissions.install
 file
@@ -59,9 +103,65 @@ file
 
 
 
-2009-06-18T04:57:51.000000Z
+2009-06-21T23:17:50.000000Z
 e948dffc6145875f801b7c654f23b0e4
 2009-03-27T13:49:27.090492Z
 4875
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+414
+
+content_permissions.info.acquiainfo
+file
+
+
+
+
+2010-03-30T00:28:40.000000Z
+757d24e91542440a5ade49002c11c5b3
+2009-12-17T22:43:34.016499Z
+5174
+buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25
 

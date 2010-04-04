@@ -1,14 +1,14 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/apachesolr/SolrPhpClient/Apache/Solr/Service
 https://svn.acquia.com/drupal
 
 
 
-2009-03-27T13:49:27.090492Z
-4875
+2009-12-17T22:43:34.016499Z
+5174
 buildbot
 
 
@@ -32,9 +32,31 @@ file
 
 
 
-2009-06-18T04:57:34.000000Z
-d1b8733d0a226db9813f9cd3d9873231
-2009-03-27T13:49:27.090492Z
-4875
+2010-03-30T00:26:50.000000Z
+2f0a7ee0c54d29302c491ec9b40b51ea
+2009-12-17T22:43:34.016499Z
+5174
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20536
 

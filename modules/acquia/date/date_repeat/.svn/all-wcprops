@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_repeat
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date_repeat
 END
 date_repeat.module
 K 25
@@ -19,7 +19,7 @@ date_repeat.info
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/date_repeat/date_repeat.info
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/date/date_repeat/date_repeat.info
 END
 date_repeat_calc.inc
 K 25

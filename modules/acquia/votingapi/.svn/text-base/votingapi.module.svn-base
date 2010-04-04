@@ -1,5 +1,5 @@
 <?php
-// $Id: votingapi.module,v 1.46.2.23 2009/06/24 19:52:37 eaton Exp $
+// $Id: votingapi.module,v 1.46.2.24 2009/07/08 16:09:45 eaton Exp $
 
 /**
  * @file
@@ -331,8 +331,6 @@ function votingapi_select_votes($criteria = array(), $limit = 0) {
  *   $criteria['value_type']
  *   $criteria['tag']
  *   $criteria['function']
- *   $criteria['uid']
- *   $criteria['vote_source']
  *   $criteria['timestamp']   (If this is set, records with timestamps
  *      GREATER THAN the set value will be selected.)
  * @param $limit

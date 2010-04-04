@@ -1,37 +1,49 @@
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image
 END
 image.admin.inc
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/image.admin.inc
+/drupal/!svn/ver/5183/branches/1.x-6.x/modules/acquia/image/image.admin.inc
 END
 INSTALL.txt
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/INSTALL.txt
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/INSTALL.txt
+END
+CHANGELOG.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/CHANGELOG.txt
 END
 image.module
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/image.module
+/drupal/!svn/ver/5183/branches/1.x-6.x/modules/acquia/image/image.module
 END
 image.imagemagick.inc
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/image.imagemagick.inc
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/image.imagemagick.inc
 END
 image.install
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/image.install
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/image/image.install
+END
+image.css
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/image/image.css
 END
 README.txt
 K 25
@@ -43,5 +55,5 @@ image.info
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/image.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/image.info
 END

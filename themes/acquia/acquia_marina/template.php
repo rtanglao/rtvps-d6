@@ -1,171 +1,28 @@
 <?php
-// $Id: template.php,v 1.1.2.14 2009/05/13 06:08:29 jwolf Exp $
+// $Id: template.php,v 1.3.2.6 2009/12/22 06:47:47 jwolf Exp $
+
+
+include_once('theme-settings.php');
 
 /**
- * Initialize theme settings
+ * Initialize theme settings if needed
  */
-if (is_null(theme_get_setting('user_notverified_display')) || theme_get_setting('rebuild_registry')) {
-	
-  // Auto-rebuild the theme registry during theme development.
-  if(theme_get_setting('rebuild_registry')) {
-    drupal_set_message(t('The theme registry has been rebuilt. <a href="!link">Turn off</a> this feature on production websites.', array('!link' => url('admin/build/themes/settings/' . $GLOBALS['theme']))), 'warning');
-  }
-
-  global $theme_key;
-  // Get node types
-  $node_types = node_get_types('names');
-  
-  /**
-   * The default values for the theme variables. Make sure $defaults exactly
-   * matches the $defaults in the theme-settings.php file.
-   */
-  $defaults = array(
-    'user_notverified_display'              => 1,
-    'breadcrumb_display'                    => 0,
-    'search_snippet'                        => 1,
-    'search_info_type'                      => 1,
-    'search_info_user'                      => 1,
-    'search_info_date'                      => 1,
-    'search_info_comment'                   => 1,
-    'search_info_upload'                    => 1,
-    'mission_statement_pages'               => 'home',
-    'front_page_title_display'              => 'title_slogan',
-    'page_title_display_custom'             => '',
-    'other_page_title_display'              => 'ptitle_slogan',
-    'other_page_title_display_custom'       => '',
-    'configurable_separator'                => ' | ',
-    'meta_keywords'                         => '',
-    'meta_description'                      => '',
-    'taxonomy_display_default'              => 'only',
-    'taxonomy_format_default'               => 'vocab',
-    'taxonomy_enable_content_type'          => 0,
-    'submitted_by_author_default'           => 1,
-    'submitted_by_date_default'             => 1,
-    'submitted_by_enable_content_type'      => 0,
-    'readmore_default'                      => t('Read more'),
-    'readmore_title_default'                => t('Read the rest of this posting.'),
-    'readmore_prefix_default'               => '',
-    'readmore_suffix_default'               => '',
-    'readmore_enable_content_type'          => 0,
-    'comment_singular_default'              => t('1 comment'),
-    'comment_plural_default'                => t('@count comments'),
-    'comment_title_default'                 => t('Jump to the first comment of this posting.'),
-    'comment_prefix_default'                => '',
-    'comment_suffix_default'                => '',
-    'comment_new_singular_default'          => t('1 new comment'),
-    'comment_new_plural_default'            => t('@count new comments'),
-    'comment_new_title_default'             => t('Jump to the first new comment of this posting.'),
-    'comment_new_prefix_default'            => '',
-    'comment_new_suffix_default'            => '',
-    'comment_add_default'                   => t('Add new comment'),
-    'comment_add_title_default'             => t('Add a new comment to this page.'),
-    'comment_add_prefix_default'            => '',
-    'comment_add_suffix_default'            => '',
-    'comment_node_default'                  => t('Add new comment'),
-    'comment_node_title_default'            => t('Share your thoughts and opinions related to this posting.'),
-    'comment_node_prefix_default'           => '',
-    'comment_node_suffix_default'           => '',
-    'comment_enable_content_type'           => 0,
-    'rebuild_registry'                      => 0,
-  );
-  
-  // Make the default content-type settings the same as the default theme settings,
-  // so we can tell if content-type-specific settings have been altered.
-  $defaults = array_merge($defaults, theme_get_settings());
-  
-  // Set the default values for content-type-specific settings
-  foreach ($node_types as $type => $name) {
-    $defaults["taxonomy_display_{$type}"]         = $defaults['taxonomy_display_default'];
-    $defaults["taxonomy_format_{$type}"]          = $defaults['taxonomy_format_default'];
-    $defaults["submitted_by_author_{$type}"]      = $defaults['submitted_by_author_default'];
-    $defaults["submitted_by_date_{$type}"]        = $defaults['submitted_by_date_default'];
-    $defaults["readmore_{$type}"]                 = $defaults['readmore_default'];
-    $defaults["readmore_title_{$type}"]           = $defaults['readmore_title_default'];
-    $defaults["readmore_prefix_{$type}"]          = $defaults['readmore_prefix_default'];
-    $defaults["readmore_suffix_{$type}"]          = $defaults['readmore_suffix_default'];
-    $defaults["comment_singular_{$type}"]         = $defaults['comment_singular_default'];
-    $defaults["comment_plural_{$type}"]           = $defaults['comment_plural_default'];
-    $defaults["comment_title_{$type}"]            = $defaults['comment_title_default'];
-    $defaults["comment_prefix_{$type}"]           = $defaults['comment_prefix_default'];
-    $defaults["comment_suffix_{$type}"]           = $defaults['comment_suffix_default'];
-    $defaults["comment_new_singular_{$type}"]     = $defaults['comment_new_singular_default'];
-    $defaults["comment_new_plural_{$type}"]       = $defaults['comment_new_plural_default'];
-    $defaults["comment_new_title_{$type}"]        = $defaults['comment_new_title_default'];
-    $defaults["comment_new_prefix_{$type}"]       = $defaults['comment_new_prefix_default'];
-    $defaults["comment_new_suffix_{$type}"]       = $defaults['comment_new_suffix_default'];
-    $defaults["comment_add_{$type}"]              = $defaults['comment_add_default'];
-    $defaults["comment_add_title_{$type}"]        = $defaults['comment_add_title_default'];
-    $defaults["comment_add_prefix_{$type}"]       = $defaults['comment_add_prefix_default'];
-    $defaults["comment_add_suffix_{$type}"]       = $defaults['comment_add_suffix_default'];
-    $defaults["comment_node_{$type}"]             = $defaults['comment_node_default'];
-    $defaults["comment_node_title_{$type}"]       = $defaults['comment_node_title_default'];
-    $defaults["comment_node_prefix_{$type}"]      = $defaults['comment_node_prefix_default'];
-    $defaults["comment_node_suffix_{$type}"]      = $defaults['comment_node_suffix_default'];
-  }
-  
-  // Get default theme settings.
-  $settings = theme_get_settings($theme_key);
-  
-  // If content type-specifc settings are not enabled, reset the values
-  if (!$settings['readmore_enable_content_type']) {
-    foreach ($node_types as $type => $name) {
-      $settings["readmore_{$type}"]                    = $settings['readmore_default'];
-      $settings["readmore_title_{$type}"]              = $settings['readmore_title_default'];
-      $settings["readmore_prefix_{$type}"]             = $settings['readmore_prefix_default'];
-      $settings["readmore_suffix_{$type}"]             = $settings['readmore_suffix_default'];
-    }
-  }
-  if (!$settings['comment_enable_content_type']) {
-    foreach ($node_types as $type => $name) {
-      $defaults["comment_singular_{$type}"]         = $defaults['comment_singular_default'];
-      $defaults["comment_plural_{$type}"]           = $defaults['comment_plural_default'];
-      $defaults["comment_title_{$type}"]            = $defaults['comment_title_default'];
-      $defaults["comment_prefix_{$type}"]           = $defaults['comment_prefix_default'];
-      $defaults["comment_suffix_{$type}"]           = $defaults['comment_suffix_default'];
-      $defaults["comment_new_singular_{$type}"]     = $defaults['comment_new_singular_default'];
-      $defaults["comment_new_plural_{$type}"]       = $defaults['comment_new_plural_default'];
-      $defaults["comment_new_title_{$type}"]        = $defaults['comment_new_title_default'];
-      $defaults["comment_new_prefix_{$type}"]       = $defaults['comment_new_prefix_default'];
-      $defaults["comment_new_suffix_{$type}"]       = $defaults['comment_new_suffix_default'];
-      $defaults["comment_add_{$type}"]              = $defaults['comment_add_default'];
-      $defaults["comment_add_title_{$type}"]        = $defaults['comment_add_title_default'];
-      $defaults["comment_add_prefix_{$type}"]       = $defaults['comment_add_prefix_default'];
-      $defaults["comment_add_suffix_{$type}"]       = $defaults['comment_add_suffix_default'];
-      $defaults["comment_node_{$type}"]             = $defaults['comment_node_default'];
-      $defaults["comment_node_title_{$type}"]       = $defaults['comment_node_title_default'];
-      $defaults["comment_node_prefix_{$type}"]      = $defaults['comment_node_prefix_default'];
-      $defaults["comment_node_suffix_{$type}"]      = $defaults['comment_node_suffix_default'];
-    }
-  }
-  
-  // Don't save the toggle_node_info_ variables
-  if (module_exists('node')) {
-    foreach (node_get_types() as $type => $name) {
-      unset($settings['toggle_node_info_'. $type]);
-    }
-  }
-  // Save default theme settings
-  variable_set(
-    str_replace('/', '_', 'theme_'. $theme_key .'_settings'),
-    array_merge($defaults, $settings)
-  );
-  // Force refresh of Drupal internals
-  theme_get_setting('', TRUE);
-}
+acquia_marina_initialize_theme_settings('acquia_marina');
 
 
 /**
  * Modify theme variables
  */
-function phptemplate_preprocess(&$vars) {
+function acquia_marina_preprocess(&$vars) {
   global $user;                                            // Get the current user
   $vars['is_admin'] = in_array('admin', $user->roles);     // Check for Admin, logged in
   $vars['logged_in'] = ($user->uid > 0) ? TRUE : FALSE;
 }
 
 
-function phptemplate_preprocess_page(&$vars) {
-  // Remove sidebars if disabled
+function acquia_marina_preprocess_page(&$vars) {
+  global $language;
+  // Remove sidebars if disabled e.g., for Panels
   if (!$vars['show_blocks']) {
     $vars['sidebar_first'] = '';
     $vars['sidebar_last'] = '';
@@ -209,7 +66,7 @@ function phptemplate_preprocess_page(&$vars) {
   foreach ($region_list as $sub_region_key => $sub_region_list) {
     $active_regions = array();
     foreach ($sub_region_list as $region_item) {
-      if ($vars[$region_item]) {
+      if (!empty($vars[$region_item])) {
         $active_regions[] = $region_item;
       }
     }
@@ -217,7 +74,12 @@ function phptemplate_preprocess_page(&$vars) {
   }
   
   // Generate menu tree from source of primary links
-  $vars['primary_links_tree'] = menu_tree(variable_get('menu_primary_links_source', 'primary-links'));
+  if (module_exists('i18nmenu')) {
+    $vars['primary_links_tree']=i18nmenu_translated_tree(variable_get('menu_primary_links_source', 'primary-links'));
+    }
+    else {
+      $vars['primary_links_tree'] = menu_tree(variable_get('menu_primary_links_source', 'primary-links'));
+    }
 
   // TNT THEME SETTINGS SECTION
   // Display mission statement on all pages
@@ -230,7 +92,7 @@ function phptemplate_preprocess_page(&$vars) {
     $vars['breadcrumb'] = '';  
   }
   
-  // Set site title, slogan, mission, page title & separator (unless using Page Title module)
+  // Set site title, slogan, mission, page title & separator
   if (!module_exists('page_title')) {
     $title = t(variable_get('site_name', ''));
     $slogan = t(variable_get('site_slogan', ''));
@@ -276,7 +138,7 @@ function phptemplate_preprocess_page(&$vars) {
           }
       }
     }
-    $vars['head_title'] = strip_tags($vars['head_title']);                       // Remove any potential html tags
+    $vars['head_title'] = strip_tags($vars['head_title']);                                        // Remove any potential html tags
   }
   
   // Set meta keywords and description (unless using Meta tags module)
@@ -291,20 +153,65 @@ function phptemplate_preprocess_page(&$vars) {
     } 
   }
 
+  // Add custom theme settings
+  $theme_settings_path = path_to_theme() . '/theme_settings/';
+  drupal_add_css($theme_settings_path . theme_get_setting('theme_width') . '.css', 'theme');
+  drupal_add_css($theme_settings_path . theme_get_setting('theme_fonts') . '.css', 'theme');
+  $banner_file = theme_get_setting('theme_banner');
+  $vars['banner_image'] = ($banner_file == 'none') ? '' : 'style="background: url('. base_path() . $theme_settings_path .'banners/'. $banner_file .') no-repeat;"';
+
+  // Set IE6 & IE7 stylesheets, plus right-to-left versions
+  $theme_path = base_path() . path_to_theme();
+  $vars['ie6_styles'] = '<link type="text/css" rel="stylesheet" media="all" href="' . $theme_path . '/ie6-fixes.css" />' . "\n";
+  $vars['ie7_styles'] = '<link type="text/css" rel="stylesheet" media="all" href="' . $theme_path . '/ie7-fixes.css" />' . "\n";
+  if (defined('LANGUAGE_RTL') && $language->direction == LANGUAGE_RTL) {
+    $vars['ie6_styles'] .= '    <link type="text/css" rel="stylesheet" media="all" href="' . $theme_path . '/ie6-fixes-rtl.css" />' . "\n";
+    $vars['ie7_styles'] .= '    <link type="text/css" rel="stylesheet" media="all" href="' . $theme_path . '/ie7-fixes-rtl.css" />' . "\n";
+  }
+
+  if (file_exists(path_to_theme() . '/local.css')) {                    // Add local css file if present
+    $theme_path = base_path() . path_to_theme() . '/local.css';
+    $vars['local_styles'] = '<link type="text/css" rel="stylesheet" media="all" href="' . $theme_path . '" />' . "\n";
+  }
+  
+  // Use grouped import technique for more than 30 un-aggregated stylesheets (css limit fix for IE)
+  $css = drupal_add_css();
+  if (theme_get_setting('fix_css_limit') && !variable_get('preprocess_css', FALSE) && acquia_marina_css_count($css) > 26) {
+    $styles = '';
+    $suffix = "\n".'</style>'."\n";
+    foreach ($css as $media => $types) {
+      $prefix = '<style type="text/css" media="'. $media .'">'."\n";
+      $imports = array();
+      foreach ($types as $files) {
+        foreach ($files as $file => $preprocess) {
+          $imports[] = '@import "'. base_path() . $file .'";';
+          if (count($imports) == 30) {
+            $styles .= $prefix . implode("\n", $imports) . $suffix;
+            $imports = array();
+          }
+        }
+      }
+      $styles .= (count($imports) > 0) ? ($prefix . implode("\n", $imports) . $suffix) : '';
+    }
+    $vars['styles'] = $styles;
+  }
+  else {
+    $vars['styles'] = drupal_get_css();                                   // Use normal link technique
+  }
   if (drupal_is_front_page()) {
     $vars['closure'] .= '<div id="legal-notice">Theme provided by <a href="http://www.acquia.com">Acquia, Inc.</a> under GPL license from TopNotchThemes <a href="http://www.topnotchthemes.com">Drupal themes</a></div>';
   }
 }
 
 
-function phptemplate_preprocess_block(&$vars) {
+function acquia_marina_preprocess_block(&$vars) {
   // Add regions with rounded blocks (e.g., sidebar_first, sidebar_last) to $rounded_regions array
   $rounded_regions = array('sidebar_first','sidebar_last','postscript_first','postscript_middle','postscript_last');
   $vars['rounded_block'] = (in_array($vars['block']->region, $rounded_regions)) ? TRUE : FALSE;
 }
 
 
-function phptemplate_preprocess_node(&$vars) {
+function acquia_marina_preprocess_node(&$vars) {
   // Build array of handy node classes
   $node_classes = array();
   $node_classes[] = $vars['zebra'];                                      // Node is odd or even
@@ -376,14 +283,14 @@ function phptemplate_preprocess_node(&$vars) {
   if (isset($vars['node']->links['node_read_more'])) {
     $node_content_type = (theme_get_setting('readmore_enable_content_type') == 1) ? $vars['node']->type : 'default';
     $vars['node']->links['node_read_more'] = array(
-      'title' => _themesettings_link(
-      theme_get_setting('readmore_prefix_'. $node_content_type),
-      theme_get_setting('readmore_suffix_'. $node_content_type),
-      t(theme_get_setting('readmore_'. $node_content_type)),
-      'node/'. $vars['node']->nid,
-      array(
-        'attributes' => array('title' => t(theme_get_setting('readmore_title_'. $node_content_type))), 
-        'query' => NULL, 'fragment' => NULL, 'absolute' => FALSE, 'html' => TRUE
+      'title' => acquia_marina_themesettings_link(
+        theme_get_setting('readmore_prefix_'. $node_content_type),
+        theme_get_setting('readmore_suffix_'. $node_content_type),
+        t(theme_get_setting('readmore_'. $node_content_type)),
+        'node/'. $vars['node']->nid,
+        array(
+          'attributes' => array('title' => t(theme_get_setting('readmore_title_'. $node_content_type))), 
+          'query' => NULL, 'fragment' => NULL, 'absolute' => FALSE, 'html' => TRUE
         )
       ),
       'attributes' => array('class' => 'readmore-item'),
@@ -394,14 +301,14 @@ function phptemplate_preprocess_node(&$vars) {
     $node_content_type = (theme_get_setting('comment_enable_content_type') == 1) ? $vars['node']->type : 'default';
     if ($vars['teaser']) {
       $vars['node']->links['comment_add'] = array(
-        'title' => _themesettings_link(
-        theme_get_setting('comment_add_prefix_'. $node_content_type),
-        theme_get_setting('comment_add_suffix_'. $node_content_type),
-        t(theme_get_setting('comment_add_'. $node_content_type)),
-        "comment/reply/".$vars['node']->nid,
-        array(
-          'attributes' => array('title' => t(theme_get_setting('comment_add_title_'. $node_content_type))), 
-          'query' => NULL, 'fragment' => 'comment-form', 'absolute' => FALSE, 'html' => TRUE
+        'title' => acquia_marina_themesettings_link(
+          theme_get_setting('comment_add_prefix_'. $node_content_type),
+          theme_get_setting('comment_add_suffix_'. $node_content_type),
+          t(theme_get_setting('comment_add_'. $node_content_type)),
+          "comment/reply/".$vars['node']->nid,
+          array(
+            'attributes' => array('title' => t(theme_get_setting('comment_add_title_'. $node_content_type))), 
+            'query' => NULL, 'fragment' => 'comment-form', 'absolute' => FALSE, 'html' => TRUE
           )
         ),
         'attributes' => array('class' => 'comment-add-item'),
@@ -410,14 +317,14 @@ function phptemplate_preprocess_node(&$vars) {
     }
     else {
       $vars['node']->links['comment_add'] = array(
-        'title' => _themesettings_link(
-        theme_get_setting('comment_node_prefix_'. $node_content_type),
-        theme_get_setting('comment_node_suffix_'. $node_content_type),
-        t(theme_get_setting('comment_node_'. $node_content_type)),
-        "comment/reply/".$vars['node']->nid,
-        array(
-          'attributes' => array('title' => t(theme_get_setting('comment_node_title_'. $node_content_type))), 
-          'query' => NULL, 'fragment' => 'comment-form', 'absolute' => FALSE, 'html' => TRUE
+        'title' => acquia_marina_themesettings_link(
+          theme_get_setting('comment_node_prefix_'. $node_content_type),
+          theme_get_setting('comment_node_suffix_'. $node_content_type),
+          t(theme_get_setting('comment_node_'. $node_content_type)),
+          "comment/reply/".$vars['node']->nid,
+          array(
+            'attributes' => array('title' => t(theme_get_setting('comment_node_title_'. $node_content_type))), 
+            'query' => NULL, 'fragment' => 'comment-form', 'absolute' => FALSE, 'html' => TRUE
           )
         ),
         'attributes' => array('class' => 'comment-node-item'),
@@ -428,7 +335,7 @@ function phptemplate_preprocess_node(&$vars) {
   if (isset($vars['node']->links['comment_new_comments'])) {
     $node_content_type = (theme_get_setting('comment_enable_content_type') == 1) ? $vars['node']->type : 'default';
     $vars['node']->links['comment_new_comments'] = array(
-      'title' => _themesettings_link(
+      'title' => acquia_marina_themesettings_link(
         theme_get_setting('comment_new_prefix_'. $node_content_type),
         theme_get_setting('comment_new_suffix_'. $node_content_type),
         format_plural(
@@ -449,7 +356,7 @@ function phptemplate_preprocess_node(&$vars) {
   if (isset($vars['node']->links['comment_comments'])) {
     $node_content_type = (theme_get_setting('comment_enable_content_type') == 1) ? $vars['node']->type : 'default';
     $vars['node']->links['comment_comments'] = array(
-      'title' => _themesettings_link(
+      'title' => acquia_marina_themesettings_link(
         theme_get_setting('comment_prefix_'. $node_content_type),
         theme_get_setting('comment_suffix_'. $node_content_type),
         format_plural(
@@ -471,7 +378,7 @@ function phptemplate_preprocess_node(&$vars) {
 }
 
 
-function phptemplate_preprocess_comment(&$vars) {
+function acquia_marina_preprocess_comment(&$vars) {
   global $user;
   // Build array of handy comment classes
   $comment_classes = array();
@@ -498,7 +405,7 @@ function phptemplate_preprocess_comment(&$vars) {
  * Set defaults for comments display
  * (Requires comment-wrapper.tpl.php file in theme directory)
  */
-function phptemplate_preprocess_comment_wrapper(&$vars) {
+function acquia_marina_preprocess_comment_wrapper(&$vars) {
   $vars['display_mode']  = COMMENT_MODE_FLAT_EXPANDED;
   $vars['display_order'] = COMMENT_ORDER_OLDEST_FIRST;
   $vars['comment_controls_state'] = COMMENT_CONTROLS_HIDDEN;
@@ -510,7 +417,7 @@ function phptemplate_preprocess_comment_wrapper(&$vars) {
  * (e.g., node, teaser, list, table, etc.)
  * (Requires views-view.tpl.php file in theme directory)
  */
-function phptemplate_preprocess_views_view(&$vars) {
+function acquia_marina_preprocess_views_view(&$vars) {
   $vars['css_name'] = $vars['css_name'] .' view-style-'. views_css_safe(strtolower($vars['view']->type));
 }
 
@@ -518,7 +425,7 @@ function phptemplate_preprocess_views_view(&$vars) {
 /**
  * Modify search results based on theme settings
  */
-function phptemplate_preprocess_search_result(&$variables) {
+function acquia_marina_preprocess_search_result(&$variables) {
   static $search_zebra = 'even';
   $search_zebra = ($search_zebra == 'even') ? 'odd' : 'even';
   $variables['search_zebra'] = $search_zebra;
@@ -563,53 +470,50 @@ function phptemplate_preprocess_search_result(&$variables) {
 
 
 /**
- * Override username theming to display/hide 'not verified' text
+ * Hide or show username '(not verified)' text
  */
-function phptemplate_username($object) {
-  if ($object->uid && $object->name) {
-    // Shorten the name when it is too long or it will break many tables.
-    if (drupal_strlen($object->name) > 20) {
-      $name = drupal_substr($object->name, 0, 15) .'...';
-    }
-    else {
-      $name = $object->name;
-    }
-    if (user_access('access user profiles')) {
-      $output = l($name, 'user/'. $object->uid, array('attributes' => array('title' => t('View user profile.'))));
-    }
-    else {
-      $output = check_plain($name);
-    }
-  }
-  else if ($object->name) {
-    // Sometimes modules display content composed by people who are
-    // not registered members of the site (e.g. mailing list or news
-    // aggregator modules). This clause enables modules to display
-    // the true author of the content.
-    if (!empty($object->homepage)) {
-      $output = l($object->name, $object->homepage, array('attributes' => array('rel' => 'nofollow')));
-    }
-    else {
-      $output = check_plain($object->name);
-    }
-    // Display or hide 'not verified' text
-    if (theme_get_setting('user_notverified_display') == 1) {
-      $output .= ' ('. t('not verified') .')';
-    }
+function acquia_marina_username($object) {
+  if ((!$object->uid) && $object->name) {
+    $output = (!empty($object->homepage)) ? l($object->name, $object->homepage, array('attributes' => array('rel' => 'nofollow'))) : check_plain($object->name);
+    $output .= (theme_get_setting('user_notverified_display') == 1) ? ' ('. t('not verified') .')' : '';
   }
   else {
-    $output = variable_get('anonymous', t('Anonymous'));
-  }
+    $output = theme_username($object);
+  }  
   return $output;
 }
 
 
 /**
- * Set default form file input size 
+ * Set form file input max char size 
  */
-function phptemplate_file($element) {
-  $element['#size'] = 40;
+function acquia_marina_file($element) {
+  $element['#size'] = ($element['#size'] > 40) ? 40 : $element['#size'];
   return theme_file($element);
+}
+
+
+/**
+ * Limit string length in word increments, add ellipsis
+ */
+function acquia_marina_wordlimit($string, $length = 50, $ellipsis = "...") {
+  $words = explode(' ', strip_tags($string));
+  if (count($words) > $length)
+    return implode(' ', array_slice($words, 0, $length)) . $ellipsis;
+  else
+    return $string;
+}
+
+
+/**
+ * Count the total number of CSS files in $vars['css']
+ */
+function acquia_marina_css_count($array) {
+  $count = 0;
+  foreach ($array as $item) {
+    $count = (is_array($item)) ? $count + acquia_marina_css_count($item) : $count + 1;
+  }
+  return $count;
 }
 
 
@@ -647,6 +551,6 @@ function phptemplate_file($element) {
  * @return
  *   an HTML string containing a link to the given path.
  */
-function _themesettings_link($prefix, $suffix, $text, $path, $options) {
+function acquia_marina_themesettings_link($prefix, $suffix, $text, $path, $options) {
   return $prefix . (($text) ? l($text, $path, $options) : '') . $suffix;
 }

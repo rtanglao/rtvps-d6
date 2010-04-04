@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/views
+END
+image_gallery_handler_field_gallery_count.inc
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/views/image_gallery_handler_field_gallery_count.inc
+END
+image_gallery_handler_field_gallery_cover_latest_time.inc
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/views/image_gallery_handler_field_gallery_cover_latest_time.inc
+END
+image_gallery_handler_relationship_gallery_cover.inc
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/views/image_gallery_handler_relationship_gallery_cover.inc
+END
+image_gallery.views.inc
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/views/image_gallery.views.inc
+END
+image_gallery_handler_field_gallery_cover.inc
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/views/image_gallery_handler_field_gallery_cover.inc
+END
+image_gallery.views_default.inc
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/views/image_gallery.views_default.inc
+END
+image_gallery_handler_field_gallery_cover_thumbnail.inc
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/views/image_gallery_handler_field_gallery_cover_thumbnail.inc
+END
+image_gallery_plugin_display_image_gallery.inc
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/drupal/!svn/ver/5108/branches/1.x-6.x/modules/acquia/image/contrib/image_gallery/views/image_gallery_plugin_display_image_gallery.inc
+END

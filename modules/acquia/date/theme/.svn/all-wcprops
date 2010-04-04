@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/theme
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/date/theme
 END
 date-views-filter-form.tpl.php
 K 25
@@ -25,7 +25,7 @@ theme.inc
 K 25
 svn:wc:ra_dav:version-url
 V 74
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/date/theme/theme.inc
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/date/theme/theme.inc
 END
 date-navigation.tpl.php
 K 25

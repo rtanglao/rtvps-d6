@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/acquia_connector/acquia_agent
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/acquia_connector/acquia_agent
 END
 rpc.acquia.com.pem
 K 25
@@ -19,7 +19,7 @@ acquia_agent_drupal_version.inc
 K 25
 svn:wc:ra_dav:version-url
 V 115
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/acquia/acquia_connector/acquia_agent/acquia_agent_drupal_version.inc
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/acquia_connector/acquia_agent/acquia_agent_drupal_version.inc
 END
 acquia_agent.install
 K 25

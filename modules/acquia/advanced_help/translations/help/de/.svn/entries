@@ -1,7 +1,7 @@
-8
+9
 
 dir
-5052
+5208
 https://svn.acquia.com/drupal/branches/1.x-6.x/modules/acquia/advanced_help/translations/help/de
 https://svn.acquia.com/drupal
 
@@ -32,11 +32,33 @@ file
 
 
 
-2009-06-18T04:58:00.000000Z
+2009-06-21T23:17:50.000000Z
 fb2505aa15adb3f29ae555874ab09f26
 2009-04-16T23:08:01.621631Z
 4917
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4596
 
 translation.html
 file
@@ -44,11 +66,33 @@ file
 
 
 
-2009-06-18T04:58:00.000000Z
+2009-06-21T23:17:50.000000Z
 6ff22528cc2e59ce9856f88bcaa732bc
 2009-04-16T23:08:01.621631Z
 4917
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+543
 
 using-advanced-help.html
 file
@@ -56,11 +100,33 @@ file
 
 
 
-2009-06-18T04:58:00.000000Z
+2009-06-21T23:17:50.000000Z
 1f2639372dd4620f05c7df7f3724a97e
 2009-04-16T23:08:01.621631Z
 4917
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2727
 
 advanced_help.help.ini
 file
@@ -68,11 +134,33 @@ file
 
 
 
-2009-06-18T04:58:00.000000Z
+2009-06-21T23:17:50.000000Z
 82517cf5521404b23a95a968b93e5a3b
 2009-04-16T23:08:01.621631Z
 4917
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+337
 
 why-advanced-help.html
 file
@@ -80,9 +168,31 @@ file
 
 
 
-2009-06-18T04:58:00.000000Z
+2009-06-21T23:17:50.000000Z
 f56cad1eeaddca96f6bc6e1bbef53f59
 2009-04-16T23:08:01.621631Z
 4917
 buildbot
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7946
 

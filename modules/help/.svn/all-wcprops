@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/help
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/help
 END
 help.css
 K 25
@@ -13,7 +13,7 @@ help.info
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/drupal/!svn/ver/5049/branches/1.x-6.x/modules/help/help.info
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/help/help.info
 END
 help.admin.inc
 K 25

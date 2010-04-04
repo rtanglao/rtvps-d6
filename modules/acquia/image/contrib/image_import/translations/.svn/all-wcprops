@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 93
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_import/translations
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_import/translations
 END
 image_import.de.po
 K 25
@@ -9,11 +9,29 @@ svn:wc:ra_dav:version-url
 V 112
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_import/translations/image_import.de.po
 END
+image_import.sv.po
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_import/translations/image_import.sv.po
+END
+image_import.nl.po
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_import/translations/image_import.nl.po
+END
 image_import.hu.po
 K 25
 svn:wc:ra_dav:version-url
 V 112
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_import/translations/image_import.hu.po
+END
+modules-image_import.ru.po
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/drupal/!svn/ver/5081/branches/1.x-6.x/modules/acquia/image/contrib/image_import/translations/modules-image_import.ru.po
 END
 image_import.sl.po
 K 25
@@ -25,7 +43,7 @@ image_import.el.po
 K 25
 svn:wc:ra_dav:version-url
 V 112
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_import/translations/image_import.el.po
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_import/translations/image_import.el.po
 END
 image_import.da.po
 K 25
@@ -37,5 +55,5 @@ image_import.pot
 K 25
 svn:wc:ra_dav:version-url
 V 110
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/image/contrib/image_import/translations/image_import.pot
+/drupal/!svn/ver/5200/branches/1.x-6.x/modules/acquia/image/contrib/image_import/translations/image_import.pot
 END

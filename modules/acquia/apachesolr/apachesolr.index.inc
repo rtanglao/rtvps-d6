@@ -1,5 +1,5 @@
 <?php
-// $Id: apachesolr.index.inc,v 1.1.2.6 2009/07/01 22:43:50 pwolanin Exp $
+// $Id: apachesolr.index.inc,v 1.1.2.22 2009/12/27 16:47:37 pwolanin Exp $
 
 /**
  * @file
@@ -16,25 +16,13 @@ function apachesolr_add_node_document(&$documents, $nid, $namespace) {
 }
 
 /**
- * Strip control characters that cause Jetty/Solr to fail.
- */
-function apachesolr_strip_ctl_chars($text) {
-  // See:  http://w3.org/International/questions/qa-forms-utf-8.html
-  // Printable utf-8 does not include any of these chars below x7F
-  return preg_replace('@[\x00-\x08\x0B\x0C\x0E-\x1F]@', ' ', $text);
-}
-
-/**
  * Strip html tags and also control characters that cause Jetty/Solr to fail.
  */
 function apachesolr_clean_text($text) {
   // Add spaces before stripping tags to avoid running words together.
   $text = filter_xss(str_replace(array('<', '>'), array(' <', '> '), $text), array());
   // Decode entities and then make safe any < or > characters.
-  $text = htmlspecialchars(html_entity_decode($text, ENT_NOQUOTES, 'UTF-8'), ENT_NOQUOTES, 'UTF-8');
-  // We must strip low bytes second in case there was an encoded
-  // low-byte character.
-  return apachesolr_strip_ctl_chars($text);
+  return htmlspecialchars(html_entity_decode($text, ENT_NOQUOTES, 'UTF-8'), ENT_NOQUOTES, 'UTF-8');
 }
 
 /**
@@ -66,15 +54,25 @@ function apachesolr_node_to_document($nid, $namespace) {
 
     $text = $node->body;
 
-    // Fetch extra data normally not visible, including comments.
-    $extra = node_invoke_nodeapi($node, 'update index');
+    // Fetch extra data normally not visible, including comments.      
+    $extra = array();
+    $exclude_comments = in_array($node->type, variable_get('apachesolr_exclude_comments_types', array()), TRUE);
+    foreach (module_implements('nodeapi') as $module) {
+      if ($exclude_comments && $module == 'comment') {
+        // Don't add comments.
+        continue;
+      }
+      if ($output = module_invoke($module, 'nodeapi', $node, 'update index', FALSE, FALSE)) {
+        $extra[$module] = $output;
+      }
+    }
     $text .= "\n\n" . implode(' ', $extra);
-    $text = apachesolr_strip_ctl_chars($text);
 
     $document = new Apache_Solr_Document();
     $document->id = apachesolr_document_id($node->nid);
     $document->site = url(NULL, array('absolute' => TRUE));
     $document->hash = apachesolr_site_hash();
+    $document->entity = 'node';
     $document->nid = $node->nid;
     $document->uid = $node->uid;
     $document->title = $node->title;
@@ -87,15 +85,20 @@ function apachesolr_node_to_document($nid, $namespace) {
     if (!empty($node->language)) {
       $document->language = $node->language;
     }
+    else {
+      // 'und' is the language-neutral code in Drupal 7.
+      // Note - this was changed from 'zxx'.
+      $document->language = 'und';
+    }
     $document->body = apachesolr_clean_text($text);
     $document->type  = $node->type;
-    $document->type_name = apachesolr_strip_ctl_chars(node_get_types('name', $node));
+    $document->type_name = node_get_types('name', $node);
     $document->created = apachesolr_date_iso($node->created);
     $document->changed = apachesolr_date_iso($node->changed);
     $last_change = (isset($node->last_comment_timestamp) && $node->last_comment_timestamp > $node->changed) ? $node->last_comment_timestamp : $node->changed;
     $document->last_comment_or_change = apachesolr_date_iso($last_change);
     $document->comment_count = isset($node->comment_count) ? $node->comment_count : 0;
-    $document->name = apachesolr_strip_ctl_chars($node->name);
+    $document->name = $node->name;
 
     $path = 'node/' . $node->nid;
     $document->url = url($path, array('absolute' => TRUE));
@@ -108,7 +111,7 @@ function apachesolr_node_to_document($nid, $namespace) {
       $language = empty($node->language) ? '' : $node->language;
       $output = drupal_get_path_alias($path, $language);
       if ($output && $output != $path) {
-        $document->path_alias = apachesolr_strip_ctl_chars($output);
+        $document->path_alias = $output;
       }
     }
 
@@ -147,10 +150,10 @@ function apachesolr_node_to_document($nid, $namespace) {
     apachesolr_add_tags_to_document($document, $text);
     apachesolr_add_taxonomy_to_document($document, $node);
 
-    // Let modules add to the document - TODO convert to drupal_alter().
+    // Let modules add to the document.
     foreach (module_implements('apachesolr_update_index') as $module) {
       $function = $module .'_apachesolr_update_index';
-      $function($document, $node);
+      $function($document, $node, $namespace);
     }
   }
   return $document;
@@ -235,3 +238,109 @@ function apachesolr_add_tags_to_document(&$document, $text) {
   }
 }
 
+/**
+ * Additional index utility functions
+ */
+
+/**
+ * hook_cron() helper to try to make {apachesolr_search_node} consistent with {node}.
+ */
+function apachesolr_cron_check_node_table() {
+  // Check for unpublished content that wasn't deleted from the index.
+  $result = db_query("SELECT n.nid, n.status FROM {apachesolr_search_node} asn INNER JOIN {node} n ON n.nid = asn.nid WHERE asn.status != n.status");
+  $node_lists = array();
+  $nodes = array();
+  // Update or delete at most this many in each Solr query.
+  $limit = variable_get('apachesolr_cron_mass_limit', 500);
+  while ($node = db_fetch_object($result)) {
+    $nodes[$node->nid] = $node;
+    if (count($nodes) == $limit) {
+      $node_lists[] = $nodes;
+      $nodes = array();
+    }
+  }
+  // Any remaning ones if the limit is not reached.
+  if (count($nodes)) {
+    $node_lists[] = $nodes;
+  }
+  foreach ($node_lists as $nodes) {
+    watchdog('Apache Solr', 'On cron running apachesolr_nodeapi_mass_update() on nids @nids', array('@nids' => implode(',', array_keys($nodes))), WATCHDOG_WARNING);
+    if (!apachesolr_nodeapi_mass_update($nodes)) {
+      // Solr query failed - so stop trying.
+      break;
+    }
+  }
+  // Check for deleted content that wasn't deleted from the index.
+  $result = db_query("SELECT asn.nid FROM {apachesolr_search_node} asn LEFT JOIN {node} n ON n.nid = asn.nid WHERE n.nid IS NULL");
+  $node_lists = array();
+  $nodes = array();
+  while ($node = db_fetch_object($result)) {
+    $nodes[$node->nid] = $node;
+    if (count($nodes) == $limit) {
+      $node_lists[] = $nodes;
+      $nodes = array();
+    }
+  }
+  // Any remaning ones if the limit is not reached.
+  if (count($nodes)) {
+    $node_lists[] = $nodes;
+  }
+  foreach ($node_lists as $nodes) {
+    watchdog('Apache Solr', 'On cron running apachesolr_nodeapi_mass_delete() on nids @nids', array('@nids' => implode(',', array_keys($nodes))), WATCHDOG_WARNING);
+    if (!apachesolr_nodeapi_mass_delete($nodes)) {
+      // Solr query failed - so stop trying.
+      break;
+    }
+  }
+}
+
+function apachesolr_nodeapi_mass_update($nodes) {
+  if (empty($nodes)) {
+    return TRUE;
+  }
+  $ids = array();
+  foreach ($nodes as $node) {
+    if (!$node->status) {
+      $ids[] = apachesolr_document_id($node->nid);
+    }
+  }
+  $time = time();
+  try {
+    $solr = apachesolr_get_solr();
+    $solr->deleteByMultipleIds($ids);
+    apachesolr_index_updated($time);
+    foreach ($nodes as $node) {
+      // There was no exception, so update the table.
+      db_query("UPDATE {apachesolr_search_node} SET changed = %d, status = %d WHERE nid  = %d", $time, $node->status, $node->nid);
+    }
+    return TRUE;
+  }
+  catch (Exception $e) {
+    watchdog('Apache Solr', nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
+    return FALSE;
+  }
+}
+
+function apachesolr_nodeapi_mass_delete($nodes) {
+  if (empty($nodes)) {
+    return TRUE;
+  }
+  $ids = array();
+  $nids = array();
+  foreach ($nodes as $node) {
+    $ids[] = apachesolr_document_id($node->nid);
+    $nids[] = $node->nid;
+  }
+  try {
+    $solr = apachesolr_get_solr();
+    $solr->deleteByMultipleIds($ids);
+    apachesolr_index_updated($time);
+    // There was no exception, so update the table.
+    db_query("DELETE FROM {apachesolr_search_node} WHERE nid  IN (" . db_placeholders($nids) . ")", $nids);
+    return TRUE;
+  }
+  catch (Exception $e) {
+    watchdog('Apache Solr', nl2br(check_plain($e->getMessage())), NULL, WATCHDOG_ERROR);
+    return FALSE;
+  }
+}

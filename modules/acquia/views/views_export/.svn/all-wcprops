@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/views_export
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/views_export
 END
 views_export.module
 K 25
 svn:wc:ra_dav:version-url
 V 92
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/views_export/views_export.module
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/views_export/views_export.module
 END
 views_export.css
 K 25
@@ -19,5 +19,5 @@ views_export.info
 K 25
 svn:wc:ra_dav:version-url
 V 90
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/views_export/views_export.info
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/views_export/views_export.info
 END

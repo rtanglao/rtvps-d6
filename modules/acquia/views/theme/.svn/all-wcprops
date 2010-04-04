@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/theme
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/theme
 END
 views-view-unformatted.tpl.php
 K 25
@@ -9,17 +9,17 @@ svn:wc:ra_dav:version-url
 V 96
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/theme/views-view-unformatted.tpl.php
 END
-views-more.tpl.php
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/theme/views-more.tpl.php
-END
 views-view-row-node.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 93
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/theme/views-view-row-node.tpl.php
+END
+views-more.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/theme/views-more.tpl.php
 END
 views-ui-edit-tab.tpl.php
 K 25
@@ -33,17 +33,17 @@ svn:wc:ra_dav:version-url
 V 92
 /drupal/!svn/ver/4877/branches/1.x-6.x/modules/acquia/views/theme/views-view-summary.tpl.php
 END
-views-exposed-form.tpl.php
-K 25
-svn:wc:ra_dav:version-url
-V 92
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/theme/views-exposed-form.tpl.php
-END
 views-ui-edit-view.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 92
 /drupal/!svn/ver/4917/branches/1.x-6.x/modules/acquia/views/theme/views-ui-edit-view.tpl.php
+END
+views-exposed-form.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/theme/views-exposed-form.tpl.php
 END
 views-view.tpl.php
 K 25
@@ -57,17 +57,17 @@ svn:wc:ra_dav:version-url
 V 91
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/theme/views-view-fields.tpl.php
 END
-views-view-row-comment.tpl.php
-K 25
-svn:wc:ra_dav:version-url
-V 96
-/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/theme/views-view-row-comment.tpl.php
-END
 views-view-rss.tpl.php
 K 25
 svn:wc:ra_dav:version-url
 V 88
 /drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/theme/views-view-rss.tpl.php
+END
+views-view-row-comment.tpl.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/drupal/!svn/ver/4875/branches/1.x-6.x/modules/acquia/views/theme/views-view-row-comment.tpl.php
 END
 views-ui-list-views.tpl.php
 K 25
@@ -103,7 +103,7 @@ theme.inc
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/drupal/!svn/ver/4999/branches/1.x-6.x/modules/acquia/views/theme/theme.inc
+/drupal/!svn/ver/5174/branches/1.x-6.x/modules/acquia/views/theme/theme.inc
 END
 views-ui-edit-item.tpl.php
 K 25
